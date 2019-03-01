@@ -148,3 +148,7 @@ body {
   padding: 20px;
   border: 1px solid darkgray;
 }
+
+.col-3-div {
+  padding-left: 10%;
+}

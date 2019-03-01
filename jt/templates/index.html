@@ -4,17 +4,29 @@
 <link rel="stylesheet" type="text/css" href="{% static 'jt/index.css' %}">
 <link rel="stylesheet" href="{% static 'jt/node_modules/bulma/css/bulma.css' %}">
 
+{% block left %}
+  <ul class="categories-list">
+    {% for category in category_list %}
+      <li><a href="#" class="category">{{category.name}}</a></li>
+    {% endfor %}
+  </ul>
+{%endblock%}
+
 {%block center%}
-  <div class="flip3D">
-    <div class="back">
-      <h3 class="card-text">Because they have such big fingers!</h3>
+  {%block indexcenter%}
+    <div class="flip3D">
+      <div class="back">
+        <h3 class="card-text">Because they have such big fingers!</h3>
+      </div>
+      <div class="front">
+        <h3 class="card-text">Why do gorillas have such big nostrils?</h3>
+      </div>
     </div>
-    <div class="front">
-      <h3 class="card-text">Why do gorillas have such big nostrils?</h3>
-    </div>
-  </div>
+  {%endblock%}
 {%endblock%}
 
 {%block right%}
-  <h1>Hello World!</h1>
+  {% block indexleft%}
+    <p>Make an account or sign in to add jokes to your favorites!</p>
+  {%endblock%}
 {%endblock%}
