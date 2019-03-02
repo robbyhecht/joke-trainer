@@ -6,5 +6,6 @@ from jt import views
 app_name = "jt"
 urlpatterns = [
   path('', views.list_categories, name='list_categories'),
+  # path('', views.random_joke, name='random_joke'),
   path('joke/', views.joke, name='joke'),
 ]
