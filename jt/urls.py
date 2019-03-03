@@ -6,8 +6,9 @@ from jt import views
 app_name = "jt"
 urlpatterns = [
   path('', views.list_categories, name='list_categories'),
-  # path('', views.random_joke, name='random_joke'),
+  path('login', views.login_user, name='login'),
+  path('logout', views.user_logout, name='logout'),
+  path('register', views.register, name='register'),
   path('category/<int:id>', views.list_by_category, name='list_by_category'),
-  
-  path('joke/', views.joke, name='joke'),
+  path('favorites', views.favorites_list, name='favorites_list'),
 ]
