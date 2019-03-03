@@ -8,7 +8,7 @@
     </div>
     {% for joke in joke_content %}
       <div class="singlecard-container">
-        <div class="flip3D">
+        <div class="flip3D" id="flipCardTarget">
           <div class="back">
             <h3 class="card-text">{{ joke.answer }}</h3>
           </div>
@@ -17,7 +17,7 @@
           </div>
         </div>
         <div class="flip-button-container">
-          <a class="button is-success">flip card</a>
+          <a class="button is-success" onclick="changeBG('flipCardTarget')">flip card</a>
         </div>
       </div>
     {% endfor %}
