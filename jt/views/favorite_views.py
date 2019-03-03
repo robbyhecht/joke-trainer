@@ -4,7 +4,7 @@ from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.shortcuts import render, get_object_or_404
 from django.template import RequestContext
 from django.urls import reverse
-from jt.models import Joke, UserJoke
+from jt.models import Joke, UserJoke, User
 
 def favorites_list(request, id):
   '''Handles listing jokes by user's favorites...
