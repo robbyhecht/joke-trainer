@@ -84,6 +84,15 @@
   padding-right: 1%;
 }
 
+/* #box1 {
+  background: red
+} */
+
+/* #box1:hover {
+  background: blue
+} */
+
+
 .flip3D {
   width: 240px;
   height: 200px;
@@ -127,7 +136,17 @@
 	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.flip3D:hover > .front {
+.flipit > .front {
+  -webkit-transform: perspective(900px) rotateY(-180deg);
+  transform: perspective(900px) rotateY(-180deg);
+}
+
+.flipit > .back {
+  -webkit-transform: perspective(900px) rotateY(0deg);
+  transform: perspective(900px) rotateY(0deg);
+}
+
+/* .flip3D:hover > .front {
   -webkit-transform: perspective(900px) rotateY(-180deg);
   transform: perspective(900px) rotateY(-180deg);
 }
@@ -135,7 +154,7 @@
 .flip3D:hover > .back {
   -webkit-transform: perspective(900px) rotateY(0deg);
   transform: perspective(900px) rotateY(0deg);
-}
+} */
 
 .back {
   display: flex;
