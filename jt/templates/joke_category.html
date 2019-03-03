@@ -1,0 +1,32 @@
+{% extends 'index.html' %}
+
+
+{%block indexcenter%}
+  <div class="allcards-container">
+    <div class="category-header-container">
+      <h1 class="category-header">{{ joke_category.name }}</h1>
+    </div>
+    {% for joke in joke_content %}
+      <div class="singlecard-container">
+        <div class="flip3D">
+          <div class="back">
+            <h3 class="card-text">{{ joke.answer }}</h3>
+          </div>
+          <div class="front">
+            <h3 class="card-text">{{ joke.question }}</h3>
+          </div>
+        </div>
+        <div class="flip-button-container">
+          <a class="button is-success">flip card</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{%endblock%}
+
+
+
+
+
+
+

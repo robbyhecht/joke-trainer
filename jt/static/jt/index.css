@@ -58,6 +58,15 @@
   align-content: center;
 }
 
+.category-header-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 .card-text {
   font-weight: bold;
   text-transform: uppercase;
