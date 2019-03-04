@@ -14,12 +14,14 @@ def list_categories(request):
   context ={'category_list' : category_list}
   return render(request, 'index.html', context)
 
+
 def random_joke(request, id):
   '''Handles displaying question and answer on flip card'''
   joke = get_object_or_404(Joke, pk=id)
   context = { 'joke' : joke }
   print(context)
   return render (request, 'index.html', context)
+
 
 def list_by_category(request, id):
   '''Handles listing jokes by category...
@@ -29,4 +31,12 @@ def list_by_category(request, id):
   joke_content = Joke.objects.filter(category = id)
   context = { 'joke_category' : joke_category, 'joke_content' : joke_content }
   print(context)
+  return render(request, 'joke_category.html', context)
+  
+
+def flip_the_card(request):
+  joke_card = get_object_or_404(Joke, pk= id)
+  joke_card.classList.toggle('flipit')
+  context = {'joke_card' : joke_card}
+  print('FLIPCARD', context)
   return render(request, 'joke_category.html', context)

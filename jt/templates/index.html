@@ -7,27 +7,31 @@
     {% for category in category_list %}
       <li><a href="http://localhost:8000/category/{{category.id}}" class="category">{{category.name}}</a></li>
     {% endfor %}
-    <li>TEST</li>
+    <li>~~hard coded text comes through~~</li>
   </ul>
   {% endblock %}
 {%endblock%}
 
 {%block center%}
   {%block indexcenter%}
-    <div>
-      <div class="flip3D" id="flipCardTarget">
-        <div class="back">
-          <h3 class="card-text">back</h3>
-        </div>
-        <div class="front">
-          <h3 class="card-text">front</h3>
-        </div>
+    <div class="allcards-container">
+      <div class="index-header-container">
+        <h1 class="index-header">Welcome to Joke Trainer!</h1>
       </div>
-      <div class="flip-button-container">
-        <a class="button is-success" onclick="flipTheCard('flipCardTarget')">flip card</a>
+      <div class="singlecard-container">
+        <div class="flip3D" id="flipCardTarget">
+          <div class="back">
+            <h3 class="card-text">back</h3>
+          </div>
+          <div class="front">
+            <h3 class="card-text">front</h3>
+          </div>
+        </div>
+        <div class="flip-button-container">
+          <a class="button is-success" onclick="flipTheCard('flipCardTarget')">flip card</a>
+        </div>
       </div>
     </div>
-    
   {%endblock%}
 {%endblock%}
 
