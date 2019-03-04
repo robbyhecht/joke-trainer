@@ -44,19 +44,21 @@
   color: gray;
 }
 
-/* .column2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-} */
-
 .col-2-div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 }
+
+/* .index-header-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px;
+  font-weight: bold;
+  font-size: 2rem;
+} */
 
 .category-header-container {
   display: flex;
@@ -65,6 +67,10 @@
   margin: 40px;
   font-weight: bold;
   font-size: 2rem;
+}
+
+.flipit {
+  margin-right: 0px;
 }
 
 .card-text {
@@ -83,15 +89,6 @@
   padding-left: 1%;
   padding-right: 1%;
 }
-
-/* #box1 {
-  background: red
-} */
-
-/* #box1:hover {
-  background: blue
-} */
-
 
 .flip3D {
   width: 240px;
