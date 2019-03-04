@@ -5,6 +5,7 @@ from django.shortcuts import render
 from django.template import RequestContext
 from django.urls import reverse
 from jt.models import Category
+from jt.forms import UserForm
 
 # from jt.forms import UserForm, ProductForm
 # from jt.models import Product
@@ -13,7 +14,6 @@ def index(request):
   template_name = 'index.html'
   return render(request, template_name, {})
 
-# Create your views here.
 def register(request):
     '''Handles the creation of a new user for authentication
 
@@ -29,14 +29,14 @@ def register(request):
     # on Django's built-in User model
     if request.method == 'POST':
         user_form = UserForm(data=request.POST)
-        customer_form = CustomerForm(data=request.POST)
+        # customer_form = CustomerForm(data=request.POST)
 
         if user_form.is_valid() and customer_form.is_valid():
             # Save the user's form data to the database.
             user = user_form.save()
-            customer = customer_form.save(commit=False)
-            customer.user = user
-            customer.save()
+            # customer = customer_form.save(commit=False)
+            # customer.user = user
+            # customer.save()
 
             # Now we hash the password with the set_password method.
             # Once hashed, we can update the user object.
@@ -45,17 +45,19 @@ def register(request):
 
             # Update our variable to tell the template registration was successful.
             registered = True
-            payment = PaymentType.objects.create(name= "southwest", accountNumber = "12355346", customer= customer)
+            # payment = PaymentType.objects.create(name= "southwest", accountNumber = "12355346", customer= customer)
             user_id = user.id
-            Order.objects.create(isCompleted = 0, customer= customer, paymentType = payment)
+            # Order.objects.create(isCompleted = 0, customer= customer, paymentType = payment)
 
         return login_user(request)
 
     elif request.method == 'GET':
         user_form = UserForm()
-        customer_form = CustomerForm()
+        # customer_form = CustomerForm()
         template_name = 'register.html'
-        return render(request, template_name, {'user_form': user_form, 'customer_form': customer_form})
+        return render(request, template_name, {'user_form': user_form,
+        # 'customer_form': customer_form
+        })
 
 
 def login_user(request):
