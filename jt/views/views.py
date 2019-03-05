@@ -4,7 +4,7 @@ from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.shortcuts import render
 from django.template import RequestContext
 from django.urls import reverse
-from jt.models import Category
+from jt.models import Category, User
 from jt.forms import UserForm
 
 # from jt.forms import UserForm, ProductForm
@@ -13,6 +13,11 @@ from jt.forms import UserForm
 def index(request):
   template_name = 'index.html'
   return render(request, template_name, {})
+
+def hi_user(request):
+  users_name = User.objects.all()
+  context = { 'users_name' : users_name }
+  return render(request, 'index.html', context)
 
 def register(request):
     '''Handles the creation of a new user for authentication
