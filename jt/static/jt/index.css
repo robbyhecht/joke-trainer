@@ -220,3 +220,9 @@
 .login-fields {
   margin: 15px;
 }
+
+.login-register-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}

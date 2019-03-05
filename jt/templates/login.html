@@ -8,16 +8,6 @@
         <link rel="stylesheet" href="{% static 'jt/node_modules/bulma/css/bulma.css' %}">
     </head>
     <body>
-        {%comment%}
-
-      <h2>Login</h2>
-      <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Login</button>
-      </form>
-
-      {% endcomment %}
 
 
       <div class="main-login-div">
@@ -55,6 +45,12 @@
           </div>
         </div>
       </div>
+      <div class="login-register-button-container">
+          <a href="{% url 'jt:register' %}"><button type="submit" class="button is-link" value="register a new account">Create a new account</button></a>
+      </div>
+
+    </body>
+  </html>
 
 
 
@@ -79,8 +75,16 @@
             <a href="{% url 'website:register' %}"><button type="submit" class="btn btn-primary" value="register a new account">create a new account</button></a>
         </div>
 
+{% endcomment %}
 
-    </body>
-</html>
+
+{%comment%}
+
+<h1>Login</h1>
+<form method="post">
+  {% csrf_token %}
+  {{ login_form.as_p }}
+  <button type="submit">Login</button>
+</form>
 
 {% endcomment %}
