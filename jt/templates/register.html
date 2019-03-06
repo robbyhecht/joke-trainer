@@ -1,15 +1,13 @@
 {% extends 'base.html' %}
 
-  <h1>Create a Joke Trainer Account</h1>
-
   {%block center%}
 
   {% if registered %}
+
   <strong>Thank you for registering!</strong>
   <a href="http://localhost:8000">Return to the homepage.</a><br />
+
   {% else %}
-
-
 
       <h3 class="title is-size3 register-header">Register</h3>
       <form action="http://localhost:8000/register" method="POST">
@@ -20,28 +18,5 @@
           </div>
       </form>
 
-
   {% endif %}
   {%endblock%}
-  
-
-
-
-
-
-  {%comment%}
-
-  <form id="user_form" method="post" action="http://localhost:8000/register"
-          enctype="multipart/form-data">
-
-      {% csrf_token %}
-
-      <!-- Display each form. The as_p method wraps each element in a paragraph
-            (<p>) element. This ensures each element appears on a new line,
-            making everything look neater. -->
-      {{ user_form.as_p }}
-
-      <input type="submit" name="submit" value="Register"/>
-  </form>
-
-  {%endcomment%}

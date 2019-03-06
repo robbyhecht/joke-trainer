@@ -1,1 +1,1 @@
-from .forms import UserForm
+from .forms import UserForm, LoginForm
