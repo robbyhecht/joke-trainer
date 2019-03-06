@@ -19,6 +19,11 @@ def hi_user(request):
   context = { 'users_name' : users_name }
   return render(request, 'index.html', context)
 
+def nav_favorites(request, id):
+  current_user = get_object_or_404(User, pk= id)
+  context = { 'current_user' : current_user }
+  return render(request, 'navbar.html', context)
+
 def register(request):
     '''Handles the creation of a new user for authentication
 

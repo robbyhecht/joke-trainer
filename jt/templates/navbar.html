@@ -20,8 +20,11 @@
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
         <a class="navbar-item" href="http://localhost:8000">Home</a>
-        <a class="navbar-item" href="http://localhost:8000/favorites">Favorite Jokes</a>
+        
+        <a class="navbar-item" href="{% url 'jt:favorites_list' %}">Favorite Jokes</a>
+        <a class="navbar-item" href="http://localhost:8000/favorites/">Trainer</a>
 
+        {% comment %}
         <div class="navbar-item field has-addons">
           <div class="control">
             <input class="input" type="text" placeholder="Search...">
@@ -32,6 +35,7 @@
             </a>
           </div>
         </div>
+        {% endcomment %}
 
       </div>
       <div class="navbar-end">

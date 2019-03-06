@@ -3,23 +3,20 @@
 {%block indexcenter%}
   <div class="allcards-container">
     <div class="category-header-container">
-      <h1 class="category-header">{{ joke_category.name }}</h1>
+      <h1 class="category-header">{{ favorite_jokes.name }}</h1>
     </div>
-    {% for joke in joke_content %}
+    {% for joke in joke_detail %}
       <div class="singlecard-container">
         <div
           class="flip3D"
           id="cardtarget-{{joke.id}}">
           <div class="back">
             <div class="backHeader">
-              <h3 class="card-text">{{ joke.answer }}</h3>
-            </div>
-            <div class="addButtonBack">
-              <a class="button is-danger is-small">add to favorites</a>
+              <h3 class="card-text">{{ joke.question }} <br /> {{ joke.answer }} </h3>
             </div>
           </div>
           <div class="front">
-            <h3 class="card-text">{{ joke.question }}</h3>
+            <h3 class="card-text">{{ joke.hint }}</h3>
           </div>
         </div>
         <div class="flip-button-container">
@@ -29,18 +26,3 @@
     {% endfor %}
   </div>
 {%endblock%}
-
-{% comment %}
-{%block javascript%}
-<script type="text/javascript">
-function flipTheCard(card) {
-  let flipcard = document.getElementById(card)
-  flipcard.classList.toggle('flipit')
-}
-</script>
-{%endblock%}
-{% endcomment %}
-
-
-
-

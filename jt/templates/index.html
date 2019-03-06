@@ -1,8 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
 
-import 
-
 <div class="col-1-div">
   {% block left %}
     {%block indexleft%}
@@ -43,77 +41,9 @@ import
 <div class="col-3-div">
   {%block right%}
     {% block indexright%}
-      <h2 class="categories-header">FAVORITES</h2>
-      <p>Make an account or sign in to add jokes to your favorites!</p>
     {%endblock%}
   {%endblock%}
 </div>
-
-
-
-{%comment%}
-{% block left %}
-<div class="main-container">
-    <div class="columns">
-  {%block indexleft%}
-    <div class="column is-one-fifth column1 has-background-light">
-      <div class="col-1-div">
-        <h2 class="categories-header">CATEGORIES</h2>  
-        <ul class="categories-list">
-          {% for category in category_list %}
-            <li><a href="http://localhost:8000/category/{{category.id}}" class="category">{{category.name}}</a></li>
-          {% endfor %}
-          <li>~~hard coded text comes through~~</li>
-        </ul>
-      </div>
-    </div>
-  {% endblock %}
-{%endblock%}
-
-{%block center%}
-  {%block indexcenter%}
-    <div class="column is-three-fifths column2">
-      <div class="col-2-div">
-        <div class="allcards-container">
-          <div class="index-header-container">
-            <h1 class="index-header">Welcome to Joke Trainer!</h1>
-          </div>
-          <div class="singlecard-container">
-            <div class="flip3D" id="flipCardTarget">
-              <div class="back">
-                <h3 class="card-text">back</h3>
-              </div>
-              <div class="front">
-                <h3 class="card-text">front</h3>
-              </div>
-            </div>
-            <div class="flip-button-container">
-              <a class="button is-success" onclick="flipTheCard('flipCardTarget')">flip card</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  {%endblock%}
-{%endblock%}
-
-{%block right%}
-  {% block indexright%}
-  <div class="column is-one-fifth column3 has-background-light">
-    <div class="col-3-div">
-      <h2 class="categories-header">FAVORITES</h2>
-      <p>Make an account or sign in to add jokes to your favorites!</p>
-    </div>
-  </div>
-  {%endblock%}
-</div>
-</div>
-{%endblock%}
-{%endcomment%}
-
-
-
-
 
 
 

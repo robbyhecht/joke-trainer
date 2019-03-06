@@ -28,3 +28,6 @@ class UserJoke(models.Model):
   '''join class for users' favorite jokes'''
   user = models.ForeignKey(User, on_delete=models.PROTECT)
   joke = models.ForeignKey(Joke, on_delete=models.PROTECT)
+
+  # def __str__(self):
+  #   return f"{self.user.first_name} selected {self.joke}"
