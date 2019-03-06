@@ -18,7 +18,12 @@
           class="flip3D"
           id="cardtarget-{{joke.id}}">
           <div class="back">
-            <h3 class="card-text">{{ joke.answer }}</h3>
+            <div class="backHeader">
+              <h3 class="card-text">{{ joke.answer }}</h3>
+            </div>
+            <div class="addButtonBack">
+              <a class="button is-danger is-small">add to favorites</a>
+            </div>
           </div>
           <div class="front">
             <h3 class="card-text">{{ joke.question }}</h3>
