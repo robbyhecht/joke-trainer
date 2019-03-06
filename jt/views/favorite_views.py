@@ -6,6 +6,7 @@ from django.template import RequestContext
 from django.urls import reverse
 from jt.models import Joke, UserJoke, User
 
+@login_required
 def favorites_list(request, id):
   '''Handles listing jokes by user's favorites...
   User name is accessed in favorite_jokes

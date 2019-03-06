@@ -1,4 +1,4 @@
-from .views import index, register, login_user, user_logout
+from .views import index, register, login_user, user_logout, hi_user
 
 from .joke_views import list_categories
 from .joke_views import random_joke
