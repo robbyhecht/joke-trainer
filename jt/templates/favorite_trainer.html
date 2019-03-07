@@ -3,7 +3,7 @@
 {%block indexcenter%}
   <div class="allcards-container">
     <div class="category-header-container">
-      <h1 class="category-header">My Favorite Jokes</h1>
+      <h1 class="category-header">Joke Trainer</h1>
     </div>
     {% for joke in joke_list %}
       <div class="singlecard-container">
@@ -12,18 +12,16 @@
           id="cardtarget-{{joke.id}}">
           <div class="back">
             <div class="backHeader">
-              <h3 class="card-text">{{ joke.answer }}</h3>
+              <h3 class="card-text card-question">Q: {{ joke.question }}</h3>
+              <h3 class="card-text card-answer">A: {{ joke.answer }} </h3>
             </div>
           </div>
           <div class="front">
-            <h3 class="card-text">{{ joke.question }}</h3>
+            <h3 class="card-text">{{ joke.hint }}</h3>
           </div>
         </div>
         <div class="flip-button-container">
           <a class="button is-success" onclick="flipTheCard('cardtarget-{{joke.id}}')">flip card</a>
-        </div>
-        <div class="removeButton">
-          <a class="button is-danger is-small">remove</a>
         </div>
       </div>
     {% endfor %}
