@@ -20,9 +20,6 @@ def favorites_list(request):
   print("faves", context)
   return render(request, 'favorite_jokes.html', context)
 
-
-
-
 @login_required
 def favorites_train(request):
   '''Handles listing jokes by user's favorites...
