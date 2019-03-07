@@ -20,9 +20,11 @@ def list_by_category(request, id):
   Category name is accessed in joke_category
   joke_content filters using join table to match up jokes with categories'''
   joke_category = get_object_or_404(Category, pk= id)
+
   joke_content = Joke.objects.filter(category = id)
-  context = { 'joke_category' : joke_category, 'joke_content' : joke_content }
-  print(context)
+  jokes_user = UserJoke.objects.filter(user = request.user)
+  context = { 'joke_category' : joke_category, 'joke_content' : joke_content, 'jokes_user': jokes_user }
+  print('CCCC', context)
   return render(request, 'joke_category.html', context)
 
 
