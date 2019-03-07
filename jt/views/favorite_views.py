@@ -24,7 +24,7 @@ def favorites_list(request):
 
 
 @login_required
-def favorites_train(request, id):
+def favorites_train(request):
   '''Handles listing jokes by user's favorites...
   User name is accessed in favorite_jokes
   joke_content filters using join table to match up jokes with user'''

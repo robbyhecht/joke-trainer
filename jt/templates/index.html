@@ -21,17 +21,28 @@
       <div class="index-header-container">
         <h1 class="index-header">Welcome to Joke Trainer!</h1>
       </div>
+      <div class="index-subheader">
+        <h2>
+          <ul>
+            <li>Cruise the Jokes</li>
+            <li>Save your Favorites</li>
+            <li>Build Your Repertoire</li>
+          </ul>
+        </h2>
+      </div>
       <div class="singlecard-container">
-        <div class="flip3D" id="flipCardTarget">
+        <div class="flip3D" id="cardtarget">
           <div class="back">
-            <h3 class="card-text">back</h3>
+            <div class="backHeader">
+              <h3 class="card-text">punchline on the back!</h3>
+            </div>
           </div>
           <div class="front">
-            <h3 class="card-text">front</h3>
+            <h3 class="card-text">set up on the front</h3>
           </div>
         </div>
         <div class="flip-button-container">
-          <a class="button is-success" onclick="flipTheCard('flipCardTarget')">flip card</a>
+          <a class="button is-success" onclick="flipTheCard('cardtarget')">flip card</a>
         </div>
       </div>
     </div>
