@@ -29,31 +29,10 @@ def list_by_category(request, id):
 @login_required
 def add_to_favorites(request):
   '''Handles adding the selected joke to UserJoke table'''
-  joke_to_add = Joke.objects.get(pk = joke.id)
-  context = { 'joke_to_add' : joke_to_add }
-  print('SELECTED JOKE', joke_to_add)
-  return render(request, 'joke_category.html', context)
-
-
-# @login_required
-# def add_product_to_cart(request, product_details):
-    
-#     user_id = request.user.id
-#     website_order_id = Order.objects.raw('''select * from website_order
-#                                             Where deletedOn is null and customer_id = %s''', [user_id])[0]
-#     print('website_order_id', website_order_id.id)
-#     print('user_id', user_id)
-#     with connection.cursor() as cursor:
-#         try:
-#             cursor.execute('''Insert into website_productorder (deletedOn, order_id, product_id)
-#                             Values(NULL, %s, %s)''', [website_order_id.id, product_details])
-#         except IndexError:
-#             raise Http404("This product type does not exist")
-#     return HttpResponseRedirect(reverse('website:cart'))
-
-
-
-
+  print('REQUEST', request)
+  user = request.user
+  UserJoke.objects.create(joke_id = request.POST["joke_id"], user = user)
+  return HttpResponseRedirect(reverse("jt:favorites"))
 
 def favorites_list(request):
   '''Handles listing jokes by user's favorites...

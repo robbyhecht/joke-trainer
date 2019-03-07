@@ -15,7 +15,12 @@
               <h3 class="card-text">{{ joke.answer }}</h3>
             </div>
             <div class="addButtonBack">
-              <a class="button is-danger is-small">add to favorites</a>
+              <form action="{% url 'jt:add_to_favorites' %}" method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="joke_id" value="{{joke.id}}">
+                <!-- <a class="button is-danger is-small">add to favorites</a> -->
+                <input type="submit" value="add to favorites">
+              </form>
             </div>
           </div>
           <div class="front">
