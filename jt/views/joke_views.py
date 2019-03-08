@@ -25,23 +25,20 @@ def list_by_category(request, id):
   # for retrieving the joke details to have on cards
   joke_content = Joke.objects.filter(category = id)
   # retrieves the joke objects included in the userjoke table
-  sql = '''
-    SELECT * FROM jt_joke
-    LEFT JOIN jt_userjoke on jt_userjoke.joke_id = jt_joke.id
-    WHERE jt_userjoke.joke_id IS NOT jt_joke.id
-    '''
-  unmarked_jokes = Joke.objects.raw(sql)
-  # faved_jokes = UserJoke.objects.exclude(user = request.user)
+  faved_jokes = UserJoke.objects.filter(user = request.user)
+
+  for joke in joke_content:
+    joke.is_favorited_by_user = False
+    for fav_joke in faved_jokes:
+      if fav_joke.joke.id == joke.id:
+        joke.is_favorited_by_user = True
+
+
   print('JOKE_CATEGORY', joke_category)
   print('JOKE_CONTENT', joke_content)
-  print('UNMARKED JOKES', unmarked_jokes)
-  context = { 'joke_category' : joke_category, 'joke_content' : joke_content, 'unmarked_jokes': unmarked_jokes }
+  print('FAVED JOKES', faved_jokes)
+  context = { 'joke_category' : joke_category, 'joke_content' : joke_content, 'faved_jokes' : faved_jokes }
   return render(request, 'joke_category.html', context)
-
-# SQL for all jokes not included in favorites (does not specify current user)
-# SELECT * FROM jt_joke
-# LEFT JOIN jt_userjoke on jt_userjoke.joke_id = jt_joke.id
-# WHERE jt_userjoke.joke_id IS NOT jt_joke.id
 
 
 
