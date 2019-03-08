@@ -33,3 +33,20 @@ def favorites_train(request):
   context = { 'joke_list' : joke_list }
   print("faves", context)
   return render(request, 'favorite_trainer.html', context)
+
+@login_required
+def add_to_favorites(request):
+  '''Handles adding the selected joke to UserJoke table'''
+  print('REQUEST', request)
+  user = request.user
+  UserJoke.objects.create(joke_id = request.POST["joke_id"], user = user)
+  return HttpResponseRedirect(reverse("jt:favorites"))
+
+
+def delete_from_favorites(request, id):
+  '''Handles deletion of a joke from the UserJoke table (a.k.a. favorites)'''
+  joke = Joke.objects.get(pk = id)
+  UserJoke.objects.get(joke = joke).delete()
+  # print('JOKE TO DELETE' joke_to_delete)
+  return HttpResponseRedirect(reverse("jt:favorites"))
+  # return(request, 'favorite_jokes.html', context)

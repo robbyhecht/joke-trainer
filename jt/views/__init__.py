@@ -12,3 +12,4 @@ from .joke_views import add_to_favorites
 
 from .favorite_views import favorites_list
 from .favorite_views import favorites_train
+from .favorite_views import delete_from_favorites
