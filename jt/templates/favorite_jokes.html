@@ -22,27 +22,10 @@
         <div class="flip-button-container">
           <a class="button is-success" onclick="flipTheCard('cardtarget-{{joke.id}}')">flip card</a>
         </div>
-        <form action="{% url 'jt:delete_from_favorites' joke.id %}" method="DELETE">
-          {% csrf_token %}
-          <input type="hidden" name="id" value="{{id}}">
-          <input type="submit" value="delete from favorites">
-        </form>
+        <div class="removeButton">
+          <a class="button is-danger is-small">remove</a>
+        </div>
       </div>
     {% endfor %}
   </div>
 {%endblock%}
-
-
-{% comment %}
-<form action="{% url 'jt:add_to_favorites' %}" method="POST">
-  {% csrf_token %}
-  <input type="hidden" name="joke_id" value="{{joke.id}}">
-  <input type="submit" value="add to favorites">
-</form>
-{% endcomment %}
-
-{% comment %}
-<div class="removeButton">
-    <a class="button is-danger is-small">remove</a>
-  </div>
-{% endcomment %}
