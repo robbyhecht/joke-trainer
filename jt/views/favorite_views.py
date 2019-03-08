@@ -11,7 +11,7 @@ def favorites_list(request):
   '''Handles listing jokes by user's favorites...
   User name is accessed in favorite_jokes
   joke_content filters using join table to match up jokes with user'''
-  filtered_jokes = UserJoke.objects.filter(user_id = request.user.id)
+  filtered_jokes = UserJoke.objects.filter(user_id = request.user.id).order_by('joke')
   joke_list = []
   for joke in filtered_jokes:
     joke_list.append(Joke.objects.get(pk = joke.joke.id))
@@ -25,7 +25,7 @@ def favorites_train(request):
   '''Handles listing jokes by user's favorites...
   User name is accessed in favorite_jokes
   joke_content filters using join table to match up jokes with user'''
-  filtered_jokes = UserJoke.objects.filter(user_id = request.user.id)
+  filtered_jokes = UserJoke.objects.filter(user_id = request.user.id).order_by('joke')
   joke_list = []
   for joke in filtered_jokes:
     joke_list.append(Joke.objects.get(pk = joke.joke.id))

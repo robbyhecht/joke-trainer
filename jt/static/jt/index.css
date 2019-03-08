@@ -25,10 +25,10 @@
   padding-left: 10%;
 }
 
-.column1 {
+/* .column1 {
   height: 100vh;
   overflow: auto;
-}
+} */
 
 .index-header {
   font-weight: bold;
@@ -231,6 +231,11 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+/* .column3 {
+  height: 100vh;
+  overflow: auto;
+} */
 
 .col-3-div {
   padding-left: 10%;

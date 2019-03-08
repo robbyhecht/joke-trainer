@@ -15,17 +15,35 @@ def list_categories(request):
   return render(request, 'index.html', context)
 
 
+
 def list_by_category(request, id):
   '''Handles listing jokes by category...
   Category name is accessed in joke_category
   joke_content filters using join table to match up jokes with categories'''
+  # for listing category name
   joke_category = get_object_or_404(Category, pk= id)
-
+  # for retrieving the joke details to have on cards
   joke_content = Joke.objects.filter(category = id)
-  jokes_user = UserJoke.objects.filter(user = request.user)
-  context = { 'joke_category' : joke_category, 'joke_content' : joke_content, 'jokes_user': jokes_user }
-  print('CCCC', context)
+  # retrieves the joke objects included in the userjoke table
+  sql = '''
+    SELECT * FROM jt_joke
+    LEFT JOIN jt_userjoke on jt_userjoke.joke_id = jt_joke.id
+    WHERE jt_userjoke.joke_id IS NOT jt_joke.id
+    '''
+  unmarked_jokes = Joke.objects.raw(sql)
+  # faved_jokes = UserJoke.objects.exclude(user = request.user)
+  print('JOKE_CATEGORY', joke_category)
+  print('JOKE_CONTENT', joke_content)
+  print('UNMARKED JOKES', unmarked_jokes)
+  context = { 'joke_category' : joke_category, 'joke_content' : joke_content, 'unmarked_jokes': unmarked_jokes }
   return render(request, 'joke_category.html', context)
+
+# SQL for all jokes not included in favorites (does not specify current user)
+# SELECT * FROM jt_joke
+# LEFT JOIN jt_userjoke on jt_userjoke.joke_id = jt_joke.id
+# WHERE jt_userjoke.joke_id IS NOT jt_joke.id
+
+
 
 
 @login_required
@@ -44,9 +62,7 @@ def favorites_list(request):
   joke_list = []
   for joke in filtered_jokes:
     joke_list.append(Joke.objects.get(pk = joke.joke.id))
-  print('EMPTY', joke_list)
   context = { 'joke_list' : joke_list }
-  print("faves", context)
   return render(request, 'favorite_jokes.html', context)
 
 
@@ -64,4 +80,18 @@ def random_joke(request, id):
 #   joke_card.classList.toggle('flipit')
 #   context = {'joke_card' : joke_card}
 #   print('FLIPCARD', context)
+#   return render(request, 'joke_category.html', context)
+
+
+
+# def list_by_category(request, id):
+#   '''Handles listing jokes by category...
+#   Category name is accessed in joke_category
+#   joke_content filters using join table to match up jokes with categories'''
+#   joke_category = get_object_or_404(Category, pk= id)
+
+#   joke_content = Joke.objects.filter(category = id)
+#   faved_jokes = UserJoke.objects.filter(user = request.user)
+#   context = { 'joke_category' : joke_category, 'joke_content' : joke_content, 'faved_jokes': faved_jokes }
+#   print('CCCC', context)
 #   return render(request, 'joke_category.html', context)

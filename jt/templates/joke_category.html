@@ -14,10 +14,11 @@
           <div class="back">
             <div class="backHeader">
               <h3 class="card-text">{{ joke.answer }}</h3>
-              <p>{{jokes_user.joke_id}}</p>
+              <p>{{faved_jokes.joke_id}}</p>
 
             </div>
-            {% if joke.question in jokes_user %}
+
+            {% for notfav in unmarked_jokes %}
             <div class="addButtonBack">
               <form action="{% url 'jt:add_to_favorites' %}" method="POST">
                 {% csrf_token %}
@@ -25,7 +26,8 @@
                 <input type="submit" value="add to favorites">
               </form>
             </div>
-            {% endif %}
+            {% endfor %}
+
           </div>
           <div class="front">
             <h3 class="card-text">{{ joke.question }}</h3>
@@ -42,6 +44,21 @@
 
 
 <!-- <a class="button is-danger is-small" onclick="">add to favorites</a> -->
+
+
+{% comment %}
+{% if faved_jokes.joke_id is joke_content.id %}
+<div class="addButtonBack">
+  <form action="{% url 'jt:add_to_favorites' %}" method="POST">
+    {% csrf_token %}
+    <input type="hidden" name="joke_id" value="{{joke.id}}">
+    <input type="submit" value="add to favorites">
+  </form>
+</div>
+{% endif %}
+{% endcomment %}
+
+
 
 
 
