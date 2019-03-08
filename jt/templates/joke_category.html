@@ -5,6 +5,7 @@
     <div class="category-header-container">
       <h1 class="category-header">{{ joke_category.name }}</h1>
     </div>
+
     {% for joke in joke_content %}
       <div class="singlecard-container">
         <div
@@ -14,9 +15,17 @@
             <div class="backHeader">
               <h3 class="card-text">{{ joke.answer }}</h3>
             </div>
-            <div class="addButtonBack">
-              <a class="button is-danger is-small">add to favorites</a>
-            </div>
+
+              {% if joke.is_favorited_by_user == False %}
+                <div class="addButtonBack">
+                  <form action="{% url 'jt:add_to_favorites' %}" method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" name="joke_id" value="{{joke.id}}">
+                    <input type="submit" value="add to favorites">
+                  </form>
+                </div>
+              {% endif %}
+
           </div>
           <div class="front">
             <h3 class="card-text">{{ joke.question }}</h3>
@@ -27,8 +36,16 @@
         </div>
       </div>
     {% endfor %}
+
   </div>
 {%endblock%}
+
+
+<!-- <a class="button is-danger is-small" onclick="">add to favorites</a> -->
+
+
+
+
 
 {% comment %}
 {%block javascript%}
