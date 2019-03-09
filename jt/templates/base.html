@@ -16,29 +16,47 @@
 
     {% include 'navbar.html'  %}
 
-    <div class="main-container">
-      <div class="columns">
-
-        <div class="column is-one-fifth column1 has-background-light">
-            {% block left %}
-            {%endblock%}
-        </div>
-
-        <div class="column is-three-fifths column2">
-          <div class="col-2-div">
-            {%block center%}
-            {%endblock%}
-          </div>
-        </div>
-
-        <div class="column is-one-fifth column3 has-background-light">
-          {%block right%}
-          {%endblock%}
-        </div>
-
-      </div>
-    </div>
+    {% block content %}
+    {% endblock %}
 
     {% block javascript %}{%endblock%}    
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+{% comment %}
+
+<div class="main-container">
+    <div class="columns">
+
+      <div class="column is-one-fifth column1 has-background-light">
+          {% block left %}
+          {%endblock%}
+      </div>
+
+      <div class="column is-three-fifths column2">
+        <div class="col-2-div">
+          {%block center%}
+          {%endblock%}
+        </div>
+      </div>
+
+      <div class="column is-one-fifth column3 has-background-light">
+        {%block right%}
+        {%endblock%}
+      </div>
+
+    </div>
+  </div>
+
+  {% block javascript %}{%endblock%} 
+
+{% endcomment %}
