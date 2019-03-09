@@ -23,14 +23,15 @@ def list_by_category(request, id):
   # for retrieving the joke details to have on cards
   joke_content = Joke.objects.filter(category = id)
   # retrieves the joke objects included in the userjoke table
-  faved_jokes = UserJoke.objects.filter(user = request.user)
-  for joke in joke_content:
-    joke.is_favorited_by_user = False
-    for fav_joke in faved_jokes:
-      if fav_joke.joke.id == joke.id:
-        joke.is_favorited_by_user = True
-  context = { 'joke_category' : joke_category, 'joke_content' : joke_content, 'faved_jokes' : faved_jokes }
-  return render(request, 'joke_category.html', context)
+  if request.user.is_authenticated: # -> because of the loop below, this method crashes if no user is logged in. this is a non-working attempt at fixing the problem
+    faved_jokes = UserJoke.objects.filter(user = request.user)
+    for joke in joke_content:
+      joke.is_favorited_by_user = False
+      for fav_joke in faved_jokes:
+        if fav_joke.joke.id == joke.id:
+          joke.is_favorited_by_user = True
+    context = { 'joke_category' : joke_category, 'joke_content' : joke_content, 'faved_jokes' : faved_jokes }
+    return render(request, 'joke_category.html', context)
 
 @login_required
 def add_to_favorites(request):
