@@ -17,7 +17,7 @@
               <form action="{% url 'jt:delete_from_favorites' joke.id %}" method="DELETE">
                 {% csrf_token %}
                 <input type="hidden" name="id" value="{{id}}">
-                <input type="submit" value="remove from favorites">
+                <button class="button is-danger is-small">remove from favorites</button>
               </form>
             </div>
           </div>

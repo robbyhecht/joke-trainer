@@ -21,7 +21,7 @@
                   <form action="{% url 'jt:add_to_favorites' %}" method="POST">
                     {% csrf_token %}
                     <input type="hidden" name="joke_id" value="{{joke.id}}">
-                    <input type="submit" value="add to favorites">
+                    <button class="button is-primary is-small">add to favorites</button>
                   </form>
                 </div>
               {% endif %}
@@ -41,23 +41,10 @@
 {%endblock%}
 
 
-<!-- <a class="button is-danger is-small" onclick="">add to favorites</a> -->
-
 
 
 
 
 {% comment %}
-{%block javascript%}
-<script type="text/javascript">
-function flipTheCard(card) {
-  let flipcard = document.getElementById(card)
-  flipcard.classList.toggle('flipit')
-}
-</script>
-{%endblock%}
+<input type="submit" value="add to favorites">
 {% endcomment %}
-
-
-
-
