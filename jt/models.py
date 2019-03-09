@@ -12,12 +12,12 @@ class Joke(models.Model):
   user = models.ManyToManyField(User, blank=True, through='UserJoke')
 
   # @property
-  def is_favorite(self):
-    favorite_jokes = UserJoke.objects.filter(joke = self.id)
-    is_favorite_joke = False
-    if favorite_jokes:
-      is_favorite_joke = True
-    return is_favorite_joke
+  # def is_favorite(self):
+  #   favorite_jokes = UserJoke.objects.filter(joke = self.id)
+  #   is_favorite_joke = False
+  #   if favorite_jokes:
+  #     is_favorite_joke = True
+  #   return is_favorite_joke
     
   
 

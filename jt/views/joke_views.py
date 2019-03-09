@@ -56,7 +56,7 @@ def random_joke(request):
   '''Handles displaying question and answer on flip card'''
   joke_at_random = Joke.objects.order_by("?").first()
   context = { 'joke_at_random' : joke_at_random }
-  print('RANDOMJOKE', joke_at_random)
+  print('RANDOMJOKE', context)
   # return HttpResponseRedirect(reverse("jt:random_joke"))
   return render (request, 'index.html', context)
 
