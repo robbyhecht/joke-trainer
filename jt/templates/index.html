@@ -34,14 +34,12 @@
       <div class="singlecard-container">
         <div class="flip3D" id="cardtarget">
           <div class="back">
-            {% for joke in joke_at_random %}
               <div class="backHeader">
-                <h3 class="card-text">{{joke.answer}}</h3>
+                <h3 class="card-text">{{joke_at_random.answer}}</h3>
               </div>
-            {% endfor %}
           </div>
           <div class="front">
-            <h3 class="card-text">set up on the front</h3>
+            <h3 class="card-text">{{joke_at_random.question}}</h3>
           </div>
         </div>
         <div class="flip-button-container">
