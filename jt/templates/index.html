@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
 
+<!-- make 'random joke' button on homepage instead of trying to randomize the visible joke? -->
+
 <div class="col-1-div">
   {% block left %}
     {%block indexleft%}
@@ -30,16 +32,19 @@
         </h2>
       </div>
       <div class="singlecard-container">
+        <h3 class="randomHeader"><strong>Joke of the Moment</strong></h3>
+
         <div class="flip3D" id="cardtarget">
           <div class="back">
-            <div class="backHeader">
-              <h3 class="card-text">punchline on the back!</h3>
-            </div>
+              <div class="backHeader">
+                <h3 class="card-text">{{joke_at_random.answer}}</h3>
+              </div>
           </div>
           <div class="front">
-            <h3 class="card-text">set up on the front</h3>
+            <h3 class="card-text">{{joke_at_random.question}}</h3>
           </div>
         </div>
+        
         <div class="flip-button-container">
           <a class="button is-success" onclick="flipTheCard('cardtarget')">flip card</a>
         </div>

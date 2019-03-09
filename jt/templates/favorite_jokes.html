@@ -7,26 +7,29 @@
     </div>
     {% for joke in joke_list %}
       <div class="singlecard-container">
+
         <div
           class="flip3D"
           id="cardtarget-{{joke.id}}">
           <div class="back">
             <div class="backHeader">
               <h3 class="card-text">{{ joke.answer }}</h3>
+              <form action="{% url 'jt:delete_from_favorites' joke.id %}" method="DELETE">
+                {% csrf_token %}
+                <input type="hidden" name="id" value="{{id}}">
+                <input type="submit" value="remove from favorites">
+              </form>
             </div>
           </div>
           <div class="front">
             <h3 class="card-text">{{ joke.question }}</h3>
           </div>
         </div>
+
         <div class="flip-button-container">
           <a class="button is-success" onclick="flipTheCard('cardtarget-{{joke.id}}')">flip card</a>
         </div>
-        <form action="{% url 'jt:delete_from_favorites' joke.id %}" method="DELETE">
-          {% csrf_token %}
-          <input type="hidden" name="id" value="{{id}}">
-          <input type="submit" value="delete from favorites">
-        </form>
+
       </div>
     {% endfor %}
   </div>
