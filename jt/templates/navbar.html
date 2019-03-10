@@ -8,7 +8,7 @@
 <div class="nav-div">
   <nav class="navbar" id="nav" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item brand" href="http://localhost:8000">
+      <a class="navbar-item brand" href="{% url 'jt:random_joke' %}">
         <p> JOKE TRAINER </p>
       </a>
       <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -19,22 +19,26 @@
     </div>
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
+
+        {% comment %}
         <a class="navbar-item" href="http://localhost:8000">Home</a>
+        {% endcomment %}
         
         <a class="navbar-item" href="{% url 'jt:favorites' %}">Favorite Jokes</a>
         <a class="navbar-item" href="{% url 'jt:favorites_trainer' %}">Trainer</a>
+        <a class="navbar-item" href="{% url 'jt:about' %}">About</a>
 
         {% comment %}
-        <div class="navbar-item field has-addons">
-          <div class="control">
-            <input class="input" type="text" placeholder="Search...">
+        <form action="#" id="searchform" method='GET'>
+          <div class="navbar-item field has-addons">
+              <div class="control">
+                <input class="input searchfield" id="searchbox" name="q" type="text" placeholder="Search...">
+              </div>
+              <div class="control">
+                <button class="button is-info">Search</button>
+              </div>
           </div>
-          <div class="control">
-            <a class="button is-info">
-              Search
-            </a>
-          </div>
-        </div>
+        </form>
         {% endcomment %}
 
       </div>

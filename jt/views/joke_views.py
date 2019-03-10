@@ -22,8 +22,9 @@ def list_by_category(request, id):
   joke_category = get_object_or_404(Category, pk= id)
   # for retrieving the joke details to have on cards
   joke_content = Joke.objects.filter(category = id)
-  # retrieves the joke objects included in the userjoke table
-  if request.user.is_authenticated: # -> because of the loop below, this method crashes if no user is logged in. Therefore, this if statement is required to eliminate the filter in the case of user not being logged in.
+  # assures there is a user before trying to access UserJoke table: an action which requires an active user.
+  if request.user.is_authenticated:
+    # retrieves the joke objects included in the UserJoke table
     faved_jokes = UserJoke.objects.filter(user = request.user)
     for joke in joke_content:
       joke.is_favorited_by_user = False
@@ -55,28 +56,8 @@ def favorites_list(request):
 
 
 def random_joke(request):
-  '''Handles displaying question and answer on flip card'''
+  '''Handles displaying random question and answer on flip card on home page'''
   joke_at_random = Joke.objects.order_by("?").first()
   context = { 'joke_at_random' : joke_at_random }
   print('RANDOMJOKE', context)
-  # return HttpResponseRedirect(reverse("jt:random_joke"))
   return render (request, 'index.html', context)
-
-
-
-  
-# def random_joke(request):
-#   '''Handles displaying question and answer on flip card'''
-#   import random
-#   all_jokes = Joke.objects.all()
-#   joke_at_random = random.sample(all_jokes, 1)
-#   print(joke_at_random)
-#   # return HttpResponseRedirect(reverse("jt:"))
-#   return render (request, 'index.html', joke_at_random)
-
-# def random_joke(request, id):
-#   '''Handles displaying question and answer on flip card'''
-#   joke = get_object_or_404(Joke, pk=id)
-#   context = { 'joke' : joke }
-#   print(context)
-#   return render (request, 'index.html', context)

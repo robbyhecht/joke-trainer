@@ -1,8 +1,10 @@
-{% extends 'base.html' %}
+{% extends 'index.html' %}
 {% load static %}
 
-{%block center%}
+{%block indexleft%}
+{%endblock%}
 
+{%block indexcenter%}
 
     <h3 class="title is-size3 login-header">Login</h3>
     <form action="{% url 'jt:login' %}" id="login_form" method="POST">
@@ -13,6 +15,5 @@
           <button class="button is-primary">Log in</button>
         </div>
     </form>
-
 
 {%endblock%}

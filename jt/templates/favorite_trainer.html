@@ -1,4 +1,19 @@
 {% extends 'index.html' %}
+{% load static %}
+
+{%block indexleft%}
+  <div>
+    <div class="joke-trainer-left-header">
+      <h4 class="is-size-5 has-text-centered">Become a master joke teller!</h4>
+    </div>
+    <div class="trainer-image-container has-text-centered">
+      <img src="{% static 'jt/images/brain.png' %}" alt="use your brain" width="125px">
+    </div>
+    <div class="joke-trainer-left-text">
+      <p class="is-size-6 has-text-centered">Use the Joke Trainer cues to commit your favorite jokes to memory</p>
+    </div>
+  </div>
+{%endblock%}
 
 {%block indexcenter%}
   <div class="allcards-container">

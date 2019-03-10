@@ -1,6 +1,9 @@
-{% extends 'base.html' %}
+{% extends 'index.html' %}
 
-  {%block center%}
+{%block indexleft%}
+{%endblock%}
+
+{%block indexcenter%}
 
   {% if registered %}
 
@@ -19,4 +22,5 @@
       </form>
 
   {% endif %}
-  {%endblock%}
+
+{%endblock%}

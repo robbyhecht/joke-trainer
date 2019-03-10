@@ -1,84 +1,69 @@
 {% extends 'base.html' %}
 {% load static %}
 
-<!-- make 'random joke' button on homepage instead of trying to randomize the visible joke? -->
+{% block content %}
+  <div class="main-container">
+    <div class="columns">
 
-<div class="col-1-div">
-  {% block left %}
-    {%block indexleft%}
-    <h2 class="categories-header">CATEGORIES</h2>
-    <ul class="categories-list">
-      {% for category in category_list %}
-        <li><a href="http://localhost:8000/category/{{category.id}}" class="category">{{category.name}}</a></li>
-      {% endfor %}
-    </ul>
-    {% endblock %}
-  {%endblock%}
-</div>
+      <div class="column is-one-fifth column1 has-background-light">
+        <div class="col-1-div">
+          {%block indexleft%}
 
-{%block center%}
-  {%block indexcenter%}
-    <div class="allcards-container">
-      <div class="index-header-container">
-        <h1 class="index-header">Welcome to Joke Trainer!</h1>
+          {% endblock %}
+        </div>
       </div>
-      <div class="index-subheader">
-        <h2>
-          <ul>
-            <li>Cruise the Jokes</li>
-            <li>Save your Favorites</li>
-            <li>Build Your Repertoire</li>
-          </ul>
-        </h2>
-      </div>
-      <div class="singlecard-container">
-        <h3 class="randomHeader"><strong>Joke of the Moment</strong></h3>
 
-        <div class="flip3D" id="cardtarget">
-          <div class="back">
-              <div class="backHeader">
-                <h3 class="card-text">{{joke_at_random.answer}}</h3>
+      <div class="column is-three-fifths column2">
+        <div class="col-2-div">
+          {%block indexcenter%}
+            <div class="allcards-container">
+              <div class="index-header-container">
+                <h1 class="index-header">Welcome to Joke Trainer!</h1>
               </div>
-          </div>
-          <div class="front">
-            <h3 class="card-text">{{joke_at_random.question}}</h3>
-          </div>
-        </div>
-        
-        <div class="flip-button-container">
-          <a class="button is-success" onclick="flipTheCard('cardtarget')">flip card</a>
+              <div class="index-subheader">
+                <h2>
+                  <ul>
+                    <li>Cruise the Jokes</li>
+                    <li>Save your Favorites</li>
+                    <li>Build Your Repertoire</li>
+                  </ul>
+                </h2>
+              </div>
+              <div class="singlecard-container">
+                <h3 class="randomHeader"><strong>Joke of the Moment</strong></h3>
+                <div class="flip3D" id="cardtarget">
+                  <div class="back">
+                      <div class="backHeader">
+                        <h3 class="card-text">{{joke_at_random.answer}}</h3>
+                      </div>
+                  </div>
+                  <div class="front">
+                    <h3 class="card-text">{{joke_at_random.question}}</h3>
+                  </div>
+                </div>
+            
+                <div class="flip-button-container">
+                  <a class="button is-success" onclick="flipTheCard('cardtarget')">flip card</a>
+                </div>
+              </div>
+            </div>
+          {%endblock%}
         </div>
       </div>
+
+      <div class="column is-one-fifth column3 has-background-light">
+        <div class="col-3-div">
+          {% block indexright%}
+            <h2 class="categories-header">CATEGORIES</h2>
+            <ul class="categories-list">
+              {% for category in category_list %}
+                <li><a href="http://localhost:8000/category/{{category.id}}" class="category">{{category.name}}</a></li>
+              {% endfor %}
+            </ul>
+          {%endblock%}
+        </div>
+      </div>
+
     </div>
-  {%endblock%}
-{%endblock%}
-
-<div class="col-3-div">
-  {%block right%}
-    {% block indexright%}
-    {%endblock%}
-  {%endblock%}
-</div>
-
-
-
-
-{%comment}
-{%for user in users_name%}
-<h1 class="index-header">Welcome to Joke Trainer, {{user.first_name}}!</h1>
-{%endfor%}
-{%endcomment}
-
-
-
-<!-- - -->
-{%comment%}
-{% for joke in random_joke %}
-  <div class="back">
-    <h3 class="card-text">{{ joke.answer }}</h3>
   </div>
-  <div class="front">
-    <h3 class="card-text">{{ joke.question }}</h3>
-  </div>
-{% endfor %}
-{%endcomment%}
+{% endblock %}
