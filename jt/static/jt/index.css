@@ -43,18 +43,14 @@
 
 
 .index-header {
-  font-weight: bold;
-  font-size: 1.2rem;
+  /* font-weight: bold; */
+  /* font-size: 1.2rem; */
   margin-top: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 45px;
 }
 
-.index-subheader {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: center;
-  margin-bottom: 60px;
+.randomHeader {
+  margin-bottom: 30px;
 }
 
 .categories-header {
@@ -63,6 +59,13 @@
   margin-top: 40px;
   margin-bottom: 30px;
 }
+
+/* .left-col-header {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 40px;
+  margin-bottom: 30px;
+} */
 
 .categories-list li {
   margin-bottom: 10px;
@@ -115,14 +118,6 @@
   text-align: center;
 }
 
-.card-question {
-  margin-bottom: 15px;
-}
-
-.card-answer {
-  margin-top: 15px;
-}
-
 .main-container {
   position: absolute;
   top: 0;
@@ -135,12 +130,12 @@
 }
 
 .flip3D {
-  width: 240px;
-  height: 200px;
+  height: 210px;
   display: flex;
   justify-content: center;
   align-content: center;
   margin-top: 20px;
+  margin-right: 0px;
 }
 
 .flip3D > .front {
@@ -213,6 +208,9 @@
   flex-direction: column;
   align-content: center;
 } */
+
+
+
 
 .favorites-button-container {
   display: flex;
@@ -293,34 +291,15 @@
 }
 
 
-/* LOGIN PAGE */
+/* AUTHENTICATION */
 
-
-.main-login-div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 100px;
-}
-
-.login-sizing-div {
-  width: 400px;
-  border-radius: 3px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: lavender;
-  -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
-	-moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
-	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.login-header {
+.auth-header {
   margin: 18px;
   padding: 10px;
   text-align: center;
 }
 
-.login-button-container {
+.auth-button-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -328,47 +307,29 @@
   padding-bottom: 25px;
 }
 
-.login-fields {
-  margin: 15px;
-}
-
-.login-register-button-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-
-/* REGISTER */
-
-
-.register-button-container {
-  margin-top: 20px;
-}
-
-.register-header {
-  margin-top: 20px;
-}
-
-
 /* JOKE TRAINER PAGE */
 
-
-.joke-trainer-left-header {
+.left-column-header {
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .joke-trainer-left-header > h4 {
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.trainer-image-container {
+.sidebar-image-container {
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
+}
+
+.left-col-text {
+  margin-top: 40px;
   margin-bottom: 30px;
 }
 
-.joke-trainer-left-text {
-  color: black;
+#repertoir-text {
+  margin-bottom: 10px;
 }
 
 

@@ -3,7 +3,7 @@
 {%block indexcenter%}
   <div class="allcards-container">
     <div class="category-header-container">
-      <h1 class="category-header">{{ joke_category.name }}</h1>
+      <h1 class="category-header is-size-3 has-text-weight-semibold">{{ joke_category.name }}</h1>
     </div>
 
     {% for joke in joke_content %}
@@ -23,9 +23,9 @@
         <div class="card-buttons-container">
           <div class="flip-button-container">
             {% if joke.is_favorited_by_user == False %}
-            <a class="button is-success flip-button flip-button-paired" id="flip-button-paired" onclick="flipTheCard('cardtarget-{{joke.id}}')">FLIP CARD</a>
+            <a class="button is-success flip-button flip-button-paired" id="flip-button-paired" onclick="flipTheCard('cardtarget-{{joke.id}}')">flip card</a>
             {% else %}
-            <a class="button is-success flip-button flip-button-solo" onclick="flipTheCard('cardtarget-{{joke.id}}')">FLIP CARD</a>
+            <a class="button is-success flip-button flip-button-solo" onclick="flipTheCard('cardtarget-{{joke.id}}')">flip card</a>
             {% endif %}
           </div>
           {% if joke.is_favorited_by_user == False %}
