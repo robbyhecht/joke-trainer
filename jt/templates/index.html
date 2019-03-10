@@ -8,15 +8,25 @@
       <div class="column is-one-fifth column1 has-background-light">
         <div class="col-1-div">
           {%block indexleft%}
-            <div class="index-subheader">
-              <h2>
-                <ul>
-                  <li>Cruise the Jokes</li>
-                  <li>Save your Favorites</li>
-                  <li>Build Your Repertoire</li>
-                </ul>
-              </h2>
+
+            <div class="index-left-header">
+              <h2 class="is-size-5 has-text-centered left-col-header">WHERE YOU CAN</h2>
+              <div class="joke-trainer-left-text">
+                <p class="is-size-6 has-text-centered">Cruise the Jokes</p>
+                <div class="index-image-container has-text-centered">
+                  <img src="{% static 'jt/images/interested_at_computer.png' %}" alt="interested in computer" width="100px">
+                </div>
+                <p class="is-size-6 has-text-centered">Save your Favorites</p>
+                <div class="index-image-container has-text-centered">
+                  <img src="{% static 'jt/images/string_around_finger.png' %}" alt="string around finger" width="90px">
+                </div>
+                <p class="is-size-6 has-text-centered">Build Your Repertoire</p>
+                <div class="index-image-container has-text-centered">
+                  <img src="{% static 'jt/images/jester_hat.png' %}" alt="jester hat" width="110px">
+                </div>
+              </div>
             </div>
+
           {% endblock %}
         </div>
       </div>
