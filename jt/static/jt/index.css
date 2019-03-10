@@ -308,63 +308,21 @@
 }
 
 
-/* LOGIN PAGE */
+/* AUTHENTICATION */
 
-
-.main-login-div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 100px;
-}
-
-.login-sizing-div {
-  width: 400px;
-  border-radius: 3px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: lavender;
-  -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
-	-moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
-	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.login-header {
+.auth-header {
   margin: 18px;
   padding: 10px;
   text-align: center;
 }
 
-.login-button-container {
+.auth-button-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 15px;
   padding-bottom: 25px;
 }
-
-.login-fields {
-  margin: 15px;
-}
-
-.login-register-button-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-
-/* REGISTER */
-
-
-.register-button-container {
-  margin-top: 20px;
-}
-
-.register-header {
-  margin-top: 20px;
-}
-
 
 /* JOKE TRAINER PAGE */
 

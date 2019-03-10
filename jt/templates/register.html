@@ -1,26 +1,30 @@
 {% extends 'index.html' %}
+{%load static%}
 
 {%block indexleft%}
 {%endblock%}
 
 {%block indexcenter%}
-
-  {% if registered %}
-
-  <strong>Thank you for registering!</strong>
-  <a href="http://localhost:8000">Return to the homepage.</a><br />
-
-  {% else %}
-
-      <h3 class="title is-size3 register-header">Register</h3>
-      <form action="http://localhost:8000/register" method="POST">
-          {% csrf_token %}
-          {{ user_form }}
-          <div class="register-button-container has-text-centered">
-            <button class="button is-primary">Sign Up</button>
-          </div>
-      </form>
-
-  {% endif %}
-
+  <h3 class="title is-size3 auth-header">Register</h3>
+  <form action="{% url 'jt:register' %}" method="POST">
+    {% csrf_token %}
+    {{ user_form }}
+    <div class="auth-button-container has-text-centered">
+      <button class="button is-primary">Sign Up</button>
+    </div>
+  </form>
 {%endblock%}
+
+{%block indexright%}
+{%endblock%}
+
+
+
+
+
+{% comment %}
+{% if registered %}
+<strong>Thank you for registering!</strong>
+<a href="http://localhost:8000">Return to the homepage.</a><br />
+{% else %}
+{% endcomment %}

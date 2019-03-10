@@ -5,15 +5,16 @@
 {%endblock%}
 
 {%block indexcenter%}
+  <h3 class="title is-size3 auth-header">Login</h3>
+  <form action="{% url 'jt:login' %}" method="POST">
+    {% csrf_token %}
+    {{ login_form }}
+    <input type="hidden" value="{{next}}" name="next"/>
+    <div class="auth-button-container has-text-centered">
+      <button class="button is-primary">Log in</button>
+    </div>
+  </form>
+{%endblock%}
 
-    <h3 class="title is-size3 login-header">Login</h3>
-    <form action="{% url 'jt:login' %}" id="login_form" method="POST">
-        {% csrf_token %}
-        {{ login_form }}
-        <input type="hidden" value="{{next}}" name="next"/>
-        <div class="login-button-container has-text-centered">
-          <button class="button is-primary">Log in</button>
-        </div>
-    </form>
-
+{%block indexright%}
 {%endblock%}
