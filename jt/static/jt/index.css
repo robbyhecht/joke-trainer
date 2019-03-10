@@ -22,7 +22,8 @@
 }
 
 .col-1-div {
-  padding-left: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 /* .column1 {
@@ -295,18 +296,20 @@
 
 /* JOKE TRAINER PAGE */
 
-.joke-trainer-right-header {
+.joke-trainer-left-header {
   margin-top: 40px;
+  margin-bottom: 30px;
 }
-.joke-trainer-right-header > h4 {
+.joke-trainer-left-header > h4 {
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.joke-trainer-right-text {
- font-size: .9rem;
- margin-top: 40px;
+.joke-trainer-left-text {
+  color: black;
 }
+
+/* ABOUT SECTION */
 
 .about-div-main {
   margin-left: 5%;
