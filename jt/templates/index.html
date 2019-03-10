@@ -8,7 +8,15 @@
       <div class="column is-one-fifth column1 has-background-light">
         <div class="col-1-div">
           {%block indexleft%}
-
+            <div class="index-subheader">
+              <h2>
+                <ul>
+                  <li>Cruise the Jokes</li>
+                  <li>Save your Favorites</li>
+                  <li>Build Your Repertoire</li>
+                </ul>
+              </h2>
+            </div>
           {% endblock %}
         </div>
       </div>
@@ -18,19 +26,12 @@
           {%block indexcenter%}
             <div class="allcards-container">
               <div class="index-header-container">
-                <h1 class="index-header">Welcome to Joke Trainer!</h1>
+                <h1 class="index-header is-size-3 has-text-weight-semibold">Welcome to Joke Trainer!</h1>
               </div>
-              <div class="index-subheader">
-                <h2>
-                  <ul>
-                    <li>Cruise the Jokes</li>
-                    <li>Save your Favorites</li>
-                    <li>Build Your Repertoire</li>
-                  </ul>
-                </h2>
+              <div>
+                <h3 class="randomHeader is-size-4 has-text-centered">Joke of the Moment</h3>
               </div>
               <div class="singlecard-container">
-                <h3 class="randomHeader"><strong>Joke of the Moment</strong></h3>
                 <div class="flip3D" id="cardtarget">
                   <div class="back">
                       <div class="backHeader">
