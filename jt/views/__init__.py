@@ -4,6 +4,7 @@ from .views import login_user
 from .views import user_logout
 from .views import hi_user
 from .views import nav_favorites
+from .views import search_bar
 
 from .joke_views import list_categories
 from .joke_views import random_joke

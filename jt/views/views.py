@@ -4,11 +4,10 @@ from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.shortcuts import render
 from django.template import RequestContext
 from django.urls import reverse
+from django.db.models import Q
 from jt.models import Category, User
 from jt.forms import UserForm, LoginForm
-
-# from jt.forms import UserForm, ProductForm
-# from jt.models import Product
+import operator
 
 def index(request):
   template_name = 'index.html'
@@ -23,6 +22,45 @@ def nav_favorites(request, id):
   current_user = get_object_or_404(User, pk= id)
   context = { 'current_user' : current_user }
   return render(request, 'navbar.html', context)
+
+def search_bar(request):
+  result = request.get_queryset()
+  query = self.request.GET.get('q')
+
+  if query:
+    query_list = query.split()
+    result = result.filter(
+      reduce(operator.and_,
+        (Q(question__icontains=q) for q in query_list)) |
+      reduce(operator.and_,
+        (Q(answer__icontains=q) for q in query_list))
+    )
+  return result
+
+
+
+# class BlogSearchListView(BlogListView):
+#     """
+#     Display a Blog List page filtered by the search query.
+#     """
+#     paginate_by = 10
+
+#     def get_queryset(self):
+#         result = super(BlogSearchListView, self).get_queryset()
+
+#         query = self.request.GET.get('q')
+#         if query:
+#             query_list = query.split()
+#             result = result.filter(
+#                 reduce(operator.and_,
+#                        (Q(title__icontains=q) for q in query_list)) |
+#                 reduce(operator.and_,
+#                        (Q(content__icontains=q) for q in query_list))
+#             )
+
+#         return result
+
+
 
 def register(request):
     '''Handles the creation of a new user for authentication
@@ -100,9 +138,6 @@ def login_user(request):
 , 'login_form': login_form,}
       template_name = 'login.html'
       return render(request, template_name, context)
-
-    # return render(request, 'login.html', next_route, context)
-
 
 
   # Use the login_required() decorator to ensure only those logged in can access the view.

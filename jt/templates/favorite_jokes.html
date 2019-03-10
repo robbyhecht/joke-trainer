@@ -34,18 +34,3 @@
     {% endfor %}
   </div>
 {%endblock%}
-
-
-{% comment %}
-<form action="{% url 'jt:add_to_favorites' %}" method="POST">
-  {% csrf_token %}
-  <input type="hidden" name="joke_id" value="{{joke.id}}">
-  <input type="submit" value="add to favorites">
-</form>
-{% endcomment %}
-
-{% comment %}
-<div class="removeButton">
-    <a class="button is-danger is-small">remove</a>
-  </div>
-{% endcomment %}
