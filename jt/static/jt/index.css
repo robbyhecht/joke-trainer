@@ -1,3 +1,6 @@
+/* NAVBAR */
+
+
 #nav{
   position: fixed;
   right: 0;
@@ -21,15 +24,23 @@
   margin-right: 10px;
 }
 
-.col-1-div {
-  padding-left: 5%;
-  padding-right: 5%;
-}
+
+/* LEFT COLUMN */
+
 
 /* .column1 {
   height: 100vh;
   overflow: auto;
 } */
+
+.col-1-div {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+/* CENTER COLUMN */
+
 
 .index-header {
   font-weight: bold;
@@ -89,6 +100,10 @@
   font-weight: bold;
   font-size: 2rem;
 }
+
+
+/* FLIP CARDS */
+
 
 .flipit {
   margin-right: 0px;
@@ -172,16 +187,6 @@
   transform: perspective(900px) rotateY(0deg);
 }
 
-/* .flip3D:hover > .front {
-  -webkit-transform: perspective(900px) rotateY(-180deg);
-  transform: perspective(900px) rotateY(-180deg);
-}
-
-.flip3D:hover > .back {
-  -webkit-transform: perspective(900px) rotateY(0deg);
-  transform: perspective(900px) rotateY(0deg);
-} */
-
 .back {
   display: flex;
   flex-wrap: wrap;
@@ -233,15 +238,22 @@
   justify-content: space-around;
 }
 
+
+/* RIGHT COLUMN */
+
+
 /* .column3 {
   height: 100vh;
   overflow: auto;
 } */
 
 .col-3-div {
-  /* padding-left: 10%; */
   text-align: center;
 }
+
+
+/* LOGIN PAGE */
+
 
 .main-login-div {
   display: flex;
@@ -252,7 +264,6 @@
 
 .login-sizing-div {
   width: 400px;
-  /* padding: 100px; */
   border-radius: 3px;
   padding-left: 20px;
   padding-right: 20px;
@@ -286,6 +297,10 @@
   margin-top: 30px;
 }
 
+
+/* REGISTER */
+
+
 .register-button-container {
   margin-top: 20px;
 }
@@ -294,7 +309,9 @@
   margin-top: 20px;
 }
 
+
 /* JOKE TRAINER PAGE */
+
 
 .joke-trainer-left-header {
   margin-top: 40px;
@@ -305,11 +322,17 @@
   text-transform: uppercase;
 }
 
+.trainer-image-container {
+  margin-bottom: 30px;
+}
+
 .joke-trainer-left-text {
   color: black;
 }
 
+
 /* ABOUT SECTION */
+
 
 .about-div-main {
   margin-left: 5%;
