@@ -14,11 +14,6 @@
           <div class="back">
             <div class="backHeader">
               <h3 class="card-text">{{ joke.answer }}</h3>
-              <form action="{% url 'jt:delete_from_favorites' joke.id %}" method="DELETE">
-                {% csrf_token %}
-                <input type="hidden" name="id" value="{{id}}">
-                <button class="button is-danger is-small">remove from favorites</button>
-              </form>
             </div>
           </div>
           <div class="front">
@@ -26,10 +21,18 @@
           </div>
         </div>
 
-        <div class="flip-button-container">
-          <a class="button is-success" onclick="flipTheCard('cardtarget-{{joke.id}}')">flip card</a>
+        <div class="card-buttons-container">
+          <div class="flip-button-container">
+            <a class="button is-success flip-button flip-button-paired" onclick="flipTheCard('cardtarget-{{joke.id}}')">flip card</a>
+          </div>
+          <div class="favorites-button-container">
+            <form action="{% url 'jt:delete_from_favorites' joke.id %}" method="DELETE">
+              {% csrf_token %}
+              <input type="hidden" name="id" value="{{id}}">
+              <button class="button is-danger is-small" id="remove-button">remove</button>
+            </form>
+          </div>
         </div>
-
       </div>
     {% endfor %}
   </div>
