@@ -238,7 +238,8 @@
 } */
 
 .col-3-div {
-  padding-left: 10%;
+  /* padding-left: 10%; */
+  text-align: center;
 }
 
 .main-login-div {
@@ -291,3 +292,29 @@
 .register-header {
   margin-top: 20px;
 }
+
+/* JOKE TRAINER PAGE */
+
+.joke-trainer-right-header {
+  margin-top: 40px;
+}
+.joke-trainer-right-header > h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.joke-trainer-right-text {
+ font-size: .9rem;
+ margin-top: 40px;
+}
+
+.about-div-main {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 40px;
+}
+
+.about-div-main > h1 {
+  margin-bottom: 10px;
+}
+

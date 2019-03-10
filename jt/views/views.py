@@ -13,6 +13,10 @@ def index(request):
   template_name = 'index.html'
   return render(request, template_name, {})
 
+def about(request):
+  template_name = 'about.html'
+  return render(request, template_name, {})
+
 def hi_user(request):
   users_name = User.objects.all()
   context = { 'users_name' : users_name }

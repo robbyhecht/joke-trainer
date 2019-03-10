@@ -8,12 +8,7 @@
       <div class="column is-one-fifth column1 has-background-light">
         <div class="col-1-div">
           {%block indexleft%}
-            <h2 class="categories-header">CATEGORIES</h2>
-            <ul class="categories-list">
-              {% for category in category_list %}
-                <li><a href="http://localhost:8000/category/{{category.id}}" class="category">{{category.name}}</a></li>
-              {% endfor %}
-            </ul>
+
           {% endblock %}
         </div>
       </div>
@@ -59,6 +54,12 @@
       <div class="column is-one-fifth column3 has-background-light">
         <div class="col-3-div">
           {% block indexright%}
+            <h2 class="categories-header">CATEGORIES</h2>
+            <ul class="categories-list">
+              {% for category in category_list %}
+                <li><a href="http://localhost:8000/category/{{category.id}}" class="category">{{category.name}}</a></li>
+              {% endfor %}
+            </ul>
           {%endblock%}
         </div>
       </div>
