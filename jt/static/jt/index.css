@@ -49,15 +49,6 @@
   margin-bottom: 45px;
 }
 
-/* .index-subheader {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: center;
-  margin-bottom: 60px;
-  margin-top: 40px;
-} */
-
 .randomHeader {
   margin-bottom: 30px;
 }
@@ -69,12 +60,12 @@
   margin-bottom: 30px;
 }
 
-.left-col-header {
+/* .left-col-header {
   font-weight: bold;
   font-size: 1.2rem;
   margin-top: 40px;
   margin-bottom: 30px;
-}
+} */
 
 .categories-list li {
   margin-bottom: 10px;
@@ -126,14 +117,6 @@
   text-transform: uppercase;
   text-align: center;
 }
-
-/* .card-question {
-  margin-bottom: 15px;
-}
-
-.card-answer {
-  margin-top: 15px;
-} */
 
 .main-container {
   position: absolute;
@@ -326,23 +309,27 @@
 
 /* JOKE TRAINER PAGE */
 
-
-.joke-trainer-left-header {
+.left-column-header {
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .joke-trainer-left-header > h4 {
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.trainer-image-container {
+.sidebar-image-container {
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
+}
+
+.left-col-text {
+  margin-top: 40px;
   margin-bottom: 30px;
 }
 
-.index-left-header {
-  margin-top: 40px;
-  margin-bottom: 30px;
+#repertoir-text {
+  margin-bottom: 10px;
 }
 
 

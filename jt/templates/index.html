@@ -9,20 +9,25 @@
         <div class="col-1-div">
           {%block indexleft%}
 
-            <div class="index-left-header">
-              <h2 class="is-size-5 has-text-centered left-col-header">WHERE YOU CAN</h2>
+            <div class="left-column-header">
               <div class="joke-trainer-left-text">
-                <p class="is-size-6 has-text-centered">Cruise the Jokes</p>
-                <div class="index-image-container has-text-centered">
-                  <img src="{% static 'jt/images/interested_at_computer.png' %}" alt="interested in computer" width="100px" class="sidebar-image">
+                  <div>
+                    <p class="is-size-6 has-text-centered left-col-text">Cruise the Jokes</p>
+                  </div>
+                <div class="sidebar-image-container has-text-centered">
+                  <img src="{% static 'jt/images/interested_at_computer.png' %}" alt="interested in computer" width="100px">
                 </div>
-                <p class="is-size-6 has-text-centered">Save your Favorites</p>
-                <div class="index-image-container has-text-centered">
-                  <img src="{% static 'jt/images/string_around_finger.png' %}" alt="string around finger" width="90px" class="sidebar-image">
+                <div>
+                  <p class="is-size-6 has-text-centered left-col-text">Save your Favorites</p>
                 </div>
-                <p class="is-size-6 has-text-centered">Build Your Repertoire</p>
-                <div class="index-image-container has-text-centered">
-                  <img src="{% static 'jt/images/jester_hat.png' %}" alt="jester hat" width="110px" class="sidebar-image">
+                <div class="sidebar-image-container has-text-centered">
+                  <img src="{% static 'jt/images/string_around_finger.png' %}" alt="string around finger" width="90px">
+                </div>
+                <div>
+                  <p class="is-size-6 has-text-centered left-col-text" id="repertoir-text">Build Your Repertoire</p>
+                </div>
+                <div class="sidebar-image-container has-text-centered">
+                  <img src="{% static 'jt/images/jester_hat.png' %}" alt="jester hat" width="110px">
                 </div>
               </div>
             </div>
@@ -38,9 +43,9 @@
               <div class="index-header-container">
                 <h1 class="index-header is-size-3 has-text-weight-semibold">Welcome to Joke Trainer!</h1>
               </div>
-              <div>
+              <!-- <div>
                 <h3 class="randomHeader is-size-4 has-text-centered">Joke of the Moment</h3>
-              </div>
+              </div> -->
               <div class="singlecard-container">
                 <div class="flip3D" id="cardtarget">
                   <div class="back">
