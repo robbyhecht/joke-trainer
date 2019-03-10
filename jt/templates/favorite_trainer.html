@@ -35,8 +35,10 @@
             <h3 class="card-text">{{ joke.hint }}</h3>
           </div>
         </div>
-        <div class="flip-button-container">
-          <a class="button is-success" onclick="flipTheCard('cardtarget-{{joke.id}}')">flip card</a>
+        <div class="card-buttons-container">
+          <div class="flip-button-container">
+            <a class="button is-success" onclick="flipTheCard('cardtarget-{{joke.id}}')">flip card</a>
+          </div>
         </div>
       </div>
     {% endfor %}

@@ -253,11 +253,11 @@
   border-top-left-radius: 7px !important;
 }
 
-#flip-button-solo {
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  border-top-right-radius: 7px;
-  border-top-left-radius: 7px;
+.flip-button-solo {
+  border-bottom-left-radius: 7px !important;
+  border-bottom-right-radius: 7px !important;
+  border-top-right-radius: 7px !important;
+  border-top-left-radius: 7px !important;
 }
 
 #remove-button {
