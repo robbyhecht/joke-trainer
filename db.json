@@ -1,0 +1,1036 @@
+[
+{
+  "model": "jt.joke",
+  "pk": 1,
+  "fields": {
+    "hint": "Gorilla Nose",
+    "question": "Why do gorillas have such big nostrils?",
+    "answer": "Because they have such big fingers"
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 2,
+  "fields": {
+    "hint": "Socialism Jokes",
+    "question": "When can you tell jokes about socialism?",
+    "answer": "Only when everybody gets them"
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 3,
+  "fields": {
+    "hint": "Fish Concrete",
+    "question": "What did the fish say when he swam into a concrete wall?",
+    "answer": "Dam"
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 4,
+  "fields": {
+    "hint": "Camping Friend",
+    "question": "I wanted to go camping with a friend of mine...",
+    "answer": "But I decided against it because I thought it would be two in tents"
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 5,
+  "fields": {
+    "hint": "Jedi Car",
+    "question": "What kind of car does a Jedi drive?",
+    "answer": "A Toy-Yoda"
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 6,
+  "fields": {
+    "hint": "Chicken Dirt",
+    "question": "Why did the chicken cross the road, roll in the dirt, and cross the road again?",
+    "answer": "Because he was a dirty double-crosser"
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 7,
+  "fields": {
+    "hint": "Duck",
+    "question": "Why did the duck cross the road?",
+    "answer": "To prove he wasn't chicken"
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 8,
+  "fields": {
+    "hint": "12 Chickens",
+    "question": "Why did the 12 chickens cross the road?",
+    "answer": "It dozen really matter"
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 9,
+  "fields": {
+    "hint": "James Bond",
+    "question": "After crossing the road, a chicken goes up to James Bond and asks him, \"What's your name?\"",
+    "answer": "He replies, \"Bond, James Bond. What's yours?\" \"Ken, Chick Ken.\""
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 10,
+  "fields": {
+    "hint": "Two Playgrounds",
+    "question": "Two playgrounds are on either side of the road...so, why did the children cross the road?",
+    "answer": "To get to the other slide"
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 11,
+  "fields": {
+    "hint": "Indecisive Bee",
+    "question": "What do you call a bee that can't make up its mind?",
+    "answer": "A may-bee"
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 12,
+  "fields": {
+    "hint": "One Minute Birthday",
+    "question": "Did you hear about the old man whose birthday one year lasted only one minute?",
+    "answer": "It was his sixty-second birthday"
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 13,
+  "fields": {
+    "hint": "Weathermen Limbs",
+    "question": "What happened when two weathermen each broke an arm and a leg in an accident?",
+    "answer": "They were worried about the four casts"
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 14,
+  "fields": {
+    "hint": "Leia Thanksgiving",
+    "question": "Why didn't Han Solo like Princess Leia's Thanksgiving Dinner?",
+    "answer": "It was Chewie"
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 15,
+  "fields": {
+    "hint": "Test Joke",
+    "question": "ABCDEFGHIJKLMNOPQRSTUVWXYZ ABCDEFGHIJKLMNOPQRSTUVWXYZ ABCDEFGHIJKLMNOPQRSTUVWXYZ ABCDEFGHIJKLMNOPQRSTUVWXYZ ABCDEFGHIJKLMNOPQRSTUVWXYZ ABCDEFGHIJKLMNOPQRSTUVWXYZ ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "answer": "Abcdefghijklmnopqrstuvwxyz Abcdefghijklmnopqrstuvwxyz Abcdefghijklmnopqrstuvwxyz Abcdefghijklmnopqrstuvwxyz Abcdefghijklmnopqrstuvwxyz Abcdefghijklmnopqrstuvwxyz"
+  }
+},
+{
+  "model": "jt.category",
+  "pk": 1,
+  "fields": {
+    "name": "Animals"
+  }
+},
+{
+  "model": "jt.category",
+  "pk": 2,
+  "fields": {
+    "name": "Knock Knock"
+  }
+},
+{
+  "model": "jt.category",
+  "pk": 3,
+  "fields": {
+    "name": "Politics"
+  }
+},
+{
+  "model": "jt.category",
+  "pk": 4,
+  "fields": {
+    "name": "Cross the Road"
+  }
+},
+{
+  "model": "jt.category",
+  "pk": 5,
+  "fields": {
+    "name": "Lightbulb"
+  }
+},
+{
+  "model": "jt.category",
+  "pk": 6,
+  "fields": {
+    "name": "Word Play"
+  }
+},
+{
+  "model": "jt.category",
+  "pk": 7,
+  "fields": {
+    "name": "One Liners"
+  }
+},
+{
+  "model": "jt.category",
+  "pk": 8,
+  "fields": {
+    "name": "Pickup Lines"
+  }
+},
+{
+  "model": "jt.category",
+  "pk": 9,
+  "fields": {
+    "name": "Star Wars"
+  }
+},
+{
+  "model": "jt.category",
+  "pk": 10,
+  "fields": {
+    "name": "Puns"
+  }
+},
+{
+  "model": "jt.category",
+  "pk": 11,
+  "fields": {
+    "name": "Religion"
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 1,
+  "fields": {
+    "category": 1,
+    "joke": 1
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 2,
+  "fields": {
+    "category": 3,
+    "joke": 2
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 3,
+  "fields": {
+    "category": 1,
+    "joke": 3
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 4,
+  "fields": {
+    "category": 6,
+    "joke": 4
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 5,
+  "fields": {
+    "category": 9,
+    "joke": 5
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 6,
+  "fields": {
+    "category": 4,
+    "joke": 6
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 7,
+  "fields": {
+    "category": 4,
+    "joke": 7
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 8,
+  "fields": {
+    "category": 4,
+    "joke": 8
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 9,
+  "fields": {
+    "category": 4,
+    "joke": 9
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 10,
+  "fields": {
+    "category": 4,
+    "joke": 10
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 11,
+  "fields": {
+    "category": 10,
+    "joke": 11
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 12,
+  "fields": {
+    "category": 10,
+    "joke": 12
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 13,
+  "fields": {
+    "category": 10,
+    "joke": 13
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 14,
+  "fields": {
+    "category": 9,
+    "joke": 14
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 15,
+  "fields": {
+    "category": 1,
+    "joke": 15
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "jt",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "jt",
+    "model": "joke"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "jt",
+    "model": "jokecategory"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "jt",
+    "model": "userjoke"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "6mdm54n9f3il12nvsyf1euwquwpsigyr",
+  "fields": {
+    "session_data": "MzllY2ZhNTQ1OGJkMDk5MjVkMmU5MTBhMGE2YjQ4ZjcxMTViYjJmMzp7fQ==",
+    "expire_date": "2019-03-20T17:11:16.986Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "jlof5wxuzi3i4wazq4pzrtbn68vwbnz1",
+  "fields": {
+    "session_data": "ZTVmNGUyMWQ2OWViZTI5MGQxZDhhZWFiOGJjM2UxZTIyOWQ2NjM2Yjp7Il9hdXRoX3VzZXJfaWQiOiI3IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyNDA3MWMxYTMxYzhjYjg5NTY1NjQxOGY4NzJkZmNiMTc4MTEzMWU5In0=",
+    "expire_date": "2019-03-25T18:47:19.902Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "lwe38u5oxmar0g2d2vjpnwrl03qwk7k7",
+  "fields": {
+    "session_data": "MzllY2ZhNTQ1OGJkMDk5MjVkMmU5MTBhMGE2YjQ4ZjcxMTViYjJmMzp7fQ==",
+    "expire_date": "2019-03-20T17:13:55.896Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "mbk1w8rljos5jk8pcxqkrntxpcciqimq",
+  "fields": {
+    "session_data": "MzllY2ZhNTQ1OGJkMDk5MjVkMmU5MTBhMGE2YjQ4ZjcxMTViYjJmMzp7fQ==",
+    "expire_date": "2019-03-20T17:17:09.224Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "nrztc6yrdbdfx18vv33imweqjekmnup4",
+  "fields": {
+    "session_data": "MzllY2ZhNTQ1OGJkMDk5MjVkMmU5MTBhMGE2YjQ4ZjcxMTViYjJmMzp7fQ==",
+    "expire_date": "2019-03-20T17:19:21.062Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "qh2hn4mviavfjdp18gs1gecrx1bxqooa",
+  "fields": {
+    "session_data": "MzllY2ZhNTQ1OGJkMDk5MjVkMmU5MTBhMGE2YjQ4ZjcxMTViYjJmMzp7fQ==",
+    "expire_date": "2019-03-20T17:07:58.391Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "r80ukwlt9qlsfwvmgtxpfcih9hduvagx",
+  "fields": {
+    "session_data": "ZTVmNGUyMWQ2OWViZTI5MGQxZDhhZWFiOGJjM2UxZTIyOWQ2NjM2Yjp7Il9hdXRoX3VzZXJfaWQiOiI3IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyNDA3MWMxYTMxYzhjYjg5NTY1NjQxOGY4NzJkZmNiMTc4MTEzMWU5In0=",
+    "expire_date": "2019-03-21T00:29:43.348Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "xe876p6to7p5iu8zx07szioke73birnp",
+  "fields": {
+    "session_data": "MzllY2ZhNTQ1OGJkMDk5MjVkMmU5MTBhMGE2YjQ4ZjcxMTViYjJmMzp7fQ==",
+    "expire_date": "2019-03-20T17:05:57.374Z"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add category",
+    "content_type": 1,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change category",
+    "content_type": 1,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete category",
+    "content_type": 1,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view category",
+    "content_type": 1,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add joke",
+    "content_type": 2,
+    "codename": "add_joke"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change joke",
+    "content_type": 2,
+    "codename": "change_joke"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete joke",
+    "content_type": 2,
+    "codename": "delete_joke"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view joke",
+    "content_type": 2,
+    "codename": "view_joke"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add joke category",
+    "content_type": 3,
+    "codename": "add_jokecategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change joke category",
+    "content_type": 3,
+    "codename": "change_jokecategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete joke category",
+    "content_type": 3,
+    "codename": "delete_jokecategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view joke category",
+    "content_type": 3,
+    "codename": "view_jokecategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user joke",
+    "content_type": 4,
+    "codename": "add_userjoke"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user joke",
+    "content_type": 4,
+    "codename": "change_userjoke"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user joke",
+    "content_type": 4,
+    "codename": "delete_userjoke"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user joke",
+    "content_type": 4,
+    "codename": "view_userjoke"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 5,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 5,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 5,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 5,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 6,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 6,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 6,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 6,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 7,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 7,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 7,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 7,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 8,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 8,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 8,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 8,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 9,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 9,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 9,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 9,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 10,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 10,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 10,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 10,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$mOfsn91vmI2X$EBwtWVDM3HMEOMeVJgs3kADFU3ZAoORulSJ8cFZR+O0=",
+    "last_login": "2019-03-03T21:22:48.057Z",
+    "is_superuser": true,
+    "username": "bruce",
+    "first_name": "",
+    "last_name": "",
+    "email": "robbyhecht@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-03-03T21:17:08.079Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$MmMcdI12Muc9$3zpvuQQFS98gowl2Eswir3rbeFJSzxVmW7coMOt9c28=",
+    "last_login": "2019-03-03T21:20:25Z",
+    "is_superuser": false,
+    "username": "robby",
+    "first_name": "Robert",
+    "last_name": "Hecht",
+    "email": "robbyhecht@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-03-03T21:18:53Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$fKonbBbzEduB$nDMfwkZTD3cucfVZwchIodmSLpGZlZbIBHfDgRkmvmg=",
+    "last_login": "2019-03-06T17:22:26.049Z",
+    "is_superuser": false,
+    "username": "bobdylan",
+    "first_name": "Bob",
+    "last_name": "Dylan",
+    "email": "b@b.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-03-05T02:45:59.320Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$AMzqUuFdUW8n$oHN5i5mbfsZ+lqfKOxed2/Agqy3vvqlYY0Xux+FDDAE=",
+    "last_login": "2019-03-05T21:49:54.743Z",
+    "is_superuser": false,
+    "username": "joe",
+    "first_name": "joe",
+    "last_name": "joe",
+    "email": "j@j.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-03-05T21:49:54.474Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$7wSiO5sLpmtz$5Mfph8O0uQEfeUq4qS5MHLz0oqncnesq2ngx7jN2ows=",
+    "last_login": "2019-03-11T18:47:19.900Z",
+    "is_superuser": false,
+    "username": "r",
+    "first_name": "r",
+    "last_name": "r",
+    "email": "r@r.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-03-06T19:03:27.262Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 8,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$YA5YiUcIsjVG$eOEBGAiUjbjszpXMRx86MmxDvVG2gi2G49AE6n3tCdA=",
+    "last_login": "2019-03-10T19:04:35.984Z",
+    "is_superuser": false,
+    "username": "chucknorris",
+    "first_name": "Chuck",
+    "last_name": "Norris",
+    "email": "c@c.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-03-10T19:04:35.738Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2019-03-03T21:18:53.822Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "robby",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2019-03-03T21:20:27.680Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "robby",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\", \"email\", \"last_login\"]}}]"
+  }
+},
+{
+  "model": "jt.userjoke",
+  "pk": 2,
+  "fields": {
+    "user": 3,
+    "joke": 3
+  }
+},
+{
+  "model": "jt.userjoke",
+  "pk": 3,
+  "fields": {
+    "user": 4,
+    "joke": 2
+  }
+},
+{
+  "model": "jt.userjoke",
+  "pk": 4,
+  "fields": {
+    "user": 4,
+    "joke": 4
+  }
+},
+{
+  "model": "jt.userjoke",
+  "pk": 37,
+  "fields": {
+    "user": 7,
+    "joke": 6
+  }
+},
+{
+  "model": "jt.userjoke",
+  "pk": 39,
+  "fields": {
+    "user": 7,
+    "joke": 3
+  }
+},
+{
+  "model": "jt.userjoke",
+  "pk": 44,
+  "fields": {
+    "user": 7,
+    "joke": 7
+  }
+},
+{
+  "model": "jt.userjoke",
+  "pk": 45,
+  "fields": {
+    "user": 7,
+    "joke": 2
+  }
+},
+{
+  "model": "jt.userjoke",
+  "pk": 46,
+  "fields": {
+    "user": 7,
+    "joke": 8
+  }
+}
+]
