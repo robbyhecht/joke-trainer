@@ -1,4 +1,5 @@
 from django.contrib.auth.models import User
+from ..models import Joke
 from django import forms
 
 class UserForm(forms.ModelForm):
@@ -22,3 +23,13 @@ class LoginForm(forms.ModelForm):
     model = User
     fields = ('username', 'password')
     # next = form.fields['next'].widget = forms.HiddenInput()
+
+class NewJokeForm(forms.ModelForm):
+
+  question = forms.CharField(widget=forms.TextInput(attrs={'class':'input'}))
+  answer = forms.CharField(widget=forms.TextInput(attrs={'class':'input'}))
+  hint = forms.CharField(widget=forms.TextInput(attrs={'class':'input'}))
+
+  class Meta:
+    model = Joke
+    fields = ('question', 'answer', 'hint')
