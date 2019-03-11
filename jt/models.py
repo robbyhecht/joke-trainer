@@ -6,9 +6,10 @@ from django.db import models
 
 class Joke(models.Model):
   '''joke model'''
-  hint = models.CharField(max_length=100, blank=False)
-  question = models.CharField(max_length=500, blank=False)
-  answer = models.CharField(max_length = 500, blank=False)
+  hint = models.CharField(max_length=50, blank=False)
+  question = models.CharField(max_length=170, blank=False)
+  answer = models.CharField(max_length = 65, blank=False)
+  creator = models.ForeignKey(User, on_delete=models.CASCADE, null=True, related_name='creator')
   user = models.ManyToManyField(User, blank=True, through='UserJoke')
 
   # @property
@@ -19,15 +20,12 @@ class Joke(models.Model):
   #     is_favorite_joke = True
   #   return is_favorite_joke
     
-  
-
   def __str__(self):
     return self.hint
 
-
 class Category(models.Model):
   '''joke categories'''
-  name = models.CharField(max_length=50, blank=False)
+  name = models.CharField(max_length=21, blank=False)
   joke = models.ManyToManyField(Joke, blank=True, through='JokeCategory')
 
   def __str__(self):
@@ -44,4 +42,4 @@ class UserJoke(models.Model):
   joke = models.ForeignKey(Joke, on_delete=models.PROTECT)
 
   def __str__(self):
-    return self.joke.question
+    return self.joke.hint
