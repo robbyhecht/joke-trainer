@@ -19,27 +19,21 @@
     </div>
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-
-        {% comment %}
-        <a class="navbar-item" href="http://localhost:8000">Home</a>
-        {% endcomment %}
         
         <a class="navbar-item" href="{% url 'jt:favorites' %}">Favorite Jokes</a>
         <a class="navbar-item" href="{% url 'jt:favorites_trainer' %}">Trainer</a>
         <a class="navbar-item" href="{% url 'jt:about' %}">About</a>
 
-        {% comment %}
-        <form action="#" id="searchform" method='GET'>
+        <form action="{% url 'jt:search' %}" id="searchform" method='GET'>
           <div class="navbar-item field has-addons">
               <div class="control">
-                <input class="input searchfield" id="searchbox" name="q" type="text" placeholder="Search...">
+                <input class="input searchfield" id="searchbox" name="search" type="text" placeholder="Search...">
               </div>
               <div class="control">
                 <button class="button is-info">Search</button>
               </div>
           </div>
         </form>
-        {% endcomment %}
 
       </div>
       <div class="navbar-end">

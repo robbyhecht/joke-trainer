@@ -19,6 +19,10 @@
   font-weight: bold;
 }
 
+.searchfield {
+  /* margin-top: 9px; */
+}
+
 .log-button {
   margin-right: 10px;
 }
@@ -282,12 +286,12 @@
 
 /* ---- */
 
-/* .column1 {
-  height: 100vh;
+.column1 {
+  /* height: 100vh; */
   overflow: auto;
-} */
+}
 
-/* .column3 {
-  height: 100vh;
+.column3 {
+  /* height: 200vh; */
   overflow: auto;
-} */
+}
