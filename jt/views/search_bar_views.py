@@ -39,4 +39,4 @@ def search(request):
     return render (request, "search_results.html", context)
 
   else:
-    return HttpResponseRedirect(reverse("jt:search"))
+    return HttpResponseRedirect(reverse("jt:random_joke"))

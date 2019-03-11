@@ -9,10 +9,16 @@
     </div>
 
     <div class="search-results-number">
-      {% if no_jokes_found %}
-        <h6>There are no results for {{ search_query }}</h6>
+      {% if search_query == "" %}
+        <h6>Give the search bar something to look for, silly!</h6>
       {% else %}
-        <h6>{{ number_of }} results for {{ search_query }}:</h6>
+        {% if no_jokes_found %}
+          <h6>There are no results for {{ search_query }}</h6>
+        {% else %}
+          <div class="has-text-centered">
+            <h6>{{ number_of }} results for {{ search_query }}:</h6>
+          </div>
+        {% endif %}
       {% endif %}
     </div>
     <div>
