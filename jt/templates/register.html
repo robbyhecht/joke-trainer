@@ -5,14 +5,16 @@
 {%endblock%}
 
 {%block indexcenter%}
-  <h3 class="title is-size3 auth-header">Register</h3>
-  <form action="{% url 'jt:register' %}" method="POST">
-    {% csrf_token %}
-    {{ user_form }}
-    <div class="auth-button-container has-text-centered">
-      <button class="button is-primary">Sign Up</button>
-    </div>
-  </form>
+  <div class="registration-container">
+    <h3 class="title is-size3 auth-header">Register</h3>
+    <form action="{% url 'jt:register' %}" method="POST">
+      {% csrf_token %}
+      {{ user_form }}
+      <div class="auth-button-container has-text-centered">
+        <button class="button is-primary">Sign Up</button>
+      </div>
+    </form>
+  </div>
 {%endblock%}
 
 {%block indexright%}
