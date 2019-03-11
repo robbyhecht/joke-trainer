@@ -24,14 +24,15 @@
         <a class="navbar-item" href="{% url 'jt:favorites_trainer' %}">Trainer</a>
         <a class="navbar-item" href="{% url 'jt:about' %}">About</a>
 
-        <form action="{% url 'jt:search' %}" id="searchform" method='GET'>
+        <form action="{% url 'jt:search' %}" id="searchform" method='POST'>
+          {% csrf_token %}
           <div class="navbar-item field has-addons">
-              <div class="control">
-                <input class="input searchfield" id="searchbox" name="search" type="text" placeholder="Search...">
-              </div>
-              <div class="control">
-                <button class="button is-info">Search</button>
-              </div>
+            <div class="control">
+              <input class="input searchfield" id="searchbox" name="search_query" type="text" placeholder="Search...">
+            </div>
+            <div class="control">
+              <button class="button is-info">Search</button>
+            </div>
           </div>
         </form>
 

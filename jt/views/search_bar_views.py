@@ -8,7 +8,7 @@ def search(request):
   """Shows retrieved jokes when the user makes a search in the navbar search field"""
 
   if request.method == "POST":
-    search_query = request.POST("search_query")
+    search_query = request.POST["search_query"]
 
     if search_query is not "":
       search_results = Joke.objects.filter(question__contains=search_query)
@@ -25,9 +25,9 @@ def search(request):
       context = { 
         "search_results" : search_results, 
         "search_query" : search_query, 
-        "faved_jokes" : faved_jokes,
-        "number_of" : len(results),
-        "no_jokes_found" : True if len(results) is 0 else False
+        # "faved_jokes" : faved_jokes,
+        "number_of" : len(search_results),
+        "no_jokes_found" : True if len(search_results) is 0 else False
       }
 
     else:
