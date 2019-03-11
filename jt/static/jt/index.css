@@ -79,9 +79,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 40px;
-  font-weight: bold;
-  font-size: 2rem;
+  margin-top: 33px;
+  margin-bottom: 45px;
 }
 
 /* JOKE TRAINER PAGE */
@@ -120,8 +119,22 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 15px;
+  padding-top: 10px;
   padding-bottom: 25px;
+}
+
+.registration-container {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.login-container {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.input {
+  margin-bottom: 10px;
 }
 
 /* FLIP CARDS */
