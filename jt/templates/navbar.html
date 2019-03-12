@@ -20,7 +20,7 @@
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
         
-        <a class="navbar-item" href="{% url 'jt:favorites' %}">Favorite Jokes</a>
+        <a class="navbar-item" href="{% url 'jt:favorites' %}">Favorites</a>
         <a class="navbar-item" href="{% url 'jt:favorites_trainer' %}">Trainer</a>
         <a class="navbar-item" href="{% url 'jt:about' %}">About</a>
 
@@ -40,6 +40,9 @@
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
+            <div class="add-button-nav">
+            <a class="button is-light" href="{% url 'jt:add_joke' %}">Add a Joke</a>
+            </div>
             {% if user.is_authenticated %}
             <a class="button is-light log-button" href="{% url 'jt:logout' %}">Log out</a>
             {% else %}
