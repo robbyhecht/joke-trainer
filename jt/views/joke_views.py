@@ -5,6 +5,7 @@ from django.shortcuts import render, get_object_or_404
 from django.template import RequestContext
 from django.urls import reverse
 from jt.models import Category, Joke, JokeCategory, UserJoke
+from jt.forms import NewJokeForm
 
 def list_categories(request):
   '''Handles listing joke categories in sidebar'''
@@ -54,10 +55,31 @@ def favorites_list(request):
   context = { 'joke_list' : joke_list }
   return render(request, 'favorite_jokes.html', context)
 
-
 def random_joke(request):
   '''Handles displaying random question and answer on flip card on home page'''
   joke_at_random = Joke.objects.order_by("?").first()
   context = { 'joke_at_random' : joke_at_random }
   print('RANDOMJOKE', context)
   return render (request, 'index.html', context)
+
+
+@login_required
+def add_joke(request):
+  '''Handles user adding a new joke to the database'''
+
+  if request.method == "GET":
+    newjoke_form = NewJokeForm()
+    template_name = 'new_joke.html'
+    return render(request, template_name, {'newjoke_form': newjoke_form})
+
+  elif request.method == "POST":
+    creator = request.user
+    question = request.POST["question"]
+    answer = request.POST["answer"]
+    hint = request.POST["hint"]
+    category = request.POST["category"]
+    new_joke = Joke(creator=creator, question=question, answer=answer, hint=hint, category=category)
+    new_joke.save()
+    print('NEW JOKE ADDED?', new_joke.id)
+
+    return HttpResponseRedirect(reverse('jt:random_joke'))

@@ -18,4 +18,5 @@ urlpatterns = [
   path('favorites/delete/<int:id>', views.delete_from_favorites, name ='delete_from_favorites'),
   path('about', views.about, name = 'about'),
   path('search', views.search, name = 'search'),
+  path('add', views.add_joke, name = 'add_joke'),
 ]
