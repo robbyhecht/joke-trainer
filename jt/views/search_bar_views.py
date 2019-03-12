@@ -17,7 +17,6 @@ def search(request):
           search_results.append(joke)
           print("SEARCH RESULTS", search_results)
 
-
       if request.user.is_authenticated:
         faved_jokes = UserJoke.objects.filter(user = request.user)
         for joke in search_results:
@@ -30,7 +29,6 @@ def search(request):
       context = { 
         "search_results" : search_results, 
         "search_query" : search_query, 
-        # "faved_jokes" : faved_jokes,
         "number_of" : len(search_results),
         "no_jokes_found" : True if len(search_results) is 0 else False
       }
