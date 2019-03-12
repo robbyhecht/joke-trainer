@@ -15,6 +15,7 @@ def list_categories(request):
   context ={'category_list' : category_list}
   return render(request, 'index.html', context)
 
+
 def list_by_category(request, id):
   '''Handles listing jokes by category...
   Category name is accessed in joke_category
@@ -22,7 +23,13 @@ def list_by_category(request, id):
   # for listing category name
   joke_category = get_object_or_404(Category, pk= id)
   # for retrieving the joke details to have on cards
-  joke_content = Joke.objects.filter(category = id)
+  all_joke_content = Joke.objects.filter(category = id)
+  print("ALL JOKE CONTENT", all_joke_content)
+  joke_content = list()
+  for joke in all_joke_content:
+    if joke.creator_id is None or joke.creator_id == request.user.id:
+      joke_content.append(joke)
+
   # assures there is a user before trying to access UserJoke table: an action which requires an active user.
   if request.user.is_authenticated:
     # retrieves the joke objects included in the UserJoke table
@@ -33,8 +40,11 @@ def list_by_category(request, id):
         if fav_joke.joke.id == joke.id:
           joke.is_favorited_by_user = True
   else: faved_jokes = Joke.objects.all()
+
   context = { 'joke_category' : joke_category, 'joke_content' : joke_content, 'faved_jokes' : faved_jokes }
+
   return render(request, 'joke_category.html', context)
+
 
 @login_required
 def add_to_favorites(request):
@@ -61,25 +71,3 @@ def random_joke(request):
   context = { 'joke_at_random' : joke_at_random }
   print('RANDOMJOKE', context)
   return render (request, 'index.html', context)
-
-
-@login_required
-def add_joke(request):
-  '''Handles user adding a new joke to the database'''
-
-  if request.method == "GET":
-    newjoke_form = NewJokeForm()
-    template_name = 'new_joke.html'
-    return render(request, template_name, {'newjoke_form': newjoke_form})
-
-  elif request.method == "POST":
-    creator = request.user
-    question = request.POST["question"]
-    answer = request.POST["answer"]
-    hint = request.POST["hint"]
-    category = request.POST["category"]
-    new_joke = Joke(creator=creator, question=question, answer=answer, hint=hint, category=category)
-    new_joke.save()
-    print('NEW JOKE ADDED?', new_joke.id)
-
-    return HttpResponseRedirect(reverse('jt:random_joke'))
