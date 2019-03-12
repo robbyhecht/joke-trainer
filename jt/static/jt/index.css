@@ -19,8 +19,8 @@
   font-weight: bold;
 }
 
-.searchfield {
-  /* margin-top: 9px; */
+#searchbox {
+  margin-bottom: 0px;
 }
 
 .log-button {

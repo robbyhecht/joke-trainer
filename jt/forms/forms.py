@@ -1,5 +1,5 @@
 from django.contrib.auth.models import User
-from ..models import Joke
+from ..models import Joke, Category
 from django import forms
 
 class UserForm(forms.ModelForm):
@@ -29,7 +29,8 @@ class NewJokeForm(forms.ModelForm):
   question = forms.CharField(widget=forms.TextInput(attrs={'class':'input'}))
   answer = forms.CharField(widget=forms.TextInput(attrs={'class':'input'}))
   hint = forms.CharField(widget=forms.TextInput(attrs={'class':'input'}))
+  category = forms.ModelMultipleChoiceField(queryset=Category.objects.all())
 
   class Meta:
     model = Joke
-    fields = ('question', 'answer', 'hint')
+    fields = ('question', 'answer', 'hint', 'category')
