@@ -40,4 +40,34 @@ def add_joke(request):
 
     return HttpResponseRedirect(reverse('jt:random_joke'))
 
+def edit_joke(request, pk):
+  if request.method == "GET":
+    newjoke_form = NewJokeForm()
+    joke = Joke.objects.get(pk=pk)
+    category = Category.objects.all()
+    context = {
+      "joke": joke,
+      "category": category,
+      "id": joke.id, 
+      "edit": True,
+      "route": "jt:edit_joke",
+      "question": joke.question,
+      "answer": joke.answer,
+      "hint": joke.hint,
+      "newjoke_form": newjoke_form
+    }
+    return render(request, 'jt/new_joke.html', context)
+
+  if request.method == "POST":
+    joke_to_edit = Joke.objects.get(pk=pk)
+    category = Category.objects.get(pk=request.POST["category"])
+    joke_to_edit.question = request.POST["question"]
+    joke_to_edit.answer = request.POST["answer"]
+    joke_to_edit.hint = request.POST["hint"]
+    joke_to_edit.save()
+
+    addSongAlbum(request.POST["albums"], song_to_edit)
+    add_joke_category(request.POST["category"], joke_to_edit)
+
+    return HttpResponseRedirect(reverse('jt:random_joke'))
     

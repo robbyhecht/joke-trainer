@@ -20,3 +20,4 @@ from .search_bar_views import search
 
 from .add_new_joke import add_joke
 from .add_new_joke import add_joke_category
+from .add_new_joke import edit_joke
