@@ -54,6 +54,7 @@ def add_to_favorites(request):
   UserJoke.objects.create(joke_id = request.POST["joke_id"], user = user)
   return HttpResponseRedirect(reverse("jt:favorites"))
 
+
 def favorites_list(request):
   '''Handles listing jokes by user's favorites...
   User name is accessed in favorite_jokes
@@ -65,52 +66,10 @@ def favorites_list(request):
   context = { 'joke_list' : joke_list }
   return render(request, 'favorite_jokes.html', context)
 
+
 def random_joke(request):
   '''Handles displaying random question and answer on flip card on home page'''
   joke_at_random = Joke.objects.order_by("?")
   for joke in joke_at_random:
     if joke.creator_id is None or joke.creator_id == request.user.id:
       return render (request, 'index.html', { 'joke_at_random' : joke })
-
-
-
-
-
-# def list_by_category(request, id):
-#   '''Handles listing jokes by category...
-#   Category name is accessed in joke_category
-#   joke_content filters using join table to match up jokes with categories'''
-#   # for listing category name
-#   joke_category = get_object_or_404(Category, pk= id)
-#   # for retrieving the joke details to have on cards
-#   all_joke_content = Joke.objects.filter(category = id)
-#   print("ALL JOKE CONTENT", all_joke_content)
-#   joke_content = list()
-#   for joke in all_joke_content:
-#     if joke.creator_id is None or joke.creator_id == request.user.id:
-#       joke_content.append(joke)
-
-#   # assures there is a user before trying to access UserJoke table: an action which requires an active user.
-#   if request.user.is_authenticated:
-#     # retrieves the joke objects included in the UserJoke table
-#     faved_jokes = UserJoke.objects.filter(user = request.user)
-#     for joke in joke_content:
-#       joke.is_favorited_by_user = False
-#       for fav_joke in faved_jokes:
-#         if fav_joke.joke.id == joke.id:
-#           joke.is_favorited_by_user = True
-#   else: faved_jokes = Joke.objects.all()
-
-#   context = { 'joke_category' : joke_category, 'joke_content' : joke_content, 'faved_jokes' : faved_jokes }
-
-#   return render(request, 'joke_category.html', context)
-
-
-
-
-# def random_joke(request):
-#   '''Handles displaying random question and answer on flip card on home page'''
-#   joke_at_random = Joke.objects.order_by("?").first()
-#   context = { 'joke_at_random' : joke_at_random }
-#   print('RANDOMJOKE', context)
-#   return render (request, 'index.html', context)
