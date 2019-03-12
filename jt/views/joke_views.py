@@ -70,6 +70,15 @@ def favorites_list(request):
 def random_joke(request):
   '''Handles displaying random question and answer on flip card on home page'''
   joke_at_random = Joke.objects.order_by("?")
+  if request.user.is_authenticated:
+    faved_jokes = UserJoke.objects.filter(user = request.user)
+    for joke in joke_at_random:
+      joke.is_favorited_by_user = False
+      for fav_joke in faved_jokes:
+        if fav_joke.joke.id == joke.id:
+          joke.is_favorited_by_user = True
+  else: faved_jokes = Joke.objects.all()
+
   for joke in joke_at_random:
     if joke.creator_id is None or joke.creator_id == request.user.id:
-      return render (request, 'index.html', { 'joke_at_random' : joke })
+      return render (request, 'index.html', { 'joke_at_random' : joke, 'faved_jokes' : faved_jokes })
