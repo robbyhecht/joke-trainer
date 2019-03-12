@@ -54,6 +54,7 @@ def add_to_favorites(request):
   UserJoke.objects.create(joke_id = request.POST["joke_id"], user = user)
   return HttpResponseRedirect(reverse("jt:favorites"))
 
+
 def favorites_list(request):
   '''Handles listing jokes by user's favorites...
   User name is accessed in favorite_jokes
@@ -65,9 +66,10 @@ def favorites_list(request):
   context = { 'joke_list' : joke_list }
   return render(request, 'favorite_jokes.html', context)
 
+
 def random_joke(request):
   '''Handles displaying random question and answer on flip card on home page'''
-  joke_at_random = Joke.objects.order_by("?").first()
-  context = { 'joke_at_random' : joke_at_random }
-  print('RANDOMJOKE', context)
-  return render (request, 'index.html', context)
+  joke_at_random = Joke.objects.order_by("?")
+  for joke in joke_at_random:
+    if joke.creator_id is None or joke.creator_id == request.user.id:
+      return render (request, 'index.html', { 'joke_at_random' : joke })
