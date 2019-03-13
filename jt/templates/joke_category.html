@@ -41,13 +41,15 @@
           {% endif %}
           
           <!-- delete joke button -->
+          {% if joke.creator_id == creator %}
           <div class="delete-button-container">
-            <form action="" method="DELETE">
+            <form action="{% url 'jt:delete_joke' %}" method="DELETE">
               {% csrf_token %}
               <input type="hidden" name="joke_id" value="{{joke.id}}">
               <button class="button is-danger is-small delete-button">DELETE</button>
             </form>
           </div>
+          {% endif %}
 
         </div>
         <!-- end buttons -->

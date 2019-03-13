@@ -19,5 +19,6 @@ urlpatterns = [
   path('about', views.about, name = 'about'),
   path('search', views.search, name = 'search'),
   path('add', views.add_joke, name = 'add_joke'),
-  path('edit/<int:id>', views.edit_joke, name = 'edit_joke'),
+  path('delete', views.delete_joke, name = 'delete_joke'),
+  path('edit', views.edit_joke, name = 'edit_joke'),
 ]
