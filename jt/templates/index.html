@@ -58,13 +58,13 @@
 
                 <div class="card-buttons-container">
                   <div class="flip-button-container">
-                    {% if joke.is_favorited_by_user == False %}
+                    {% if joke_at_random.is_favorited_by_user == False %}
                       <a class="button is-success flip-button flip-button-paired" id="flip-button-paired" onclick="flipTheCard('cardtarget')">flip card</a>
                     {% else %}
                       <a class="button is-success flip-button flip-button-solo" onclick="flipTheCard('cardtarget')">flip card</a>
                     {% endif %}
                   </div>
-                  {% if joke.is_favorited_by_user == False %}
+                  {% if joke_at_random.is_favorited_by_user == False %}
                     <div class="favorites-button-container">
                       <form action="{% url 'jt:add_to_favorites' %}" method="POST">
                         {% csrf_token %}
@@ -97,3 +97,26 @@
     </div>
   </div>
 {% endblock %}
+
+
+
+
+
+
+{% comment %}
+{% if joke.is_favorited_by_user == False %}
+<a class="button is-success flip-button flip-button-paired" id="flip-button-paired" onclick="flipTheCard('cardtarget')">flip card</a>
+{% else %}
+<a class="button is-success flip-button flip-button-solo" onclick="flipTheCard('cardtarget')">flip card</a>
+{% endif %}
+</div>
+{% if joke.is_favorited_by_user == False %}
+<div class="favorites-button-container">
+<form action="{% url 'jt:add_to_favorites' %}" method="POST">
+  {% csrf_token %}
+  <input type="hidden" name="joke_id" value="{{joke.id}}">
+  <button class="button is-info is-small" id="add-button">add to favorites</button>
+</form>
+</div>
+{% endif %}
+{% endcomment %}
