@@ -41,7 +41,7 @@
           {% endif %}
           
           <!-- delete joke button -->
-          {% if joke.creator_id == creator %}
+          {% if joke.creator_id %}
           <div class="delete-button-container">
             <form action="{% url 'jt:delete_joke' %}" method="DELETE">
               {% csrf_token %}
@@ -50,6 +50,8 @@
             </form>
           </div>
           {% endif %}
+
+
 
         </div>
         <!-- end buttons -->
