@@ -1,4 +1,27 @@
 {% extends 'index.html' %}
+{% load static %}
+
+{% block indexleft %}
+  <div>
+    <div class="left-column-header" id="favorites-left-header">
+      <h4 class="is-size-5 has-text-centered">A toast to the jokes you love the most</h4>
+    </div>
+    <div class="sidebar-image-container has-text-centered">
+      <img src="{% static 'jt/images/toaster.png' %}" alt="use your brain" width="125px">
+    </div>
+    <!-- <div class="left-column-header" id="favorites-left-header">
+      <h4 class="is-size-5 has-text-centered">A nest for the best</h4>
+    </div>
+    <div class="sidebar-image-container has-text-centered">
+      <img src="{% static 'jt/images/nest.png' %}" alt="use your brain" width="150px">
+    </div> -->
+
+
+    <div class="left-col-text">
+      <!-- <p class="is-size-6 has-text-centered">Use the Joke Trainer cues to commit your favorite jokes to memory</p> -->
+    </div>
+  </div>
+{% endblock %}
 
 {%block indexcenter%}
   <div class="allcards-container">
