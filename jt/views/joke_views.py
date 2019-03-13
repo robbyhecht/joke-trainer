@@ -24,7 +24,6 @@ def list_by_category(request, id):
   joke_category = get_object_or_404(Category, pk= id)
   # for retrieving the joke details to have on cards
   all_joke_content = Joke.objects.filter(category = id)
-  print("ALL JOKE CONTENT", all_joke_content)
   joke_content = list()
   for joke in all_joke_content:
     if joke.creator_id is None or joke.creator_id == request.user.id:
@@ -49,7 +48,6 @@ def list_by_category(request, id):
 @login_required
 def add_to_favorites(request):
   '''Handles adding the selected joke to UserJoke table'''
-  print('REQUEST', request)
   user = request.user
   UserJoke.objects.create(joke_id = request.POST["joke_id"], user = user)
   return HttpResponseRedirect(reverse("jt:favorites"))
@@ -69,7 +67,25 @@ def favorites_list(request):
 
 def random_joke(request):
   '''Handles displaying random question and answer on flip card on home page'''
-  joke_at_random = Joke.objects.order_by("?")
-  for joke in joke_at_random:
+  # get all jokes in random order
+  all_random_jokes = Joke.objects.order_by("?")
+  joke_at_random = list()
+  for joke in all_random_jokes:
     if joke.creator_id is None or joke.creator_id == request.user.id:
-      return render (request, 'index.html', { 'joke_at_random' : joke })
+      joke_at_random.append(joke)
+
+  # to avoid crash, limit to authenticated users before filtering by user
+  if request.user.is_authenticated:
+    # filter by current user to establish connection with favorited jokes
+    faved_jokes = UserJoke.objects.filter(user = request.user)
+    for joke in joke_at_random:
+      joke.is_favorited_by_user = False
+      for fav_joke in faved_jokes:
+        # compare each joke in the full collection to each joke in the user's favorited jokes
+        if fav_joke.joke.id == joke.id:
+          joke.is_favorited_by_user = True
+  else: faved_jokes = Joke.objects.all()
+
+  for joke in joke_at_random:
+    return render (request, 'index.html', { 'joke_at_random' : joke, 'faved_jokes' : faved_jokes })
+
