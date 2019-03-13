@@ -7,16 +7,6 @@ from django.urls import reverse
 from jt.models import Category, Joke, JokeCategory, UserJoke
 from jt.forms import NewJokeForm
 
-# helper function used by add and edit new joke functions
-def add_joke_category(form_category, joke):
-  for category_id in form_category:
-    category = Category.objects.get(pk=category_id)
-    joke_category_pairing = JokeCategory.objects.filter(joke=joke, category=category)
-    if joke_category_pairing:
-      pass
-    else:
-      JokeCategory.objects.create(joke=joke, category=category)
-
 @login_required
 def add_joke(request):
   '''Handles user adding a new joke to the database'''
@@ -36,7 +26,10 @@ def add_joke(request):
     new_joke.save()
     print('NEW JOKE ADDED?', new_joke.id)
 
-    add_joke_category(request.POST["category"], new_joke)
+    for category_id in category:
+      category = Category.objects.get(pk=category_id)
+      JokeCategory.objects.create(joke=new_joke, category=category)
+      request.POST["category"], new_joke
 
     return HttpResponseRedirect(reverse('jt:random_joke'))
 
@@ -70,4 +63,5 @@ def edit_joke(request, pk):
     add_joke_category(request.POST["category"], joke_to_edit)
 
     return HttpResponseRedirect(reverse('jt:random_joke'))
+    
     

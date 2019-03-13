@@ -19,5 +19,4 @@ from .favorite_views import delete_from_favorites
 from .search_bar_views import search
 
 from .new_joke_views import add_joke
-from .new_joke_views import add_joke_category
 from .new_joke_views import edit_joke
