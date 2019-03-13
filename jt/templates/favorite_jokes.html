@@ -49,7 +49,7 @@
             <a class="button is-success flip-button flip-button-paired" onclick="flipTheCard('cardtarget-{{joke.id}}')">flip card</a>
           </div>
           <div class="favorites-button-container">
-            <form action="{% url 'jt:delete_from_favorites' joke.id %}" method="DELETE">
+            <form action="{% url 'jt:remove_from_favorites' joke.id %}" method="DELETE">
               {% csrf_token %}
               <input type="hidden" name="id" value="{{id}}">
               <button class="button is-danger is-small" id="remove-button">remove</button>

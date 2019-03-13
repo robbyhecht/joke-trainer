@@ -20,6 +20,8 @@
             <h3 class="card-text">{{ joke.question }}</h3>
           </div>
         </div>
+
+        <!-- buttons -->
         <div class="card-buttons-container">
           <div class="flip-button-container">
             {% if joke.is_favorited_by_user == False %}
@@ -37,7 +39,19 @@
               </form>
             </div>
           {% endif %}
+          
+          <!-- delete joke button -->
+          <div class="delete-button-container">
+            <form action="" method="DELETE">
+              {% csrf_token %}
+              <input type="hidden" name="joke_id" value="{{joke.id}}">
+              <button class="button is-danger is-small delete-button">DELETE</button>
+            </form>
+          </div>
+
         </div>
+        <!-- end buttons -->
+
       </div>
     {% endfor %}
 

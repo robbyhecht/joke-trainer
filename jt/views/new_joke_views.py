@@ -33,6 +33,12 @@ def add_joke(request):
 
     return HttpResponseRedirect(reverse('jt:random_joke'))
 
+
+# def delete_joke(request, pk):
+
+
+
+
 def edit_joke(request, pk):
   if request.method == "GET":
     newjoke_form = NewJokeForm()
@@ -63,5 +69,3 @@ def edit_joke(request, pk):
     add_joke_category(request.POST["category"], joke_to_edit)
 
     return HttpResponseRedirect(reverse('jt:random_joke'))
-    
-    
