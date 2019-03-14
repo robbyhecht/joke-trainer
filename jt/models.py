@@ -34,7 +34,7 @@ class Category(models.Model):
 class JokeCategory(models.Model):
   '''join class for the many to many connection between jokes and their categories'''
   category = models.ForeignKey(Category, on_delete=models.PROTECT)
-  joke = models.ForeignKey(Joke, on_delete=models.PROTECT)
+  joke = models.ForeignKey(Joke, on_delete=models.CASCADE)
 
 class UserJoke(models.Model):
   '''join class for users' favorite jokes'''
