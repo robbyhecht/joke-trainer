@@ -36,11 +36,10 @@ def add_joke(request):
 
 def delete_joke(request, id):
   '''Handles deletion of a joke from the Joke table- only accessible if creator_id matches user'''
-  this_joke = get_object_or_404(Joke, pk = id)
-  print("JOKE", joke)
-  # Joke.objects.filter(creator = request.creator_id).get(joke = joke).delete()
-  this_joke.delete()
+  joke_for_deletion = Joke.objects.get(pk=id)
+  joke_for_deletion.delete()
   return HttpResponseRedirect(reverse("jt:random_joke"))
+
 
 
   #   def delete_joke(request, pk):
