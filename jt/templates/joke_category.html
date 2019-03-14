@@ -8,6 +8,7 @@
 
     {% for joke in joke_content %}
       <div class="singlecard-container">
+
         <div
           class="flip3D"
           id="cardtarget-{{joke.id}}">
@@ -21,15 +22,46 @@
           </div>
         </div>
 
-        <!-- buttons -->
+        <!-- start buttons -->
+
         <div class="card-buttons-container">
-          <div class="flip-button-container">
-            {% if joke.is_favorited_by_user == False %}
-            <a class="button is-success flip-button flip-button-paired" id="flip-button-paired" onclick="flipTheCard('cardtarget-{{joke.id}}')">flip card</a>
-            {% else %}
-            <a class="button is-success flip-button flip-button-solo" onclick="flipTheCard('cardtarget-{{joke.id}}')">flip card</a>
+
+          <div class="triple-button-container">
+
+            <!-- edit joke button -->
+            {% if joke.creator_id %}
+              <div class="edit-button-container">
+                <form action="{% url 'jt:edit_joke' joke.id %}" method="GET">
+                  {% csrf_token %}
+                  <input type="hidden" name="joke_for_edit" value="{{joke.id}}">
+                  <button class="button is-dark is-small" id="edit-button">EDIT</button>
+                </form>
+              </div>
             {% endif %}
+
+            <!-- flip card button -->
+            <div class="flip-button-container">
+              {% if joke.is_favorited_by_user == False %}
+                <a class="button is-success flip-button flip-button-paired" id="flip-button-paired" onclick="flipTheCard('cardtarget-{{joke.id}}')">flip card</a>
+              {% else %}
+                <a class="button is-success flip-button flip-button-solo" onclick="flipTheCard('cardtarget-{{joke.id}}')">flip card</a>
+              {% endif %}
+            </div>
+
+            <!-- delete joke button -->
+            {% if joke.creator_id %}
+              <div class="delete-button-container">
+                <form action="{% url 'jt:delete_joke' joke.id %}" method="DELETE">
+                  {% csrf_token %}
+                  <input type="hidden" name="joke" value="{{joke.id}}">
+                  <button class="button is-danger is-small" id="delete-button">DELETE</button>
+                </form>
+              </div>
+            {% endif %}
+            
           </div>
+
+          <!-- is favorited button -->
           {% if joke.is_favorited_by_user == False %}
             <div class="favorites-button-container">
               <form action="{% url 'jt:add_to_favorites' %}" method="POST">
@@ -39,30 +71,6 @@
               </form>
             </div>
           {% endif %}
-
-          <!-- edit joke button -->
-          {% if joke.creator_id %}
-            <div class="edit-button-container">
-              <form action="{% url 'jt:edit_joke' joke.id %}" method="GET">
-                {% csrf_token %}
-                <input type="hidden" name="joke_for_edit" value="{{joke.id}}">
-                <button class="button is-dark is-small edit-button">edit</button>
-              </form>
-            </div>
-          {% endif %}
-          
-          <!-- delete joke button -->
-          {% if joke.creator_id %}
-            <div class="delete-button-container">
-              <form action="{% url 'jt:delete_joke' joke.id %}" method="DELETE">
-                {% csrf_token %}
-                <input type="hidden" name="joke" value="{{joke.id}}">
-                <button class="button is-danger is-small delete-button">DELETE</button>
-              </form>
-            </div>
-          {% endif %}
-
-
 
         </div>
         <!-- end buttons -->
