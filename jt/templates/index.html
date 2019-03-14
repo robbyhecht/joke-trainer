@@ -15,25 +15,25 @@
                     <p class="is-size-6 has-text-centered left-col-text">Cruise the Jokes</p>
                   </div>
                 <div class="sidebar-image-container has-text-centered">
-                  <img src="{% static 'jt/images/interested_at_computer.png' %}" alt="interested in computer" width="80px">
+                  <a href="{% url 'jt:random_joke' %}"><img src="{% static 'jt/images/interested_at_computer.png' %}" alt="interested in computer" width="50px"></a>
                 </div>
                 <div>
                   <p class="is-size-6 has-text-centered left-col-text">Add Your Own</p>
                 </div>
                 <div class="sidebar-image-container has-text-centered">
-                  <img src="{% static 'jt/images/sewing_machine.png' %}" alt="thought bubble" width="70px">
+                  <a href="{% url 'jt:add_joke' %}"><img src="{% static 'jt/images/sewing_machine.png' %}" alt="thought bubble" width="50px"></a>
                 </div>
                 <div>
                   <p class="is-size-6 has-text-centered left-col-text">Save Your Favorites</p>
                 </div>
                 <div class="sidebar-image-container has-text-centered">
-                  <img src="{% static 'jt/images/heart.svg' %}" alt="string around finger" width="80px">
+                    <a href="{% url 'jt:favorites' %}"><img src="{% static 'jt/images/heart.svg' %}" alt="heart" width="50px"></a>
                 </div>
                 <div>
                   <p class="is-size-6 has-text-centered left-col-text" id="repertoir-text">Build Your Repertoire</p>
                 </div>
                 <div class="sidebar-image-container has-text-centered">
-                  <img src="{% static 'jt/images/jester_hat.png' %}" alt="jester hat" width="80px">
+                  <a href="{% url 'jt:favorites_trainer' %}"><img src="{% static 'jt/images/jester_hat.png' %}" alt="jester hat" width="50px"></a>
                 </div>
               </div>
             </div>

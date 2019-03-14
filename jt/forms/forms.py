@@ -29,7 +29,7 @@ class NewJokeForm(forms.ModelForm):
   question = forms.CharField(widget=forms.TextInput(attrs={'class':'input'}))
   answer = forms.CharField(widget=forms.TextInput(attrs={'class':'input'}))
   hint = forms.CharField(widget=forms.TextInput(attrs={'class':'input'}))
-  category = forms.ModelMultipleChoiceField(queryset=Category.objects.all())
+  category = forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple(attrs={'class':'category-choices'}), queryset=Category.objects.all())
 
   class Meta:
     model = Joke
