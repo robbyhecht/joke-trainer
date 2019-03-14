@@ -20,5 +20,5 @@ urlpatterns = [
   path('search', views.search, name = 'search'),
   path('add', views.add_joke, name = 'add_joke'),
   path('delete/<int:id>', views.delete_joke, name = 'delete_joke'),
-  path('edit', views.edit_joke, name = 'edit_joke'),
+  path('edit/<int:id>', views.edit_joke, name = 'edit_joke'),
 ]

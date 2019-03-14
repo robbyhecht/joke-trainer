@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+{%load static%}
+
+{%block indexleft%}
+{%endblock%}
+
+{%block indexcenter%}
+  <div class="editjoke-container">
+    <h3 class="title is-size3 auth-header">Edit Your Joke</h3>
+    <form action="{% url 'jt:edit_joke' joke.id %}" method="POST">
+      {% csrf_token %}
+      {{ editjoke_form }}
+      <div class="auth-button-container has-text-centered">
+        <button class="button is-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+{%endblock%}
+
+{%block indexright%}
+{%endblock%}
