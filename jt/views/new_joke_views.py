@@ -33,6 +33,31 @@ def add_joke(request):
 
     return HttpResponseRedirect(reverse('jt:random_joke'))
 
+
+def delete_joke(request, id):
+  '''Handles deletion of a joke from the Joke table- only accessible if creator_id matches user'''
+  joke_for_deletion = Joke.objects.get(pk=id)
+  joke_for_deletion.delete()
+  return HttpResponseRedirect(reverse("jt:random_joke"))
+
+
+
+  #   def delete_joke(request, pk):
+  # '''Handles deletion of a joke from the Joke table- only accessible if creator_id matches user'''
+  # joke = Joke.objects.get(pk = id)
+  # Joke.objects.filter(creator = request.creator).get(joke = joke).delete()
+  # return HttpResponseRedirect(reverse("jt:random_joke"))
+
+
+
+# def remove_from_favorites(request, id):
+#   '''Handles deletion of a joke from the UserJoke table (a.k.a. favorites)'''
+#   joke = Joke.objects.get(pk = id)
+#   UserJoke.objects.filter(user = request.user).get(joke = joke).delete()
+#   return HttpResponseRedirect(reverse("jt:favorites"))
+
+
+
 def edit_joke(request, pk):
   if request.method == "GET":
     newjoke_form = NewJokeForm()
@@ -63,5 +88,8 @@ def edit_joke(request, pk):
     add_joke_category(request.POST["category"], joke_to_edit)
 
     return HttpResponseRedirect(reverse('jt:random_joke'))
-    
-    
+
+
+
+
+

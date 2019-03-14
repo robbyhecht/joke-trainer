@@ -43,10 +43,8 @@ def add_to_favorites(request):
   return HttpResponseRedirect(reverse("jt:favorites"))
 
 
-def delete_from_favorites(request, id):
+def remove_from_favorites(request, id):
   '''Handles deletion of a joke from the UserJoke table (a.k.a. favorites)'''
   joke = Joke.objects.get(pk = id)
   UserJoke.objects.filter(user = request.user).get(joke = joke).delete()
-  # print('JOKE TO DELETE' joke_to_delete)
   return HttpResponseRedirect(reverse("jt:favorites"))
-  # return(request, 'favorite_jokes.html', context)

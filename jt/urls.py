@@ -15,9 +15,10 @@ urlpatterns = [
   path('favorites', views.favorites_list, name='favorites'),
   path('favorites/trainer', views.favorites_train, name='favorites_trainer'),
   path('category/add', views.add_to_favorites, name='add_to_favorites'),
-  path('favorites/delete/<int:id>', views.delete_from_favorites, name ='delete_from_favorites'),
+  path('favorites/remove/<int:id>', views.remove_from_favorites, name ='remove_from_favorites'),
   path('about', views.about, name = 'about'),
   path('search', views.search, name = 'search'),
   path('add', views.add_joke, name = 'add_joke'),
-  path('edit/<int:id>', views.edit_joke, name = 'edit_joke'),
+  path('delete/<int:id>', views.delete_joke, name = 'delete_joke'),
+  path('edit', views.edit_joke, name = 'edit_joke'),
 ]
