@@ -34,3 +34,13 @@ class NewJokeForm(forms.ModelForm):
   class Meta:
     model = Joke
     fields = ('question', 'answer', 'hint', 'category')
+
+class EditJokeForm(forms.ModelForm):
+
+  question = forms.CharField(widget=forms.TextInput(attrs={'class':'input'}))
+  answer = forms.CharField(widget=forms.TextInput(attrs={'class':'input'}))
+  hint = forms.CharField(widget=forms.TextInput(attrs={'class':'input'}))
+
+  class Meta:
+    model = Joke
+    fields = ('question', 'answer', 'hint')
