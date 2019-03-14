@@ -38,8 +38,60 @@
   padding-right: 5%;
 }
 
-.sidebar-image-container {
-  width: 100px;
+.sidebar-image {
+  width: 95px;
+}
+
+
+/* JOKE TRAINER PAGE */
+
+.left-column-header {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.left-col-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#left-trainer-text {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#repertoir-text {
+  margin-bottom: 10px;
+}
+
+.brain-image {
+  width: 125px;
+}
+
+@media only screen and (max-width: 800px) {
+  .sidebar-image {
+    width: 40px;
+  }
+  .brain-image {
+    width: 60px;
+  }
+  .left-col-text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  #repertoir-text {
+    margin-bottom: 0px;
+  }
+
+  .left-column-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #left-trainer-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 /* RIGHT COLUMN */
@@ -104,21 +156,6 @@
   margin-bottom: 30px;
 }
 
-/* JOKE TRAINER PAGE */
-
-.left-column-header {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.left-col-text {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-#repertoir-text {
-  margin-bottom: 10px;
-}
 
 /* ABOUT SECTION */
 
