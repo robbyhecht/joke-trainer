@@ -42,6 +42,24 @@
   width: 85px;
 }
 
+.sidebar-image-container:hover {
+  color: rgb(92, 92, 92) !important;
+}
+
+.go-to-trainer-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .go-to-trainer-button-container {
+    margin-top: 20px;
+  }
+}
+
+
 
 /* JOKE TRAINER PAGE */
 
@@ -62,6 +80,10 @@
 
 #repertoir-text {
   margin-bottom: 10px;
+}
+
+.explanation-container {
+  margin: 0px 20px 50px 20px;
 }
 
 .brain-image {
@@ -389,6 +411,8 @@
 .pagination-container {
   margin-bottom: 30px;
   margin-top: 35px;
+  display: flex;
+  justify-content: center;
 }
 
 .first {

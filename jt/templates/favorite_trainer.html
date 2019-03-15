@@ -9,9 +9,9 @@
     <div class="sidebar-image-container has-text-centered">
       <img src="{% static 'jt/images/brain.png' %}" alt="use your brain" class="brain-image">
     </div>
-    <div class="left-col-text" id="left-trainer-text">
+    <!-- <div class="left-col-text" id="left-trainer-text">
       <p class="is-size-6 has-text-centered">Use the Joke Trainer cues to commit your favorite jokes to memory</p>
-    </div>
+    </div> -->
   </div>
 {%endblock%}
 
@@ -19,6 +19,9 @@
   <div class="allcards-container">
     <div class="category-header-container center-header-container">
       <h1 class="category-header is-size-3 has-text-weight-semibold">Joke Trainer</h1>
+    </div>
+    <div class="explanation-container">
+      <h3 class="is-size-4 has-text-centered">The cards below have your favorite jokes hidden on the back with only a hint to jog your memory. How many can you remember?</h3>
     </div>
     {% for joke in joke_list %}
       <div class="singlecard-container">
