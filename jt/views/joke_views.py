@@ -6,6 +6,7 @@ from django.template import RequestContext
 from django.urls import reverse
 from jt.models import Category, Joke, JokeCategory, UserJoke
 from jt.forms import NewJokeForm
+from django.core.paginator import Paginator
 
 def list_categories(request):
   '''Handles listing joke categories in sidebar'''
@@ -39,6 +40,10 @@ def list_by_category(request, id):
         if fav_joke.joke.id == joke.id:
           joke.is_favorited_by_user = True
   else: faved_jokes = Joke.objects.all()
+
+  paginator = Paginator(joke_content, 5)
+  page = request.GET.get('page')
+  joke_content = paginator.get_page(page)
 
   context = { 'joke_category' : joke_category, 'joke_content' : joke_content, 'faved_jokes' : faved_jokes }
 
