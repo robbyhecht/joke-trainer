@@ -238,6 +238,10 @@
   /* color: black; */
 }
 
+#hint-text {
+  font-weight: normal;
+}
+
 .flip3D {
   height: 210px;
   display: flex;
