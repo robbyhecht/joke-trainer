@@ -386,6 +386,32 @@
   }
 }
 
+.pagination-container {
+  margin-bottom: 30px;
+  margin-top: 35px;
+}
+
+.first {
+  margin-right: 5px;
+}
+
+.previous {
+  margin-left: 5px;
+}
+
+.next {
+  margin-right: 5px
+}
+
+.last {
+  margin-left: 5px;
+  /* margin-right: 31px; */
+}
+
+.current {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 /* ---- */
 
