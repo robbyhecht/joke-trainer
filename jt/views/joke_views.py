@@ -10,7 +10,7 @@ from jt.forms import NewJokeForm
 def list_categories(request):
   '''Handles listing joke categories in sidebar'''
   # retrieves all categories
-  category_list = Category.objects.all().order_by('name')
+  category_list = Category.objects.all()
   # creates a dictionary to pass departments and employees to the HTML template
   context ={'category_list' : category_list}
   return render(request, 'index.html', context)
