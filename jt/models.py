@@ -23,6 +23,9 @@ class Joke(models.Model):
   def __str__(self):
     return self.hint
 
+  class Meta:
+    ordering = ('question',)
+
 class Category(models.Model):
   '''joke categories'''
   name = models.CharField(max_length=21, blank=False)
@@ -30,6 +33,9 @@ class Category(models.Model):
 
   def __str__(self):
     return self.name
+
+  class Meta:
+    ordering = ('name',)
 
 class JokeCategory(models.Model):
   '''join class for the many to many connection between jokes and their categories'''
