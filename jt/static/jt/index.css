@@ -39,7 +39,7 @@
 }
 
 .sidebar-image {
-  width: 95px;
+  width: 85px;
 }
 
 
@@ -119,10 +119,6 @@
   text-align: center;
 }
 
-/* #favorites-left-header {
-  margin-bottom: 50px;
-} */
-
 /* CENTER COLUMN */
 
 .col-2-div {
@@ -198,9 +194,9 @@
   padding-bottom: 25px;
 }
 
-.registration-container {
-  padding-left: 10%;
-  padding-right: 10%;
+.form-container {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .login-container {
@@ -323,13 +319,13 @@
 .triple-button-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .flip-button-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: center;
   margin-left: 20px;
   margin-right: 20px;
 }

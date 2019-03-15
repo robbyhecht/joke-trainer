@@ -33,13 +33,13 @@ class Category(models.Model):
 
 class JokeCategory(models.Model):
   '''join class for the many to many connection between jokes and their categories'''
-  category = models.ForeignKey(Category, on_delete=models.PROTECT)
+  category = models.ForeignKey(Category, on_delete=models.CASCADE)
   joke = models.ForeignKey(Joke, on_delete=models.CASCADE)
 
 class UserJoke(models.Model):
   '''join class for users' favorite jokes'''
-  user = models.ForeignKey(User, on_delete=models.PROTECT)
-  joke = models.ForeignKey(Joke, on_delete=models.PROTECT)
+  user = models.ForeignKey(User, on_delete=models.CASCADE)
+  joke = models.ForeignKey(Joke, on_delete=models.CASCADE)
 
   def __str__(self):
     return self.joke.hint

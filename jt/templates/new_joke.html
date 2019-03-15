@@ -5,7 +5,7 @@
 {%endblock%}
 
 {%block indexcenter%}
-  <div class="newjoke-container">
+  <div class="form-container">
     <h3 class="title is-size3 auth-header">Add a Joke</h3>
     <form action="{% url 'jt:add_joke' %}" method="POST">
       {% csrf_token %}
