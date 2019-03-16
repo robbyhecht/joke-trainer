@@ -12,9 +12,6 @@
 .navbar-brand {
   margin-left: 60px;
   margin-right: 30px;
-  /* padding-bottom: 0px; */
-  display: flex;
-  align-content: center !important;
 }
 
 .brand {
@@ -25,6 +22,7 @@
 .navbar-item {
   margin-right: 10px;
   padding: 0px;
+  font-size: 1.1rem;
 }
 
 #searchbox {
@@ -46,12 +44,6 @@
   align-items: center !important;
 }
 
-.navbar-logo-container {
-  /* display: flex !important;
-  align-content: center !important; */
-  /* justify-content: center; */
-}
-
 /* LEFT COLUMN */
 
 .col-1-div {
@@ -62,6 +54,10 @@
 .sidebar-image {
   width: 85px;
 }
+
+/* .sidebar-image:hover {
+  transform: scale(1.1);
+} */
 
 .sidebar-image-container:hover {
   color: rgb(92, 92, 92) !important;
