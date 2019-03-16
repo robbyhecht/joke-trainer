@@ -12,6 +12,9 @@
 .navbar-brand {
   margin-left: 60px;
   margin-right: 30px;
+  /* padding-bottom: 0px; */
+  display: flex;
+  align-content: center !important;
 }
 
 .brand {
@@ -21,6 +24,7 @@
 
 .navbar-item {
   margin-right: 10px;
+  padding: 0px;
 }
 
 #searchbox {
@@ -29,6 +33,23 @@
 
 .log-button {
   margin-right: 10px;
+}
+
+.navbar-logo {
+  padding: 0px;
+  width: 240px;
+  height:53px;
+}
+
+#navbar-logo-link {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.navbar-logo-container {
+  /* display: flex !important;
+  align-content: center !important; */
+  /* justify-content: center; */
 }
 
 /* LEFT COLUMN */
@@ -88,6 +109,10 @@
 
 .brain-image {
   width: 125px;
+}
+
+#trainer-text-link {
+  color: rgb(54, 54, 54)
 }
 
 @media only screen and (max-width: 800px) {

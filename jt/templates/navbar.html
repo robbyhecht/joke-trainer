@@ -7,9 +7,10 @@
 
 <div class="nav-div">
   <nav class="navbar" id="nav" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item brand" href="{% url 'jt:random_joke' %}">
-        <p> JOKE TRAINER </p>
+    <div class="navbar-brand navbar-logo-container">
+      <a class="brand" href="{% url 'jt:random_joke' %}" id="navbar-logo-link">
+        <img src="{% static 'jt/images/joke_trainer_logo.png' %}" alt="Joke Trainer Logo" class="navbar-logo">
+        <!-- <p> JOKE TRAINER </p> -->
       </a>
       <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>

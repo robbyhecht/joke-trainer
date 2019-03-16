@@ -20,9 +20,15 @@
     <div class="category-header-container center-header-container">
       <h1 class="category-header is-size-3 has-text-weight-semibold">My Favorite Jokes</h1>
     </div>
-    <div class="explanation-container">
-      <h3 class="is-size-4 has-text-centered">Your personal library of the best of the best. Head over to the <strong>Trainer</strong> section to work on adding them to your act!</h3>
-    </div>
+    {% if joke_list is None %}
+      <div class="explanation-container">
+        <h3 class="is-size-4 has-text-centered">Add some jokes to your Favorites to get started!</h3>
+      </div>
+    {%else%}
+      <div class="explanation-container">
+        <h3 class="is-size-4 has-text-centered">Your personal library of the best of the best. Head over to the <strong><a href="{% url 'jt:favorites_trainer' %}" class="is-dark" id="trainer-text-link">Trainer</a></strong> section to work on adding them to your act!</h3>
+      </div>
+    {% endif %}
     {% for joke in joke_list %}
       <div class="singlecard-container">
 
