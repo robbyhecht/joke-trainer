@@ -16,35 +16,58 @@
 {%endblock%}
 
 {%block indexcenter%}
-  <div class="allcards-container">
-    <div class="category-header-container center-header-container">
-      <h1 class="category-header is-size-3 has-text-weight-semibold">Joke Trainer</h1>
-    </div>
-    <div class="explanation-container">
-      <h3 class="is-size-4 has-text-centered">The cards below have your favorite jokes hidden on the back with only a hint to jog your memory. How many can you remember?</h3>
-    </div>
-    {% for joke in joke_list %}
-      <div class="singlecard-container">
-        <div
-          class="flip3D"
-          id="cardtarget-{{joke.id}}">
-          <div class="back">
-            <div class="backHeader">
-              <h3 class="card-text card-question">Q: {{ joke.question }}</h3>
-              <br />
-              <h3 class="card-text card-answer">A: {{ joke.answer }} </h3>
+  <div class="all-center-div">
+    <div class="allcards-container">
+      <div class="category-header-container center-header-container">
+        <h1 class="category-header is-size-3 has-text-weight-semibold">Joke Trainer</h1>
+      </div>
+      <div class="explanation-container">
+        <h3 class="is-size-4 has-text-centered">The cards below have your favorite jokes hidden on the back with only a hint to jog your memory. How many can you remember?</h3>
+      </div>
+      {% for joke in joke_list %}
+        <div class="singlecard-container">
+          <div
+            class="flip3D"
+            id="cardtarget-{{joke.id}}">
+            <div class="back">
+              <div class="backHeader">
+                <h3 class="card-text card-question">Q: {{ joke.question }}</h3>
+                <br />
+                <h3 class="card-text card-answer">A: {{ joke.answer }} </h3>
+              </div>
+            </div>
+            <div class="front">
+              <h3 class="card-text" id="hint-text">Hint: <br /><strong>{{ joke.hint }}</strong></h3>
             </div>
           </div>
-          <div class="front">
-            <h3 class="card-text" id="hint-text">Hint: <br /><strong>{{ joke.hint }}</strong></h3>
+          <div class="card-buttons-container">
+            <div class="flip-button-container">
+              <a class="button is-success" onclick="flipTheCard('cardtarget-{{joke.id}}')">flip card</a>
+            </div>
           </div>
         </div>
-        <div class="card-buttons-container">
-          <div class="flip-button-container">
-            <a class="button is-success" onclick="flipTheCard('cardtarget-{{joke.id}}')">flip card</a>
-          </div>
+      {% endfor %}
+    </div>
+
+    <div class="pagination-container">
+      <div class="pagination">
+        <div class="step-links">
+          {% if joke_list.has_previous %}
+            <a href="?page=1" class="first">&laquo; First</a>
+            <a href="?page={{ joke_list.previous_page_number }}" class="previous">Previous</a>
+          {% endif %}
+
+          <span class="current">
+            Page {{ joke_list.number }} of {{ joke_list.paginator.num_pages }}
+          </span>
+
+          {% if joke_list.has_next %}
+            <a href="?page={{ joke_list.next_page_number }}" class="next">Next</a>
+            <a href="?page={{ joke_list.paginator.num_pages }}" class="last">Last &raquo;</a>
+          {% endif %}
         </div>
       </div>
-    {% endfor %}
+    </div>
+
   </div>
 {%endblock%}

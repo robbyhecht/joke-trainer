@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block indexleft %}
-  <div>
+  <div class="all-center-div">
     <div class="left-column-header" id="favorites-left-header">
       <h4 class="is-size-5 has-text-centered">A toast to the jokes you love the most</h4>
     </div>
@@ -16,48 +16,71 @@
 {% endblock %}
 
 {%block indexcenter%}
-  <div class="allcards-container">
-    <div class="category-header-container center-header-container">
-      <h1 class="category-header is-size-3 has-text-weight-semibold">My Favorite Jokes</h1>
-    </div>
-    {% if joke_list is None %}
-      <div class="explanation-container">
-        <h3 class="is-size-4 has-text-centered">Add some jokes to your Favorites to get started!</h3>
+  <div class="all-center-div">
+    <div class="allcards-container">
+      <div class="category-header-container center-header-container">
+        <h1 class="category-header is-size-3 has-text-weight-semibold">My Favorite Jokes</h1>
       </div>
-    {%else%}
-      <div class="explanation-container">
-        <h3 class="is-size-4 has-text-centered">Your personal library of the best of the best. Once you've got a nice collection going, head over to the <strong><a href="{% url 'jt:favorites_trainer' %}" class="is-dark" id="trainer-text-link">Trainer</a></strong> section to work on making them a part of your act!</h3>
-      </div>
-    {% endif %}
-    {% for joke in joke_list %}
-      <div class="singlecard-container">
+      {% if joke_list is None %}
+        <div class="explanation-container">
+          <h3 class="is-size-4 has-text-centered">Add some jokes to your Favorites to get started!</h3>
+        </div>
+      {%else%}
+        <div class="explanation-container">
+          <h3 class="is-size-4 has-text-centered">Your personal library of the best of the best. Once you've got a nice collection going, head over to the <strong><a href="{% url 'jt:favorites_trainer' %}" class="is-dark" id="trainer-text-link">Trainer</a></strong> section to work on making them a part of your act!</h3>
+        </div>
+      {% endif %}
+      {% for joke in joke_list %}
+        <div class="singlecard-container">
 
-        <div
-          class="flip3D"
-          id="cardtarget-{{joke.id}}">
-          <div class="back">
-            <div class="backHeader">
-              <h3 class="card-text">{{ joke.answer }}</h3>
+          <div
+            class="flip3D"
+            id="cardtarget-{{joke.id}}">
+            <div class="back">
+              <div class="backHeader">
+                <h3 class="card-text">{{ joke.answer }}</h3>
+              </div>
+            </div>
+            <div class="front">
+              <h3 class="card-text">{{ joke.question }}</h3>
             </div>
           </div>
-          <div class="front">
-            <h3 class="card-text">{{ joke.question }}</h3>
+
+          <div class="card-buttons-container">
+            <div class="flip-button-container">
+              <a class="button is-success flip-button flip-button-paired" onclick="flipTheCard('cardtarget-{{joke.id}}')">flip card</a>
+            </div>
+            <div class="favorites-button-container">
+              <form action="{% url 'jt:remove_from_favorites' joke.id %}" method="DELETE">
+                {% csrf_token %}
+                <input type="hidden" name="id" value="{{id}}">
+                <button class="button is-danger is-small" id="remove-button">remove</button>
+              </form>
+            </div>
           </div>
         </div>
+      {% endfor %}
+    </div>
 
-        <div class="card-buttons-container">
-          <div class="flip-button-container">
-            <a class="button is-success flip-button flip-button-paired" onclick="flipTheCard('cardtarget-{{joke.id}}')">flip card</a>
-          </div>
-          <div class="favorites-button-container">
-            <form action="{% url 'jt:remove_from_favorites' joke.id %}" method="DELETE">
-              {% csrf_token %}
-              <input type="hidden" name="id" value="{{id}}">
-              <button class="button is-danger is-small" id="remove-button">remove</button>
-            </form>
-          </div>
+    <div class="pagination-container">
+      <div class="pagination">
+        <div class="step-links">
+          {% if joke_list.has_previous %}
+            <a href="?page=1" class="first">&laquo; First</a>
+            <a href="?page={{ joke_list.previous_page_number }}" class="previous">Previous</a>
+          {% endif %}
+
+          <span class="current">
+            Page {{ joke_list.number }} of {{ joke_list.paginator.num_pages }}
+          </span>
+
+          {% if joke_list.has_next %}
+            <a href="?page={{ joke_list.next_page_number }}" class="next">Next</a>
+            <a href="?page={{ joke_list.paginator.num_pages }}" class="last">Last &raquo;</a>
+          {% endif %}
         </div>
       </div>
-    {% endfor %}
+    </div>
+
   </div>
 {%endblock%}
