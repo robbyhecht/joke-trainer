@@ -1,3 +1,4 @@
+
 /* NAVBAR */
 
 #nav{
@@ -55,9 +56,9 @@
   width: 85px;
 }
 
-/* .sidebar-image:hover {
+.sidebar-image:hover {
   transform: scale(1.1);
-} */
+}
 
 .sidebar-image-container:hover {
   color: rgb(92, 92, 92) !important;
