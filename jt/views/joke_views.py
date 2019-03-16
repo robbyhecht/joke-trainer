@@ -55,7 +55,7 @@ def add_to_favorites(request):
   '''Handles adding the selected joke to UserJoke table'''
   user = request.user
   UserJoke.objects.create(joke_id = request.POST["joke_id"], user = user)
-  return HttpResponseRedirect(reverse("jt:favorites"))
+  return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 
 
 def favorites_list(request):

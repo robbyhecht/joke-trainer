@@ -12,28 +12,28 @@
             <div class="left-column-header">
               <div class="joke-trainer-left-text">
                   <div>
-                    <p class="is-size-6 has-text-centered left-col-text">Cruise the Jokes</p>
+                    <p class="is-size-5 has-text-centered left-col-text">Cruise the Jokes</p>
                   </div>
                 <div class="sidebar-image-container has-text-centered">
-                  <a href="{% url 'jt:random_joke' %}"><img src="{% static 'jt/images/interested_at_computer.png' %}" class="sidebar-image" alt="interested in computer"></a>
+                  <img src="{% static 'jt/images/interested_at_computer.png' %}" class="sidebar-image" alt="interested in computer">
                 </div>
                 <div>
-                  <p class="is-size-6 has-text-centered left-col-text">Add Your Own</p>
+                  <p class="is-size-5 has-text-centered left-col-text">Add Your Own</p>
                 </div>
                 <div class="sidebar-image-container has-text-centered">
-                  <a href="{% url 'jt:add_joke' %}"><img src="{% static 'jt/images/sewing_machine.png' %}" class="sidebar-image" alt="thought bubble"></a>
+                  <img src="{% static 'jt/images/sewing_machine.png' %}" class="sidebar-image" alt="sewing machine">
                 </div>
                 <div>
-                  <p class="is-size-6 has-text-centered left-col-text">Save Your Favorites</p>
+                  <p class="is-size-5 has-text-centered left-col-text">Save Your Favorites</p>
                 </div>
                 <div class="sidebar-image-container has-text-centered">
-                    <a href="{% url 'jt:favorites' %}"><img src="{% static 'jt/images/heart.svg' %}" class="sidebar-image" alt="heart"></a>
+                  <img src="{% static 'jt/images/heart.svg' %}" class="sidebar-image" alt="heart">
                 </div>
                 <div>
-                  <p class="is-size-6 has-text-centered left-col-text" id="repertoir-text">Build Your Repertoire</p>
+                  <p class="is-size-5 has-text-centered left-col-text" id="repertoir-text">Build Your Repertoire</p>
                 </div>
                 <div class="sidebar-image-container has-text-centered">
-                  <a href="{% url 'jt:favorites_trainer' %}"><img src="{% static 'jt/images/jester_hat.png' %}" class="sidebar-image" alt="jester hat"></a>
+                  <img src="{% static 'jt/images/jester_hat.png' %}" class="sidebar-image" alt="jester hat">
                 </div>
               </div>
             </div>
@@ -49,6 +49,9 @@
               <div class="center-header-container">
                 <h1 class="index-header is-size-3 has-text-weight-semibold" id="index-header">Welcome to Joke Trainer!</h1>
               </div>
+              <!-- <div>
+                <img src="{% static 'jt/images/jokeTrainerLogo.png' %}" alt="Joke Trainer Logo" class="joke-trainer-logo">
+              </div> -->
 
               <div id="random-joke-header-container">
                 <h3 class="is-size-4 has-text-centered" id="random-joke-header">Joke of the Moment</h3>
