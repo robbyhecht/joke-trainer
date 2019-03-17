@@ -62,4 +62,4 @@ def delete_joke(request, id):
   '''Handles deletion of a joke from the Joke table- only accessible if creator_id matches user'''
   joke_for_deletion = Joke.objects.get(pk=id)
   joke_for_deletion.delete()
-  return HttpResponseRedirect(reverse("jt:random_joke"))
+  return HttpResponseRedirect(request.META.get('HTTP_REFERER'))

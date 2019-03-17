@@ -50,6 +50,33 @@ def list_by_category(request, id):
   return render(request, 'joke_category.html', context)
 
 
+def list_my_jokes(request):
+  '''Handles listing the jokes added by the user via the link in right sidebar'''
+  my_joke_content = Joke.objects.filter(creator_id = request.user.id)
+  joke_content = list()
+  for joke in my_joke_content:
+      joke_content.append(joke)
+
+  # assures there is a user before trying to access UserJoke table: an action which requires an active user.
+  if request.user.is_authenticated:
+    # retrieves the joke objects included in the UserJoke table
+    faved_jokes = UserJoke.objects.filter(user = request.user)
+    for joke in joke_content:
+      joke.is_favorited_by_user = False
+      for fav_joke in faved_jokes:
+        if fav_joke.joke.id == joke.id:
+          joke.is_favorited_by_user = True
+  else: faved_jokes = Joke.objects.all()
+
+  paginator = Paginator(joke_content, 5)
+  page = request.GET.get('page')
+  joke_content = paginator.get_page(page)
+
+  context = { 'joke_content' : joke_content }
+
+  return render(request, 'my_jokes.html', context)
+
+
 @login_required
 def add_to_favorites(request):
   '''Handles adding the selected joke to UserJoke table'''
@@ -93,4 +120,3 @@ def random_joke(request):
 
   for joke in joke_at_random:
     return render (request, 'index.html', { 'joke_at_random' : joke, 'faved_jokes' : faved_jokes })
-

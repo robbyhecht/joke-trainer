@@ -96,6 +96,13 @@
         <div class="col-3-div">
           {% block indexright%}
             <h2 class="categories-header">CATEGORIES</h2>
+
+            {% if user.is_authenticated %}
+            <div class="my-jokes-link-container">
+              <a href="{% url 'jt:list_my_jokes' %}" class="my-jokes category">My Jokes</a>
+            </div>
+            {% endif %}
+
             <ul class="categories-list">
               {% for category in category_list %}
                 <li><a href="http://localhost:8000/category/{{category.id}}" class="category">{{category.name}}</a></li>

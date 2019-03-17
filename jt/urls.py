@@ -8,6 +8,7 @@ urlpatterns = [
   # path('', views.index, name='index'),
   path('', views.random_joke, name = 'random_joke'),
   path('categories', views.list_categories, name='list_categories'),
+  path('myjokes', views.list_my_jokes, name='list_my_jokes'),
   path('login', views.login_user, name='login'),
   path('logout', views.user_logout, name='logout'),
   path('register', views.register, name='register'),
