@@ -11,9 +11,9 @@
 
             <div class="left-column-header">
               <div class="joke-trainer-left-text">
-                  <div>
-                    <p class="is-size-5 has-text-centered left-col-text">Cruise the Jokes</p>
-                  </div>
+                <div>
+                  <p class="is-size-5 has-text-centered left-col-text">Cruise the Jokes</p>
+                </div>
                 <div class="sidebar-image-container has-text-centered">
                   <img src="{% static 'jt/images/interested_at_computer.png' %}" class="sidebar-image" alt="interested in computer">
                 </div>
@@ -47,11 +47,14 @@
           {%block indexcenter%}
             <div class="allcards-container">
               <div class="center-header-container">
-                <h1 class="index-header is-size-3 has-text-weight-semibold" id="index-header">Welcome to Joke Trainer!</h1>
+                <h1 class="index-header is-size-3 has-text-weight-semibold" id="index-header">Welcome to Joke Trainer</h1>
               </div>
-              <div id="random-joke-header-container">
-                <h3 class="is-size-4 has-text-centered" id="random-joke-header">Joke of the Moment</h3>
+              <div class="explanation-container" id="index-explanation-container">
+                <h4 class="is-size-4 has-text-centered">A curated library of jokes for you to enjoy, customize and learn. Choose a category or use the search bar to get started!</h4>
               </div>
+              <!-- <div id="random-joke-header-container">
+                <h5 class="is-size-5 has-text-centered" id="random-joke-header">Joke of the Moment</h5>
+              </div> -->
 
               <div class="singlecard-container">
                 <div class="flip3D" id="cardtarget">
@@ -93,6 +96,13 @@
         <div class="col-3-div">
           {% block indexright%}
             <h2 class="categories-header">CATEGORIES</h2>
+
+            {% if user.is_authenticated %}
+            <div class="my-jokes-link-container">
+              <a href="{% url 'jt:list_my_jokes' %}" class="my-jokes category">My Jokes</a>
+            </div>
+            {% endif %}
+
             <ul class="categories-list">
               {% for category in category_list %}
                 <li><a href="http://localhost:8000/category/{{category.id}}" class="category">{{category.name}}</a></li>

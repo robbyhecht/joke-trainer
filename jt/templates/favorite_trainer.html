@@ -9,6 +9,9 @@
     <div class="sidebar-image-container has-text-centered">
       <img src="{% static 'jt/images/brain.png' %}" alt="use your brain" class="brain-image">
     </div>
+    <div class="go-to-trainer-button-container">
+      <a href="{% url 'jt:favorites' %}"><button class="button is-dark is-large" id="go-to-trainer-button">Go To Favorites</button></a>
+    </div>
     <!-- <div class="left-col-text" id="left-trainer-text">
       <p class="is-size-6 has-text-centered">Use the Joke Trainer cues to commit your favorite jokes to memory</p>
     </div> -->
@@ -36,7 +39,7 @@
                 <h3 class="card-text card-answer">A: {{ joke.answer }} </h3>
               </div>
             </div>
-            <div class="front">
+            <div class="front hint-container">
               <h3 class="card-text" id="hint-text">Hint: <br /><strong>{{ joke.hint }}</strong></h3>
             </div>
           </div>

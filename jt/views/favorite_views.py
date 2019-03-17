@@ -17,7 +17,6 @@ def favorites_list(request):
   joke_list = []
   for joke in filtered_jokes:
     joke_list.append(Joke.objects.get(pk = joke.joke.id))
-  print('EMPTY', joke_list)
 
   paginator = Paginator(joke_list, 5)
   page = request.GET.get('page')

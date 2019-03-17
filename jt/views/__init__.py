@@ -11,6 +11,7 @@ from .joke_views import random_joke
 from .joke_views import list_by_category
 from .joke_views import add_to_favorites
 from .joke_views import random_joke
+from .joke_views import list_my_jokes
 
 from .favorite_views import favorites_list
 from .favorite_views import favorites_train
