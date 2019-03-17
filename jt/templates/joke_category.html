@@ -26,6 +26,7 @@
 
           <div class="card-buttons-container">
             <div class="triple-button-container">
+
               <!-- edit joke button -->
               {% if joke.creator_id %}
                 <div class="edit-button-container">
@@ -47,15 +48,8 @@
               </div>
 
               <!-- delete joke button -->
-              {% if joke.creator_id %}
-                <div class="delete-button-container">
-                  <form action="{% url 'jt:delete_joke' joke.id %}" method="DELETE">
-                    {% csrf_token %}
-                    <input type="hidden" name="joke" value="{{joke.id}}">
-                    <button class="button is-danger is-small" id="delete-button">DELETE</button>
-                  </form>
-                </div>
-              {% endif %}
+              {% include 'button_modules/delete_joke_component.html'  %}
+
             </div>
             <!-- add to favorites button -->
             {% if joke.is_favorited_by_user == False %}
