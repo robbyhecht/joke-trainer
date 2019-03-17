@@ -55,7 +55,7 @@
                     <p class="modal-card-title">
                       Are you sure you want to delete your joke?
                     </p>
-                    <button class="delete" aria-label="close"></button>
+                    <button class="delete" aria-label="close" onclick="closeDeletionModal('modaltarget-{{joke.id}}')"></button>
                   </header>
                   <footer class="modal-card-foot">
                     {% if joke.creator_id %}
@@ -67,7 +67,7 @@
                         </form>
                       </div>
                     {% endif %}
-                    <button class="button">Cancel</button>
+                    <button class="button" onclick="closeDeletionModal('modaltarget-{{joke.id}}')" >Cancel</button>
                   </footer>
                 </div>
               </div>
