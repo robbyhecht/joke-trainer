@@ -26,6 +26,7 @@
 
           <div class="card-buttons-container">
             <div class="triple-button-container">
+
               <!-- edit joke button -->
               {% if joke.creator_id %}
                 <div class="edit-button-container">
@@ -46,11 +47,7 @@
                 {% endif %}
               </div>
 
-
-
-
               <!-- delete joke button -->
-              
               <div class="modal" id="modaltarget-{{joke.id}}">
                 <div class="modal-background"></div>
                 <div class="modal-card">
@@ -83,15 +80,7 @@
                   </button>
                 </div>
               {% endif %}
-
             </div>
-
-
-
-
-
-
-
 
             <!-- add to favorites button -->
             {% if joke.is_favorited_by_user == False %}

@@ -5,5 +5,10 @@ function flipTheCard(card) {
 
 function deletionModal(modal) {
   let deletion = document.getElementById(modal)
-  deletion.classList.toggle('is-active')
+  deletion.classList.add('is-active')
+}
+
+function closeDeletionModal(modal) {
+  let closeDeletion = document.getElementById(modal)
+  closeDeletion.classList.remove('is-active')
 }
