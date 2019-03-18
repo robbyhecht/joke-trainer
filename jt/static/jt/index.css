@@ -15,33 +15,23 @@
   margin-right: 20px;
 }
 
-.brand {
-  font-size: 23px;
-  font-weight: bold;
-}
-
-.navbar-item {
-  margin-right: 10px;
-  padding: 0px;
-  font-size: 1.1rem;
-}
-
-.navbar-end {
-  margin-right: 10px;
-}
-
-#searchbox {
-  margin-bottom: 0px;
-}
-
-.log-button {
-  margin-right: 35px;
-}
-
 .navbar-logo {
   padding: 0px;
   width: 240px;
   height:53px;
+}
+
+.navbar-item {
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+.navbar-end {
+  margin-right: 45px;
+}
+
+#searchbox {
+  margin-bottom: 0px;
 }
 
 #navbar-logo-link {
@@ -49,11 +39,23 @@
   align-items: center !important;
 }
 
+
 /* LEFT COLUMN */
 
 .col-1-div {
   padding-left: 5%;
   padding-right: 5%;
+}
+
+/* index etc */
+.left-col-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* favorites and trainer */
+.left-column-header {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .sidebar-image {
@@ -64,56 +66,23 @@
   transform: scale(1.1);
 } */
 
-.sidebar-image-container:hover {
-  color: rgb(92, 92, 92) !important;
-}
-
-.go-to-trainer-button-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 45px;
-  margin-bottom: 20px;
-}
-
-@media only screen and (max-width: 800px) {
-  .go-to-trainer-button-container {
-    margin-top: 20px;
-  }
-}
-
-
-
-/* JOKE TRAINER PAGE */
-
-.left-column-header {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.left-col-text {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-#left-trainer-text {
-  margin-top: 40px;
-  margin-bottom: 20px;
+.fav-trainer-side-image {
+  width: 125px;
 }
 
 #repertoir-text {
   margin-bottom: 10px;
 }
 
+.trainer-favorites-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
 .explanation-container {
   margin: 0px 20px 50px 20px;
-}
-
-#index-explanation-container {
-  margin-bottom: 50px;
-}
-
-.brain-image {
-  width: 125px;
 }
 
 #trainer-text-link {
@@ -121,67 +90,34 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .sidebar-image {
-    width: 40px;
-  }
-  .brain-image {
-    width: 60px;
-  }
+
   .left-col-text {
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  #repertoir-text {
-    margin-bottom: 0px;
-  }
-
   .left-column-header {
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  .sidebar-image {
+    width: 40px;
+  }
+  .fav-trainer-side-image {
+    width: 60px;
+  }
+  #repertoir-text {
+    margin-bottom: 0px;
   }
 
   #left-trainer-text {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  .trainer-favorites-button-container {
+    margin-top: 20px;
+  }
 }
 
-/* RIGHT COLUMN */
-
-.categories-header {
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-top: 40px;
-  margin-bottom: 30px;
-}
-
-.my-jokes-link-container {
-  margin-bottom: 10px;
-}
-
-.categories-list li {
-  margin-bottom: 10px;
-}
-
-.category {
-  color: hsl(0, 0%, 21%);
-}
-
-.about-subheader {
-  color: hsl(0, 0%, 21%);
-}
-
-.about-subheader:hover {
-  color: gray;
-}
-
-.category:hover {
-  color: gray;
-}
-
-.col-3-div {
-  text-align: center;
-}
 
 /* CENTER COLUMN */
 
@@ -236,6 +172,43 @@
   }
 }
 
+
+/* RIGHT COLUMN */
+
+.categories-header {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.my-jokes-link-container {
+  margin-bottom: 10px;
+}
+
+.categories-list li {
+  margin-bottom: 10px;
+}
+
+.category {
+  color: hsl(0, 0%, 21%);
+}
+
+.about-subheader {
+  color: hsl(0, 0%, 21%);
+}
+
+.about-subheader:hover {
+  color: gray;
+}
+
+.category:hover {
+  color: gray;
+}
+
+.col-3-div {
+  text-align: center;
+}
 
 
 /* ABOUT SECTION */
@@ -487,7 +460,6 @@
 
 .last {
   margin-left: 5px;
-  /* margin-right: 31px; */
 }
 
 .current {
