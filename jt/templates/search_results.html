@@ -21,67 +21,12 @@
         {% endif %}
       {% endif %}
     </div>
+
     <div>
-      {% for joke in search_results %}
-        <div class="singlecard-container">
-          <div
-            class="flip3D"
-            id="cardtarget-{{joke.id}}">
-            <div class="back">
-              <div class="backHeader">
-                <h3 class="card-text">{{ joke.answer }}</h3>
-              </div>
-            </div>
-            <div class="front">
-              <h3 class="card-text">{{ joke.question }}</h3>
-            </div>
-          </div>
-
-          <!-- start buttons -->
-
-          <div class="card-buttons-container">
-
-            <div class="triple-button-container">
-
-              <!-- edit joke button -->
-              {% if joke.creator_id %}
-                <div class="edit-button-container">
-                  <form action="{% url 'jt:edit_joke' joke.id %}" method="GET">
-                    {% csrf_token %}
-                    <input type="hidden" name="joke_for_edit" value="{{joke.id}}">
-                    <button class="button is-dark is-small" id="edit-button">EDIT</button>
-                  </form>
-                </div>
-              {% endif %}
-
-              <!-- flip card button -->
-              <div class="flip-button-container">
-                {% if joke.is_favorited_by_user == False %}
-                  <a class="button is-success flip-button flip-button-paired" id="flip-button-paired" onclick="flipTheCard('cardtarget-{{joke.id}}')">flip card</a>
-                {% else %}
-                  <a class="button is-success flip-button flip-button-solo" onclick="flipTheCard('cardtarget-{{joke.id}}')">flip card</a>
-                {% endif %}
-              </div>
-
-              <!-- delete joke button -->
-              {% include 'button_modules/delete_joke_component.html'  %}
-          
-            </div>
-
-            <!-- add to favorites button -->
-            {% if joke.is_favorited_by_user == False %}
-              <div class="favorites-button-container">
-                <form action="{% url 'jt:add_to_favorites' %}" method="POST">
-                  {% csrf_token %}
-                  <input type="hidden" name="joke_id" value="{{joke.id}}">
-                  <button class="button is-info is-small" id="add-button">add to favorites</button>
-                </form>
-              </div>
-            {% endif %}
-          </div>
-        </div>
-      {% endfor %}
+      <!-- joke flashcard and buttons -->
+      {% include 'components/joke_content_component.html' %}
     </div>
+
   </div>
 
 
