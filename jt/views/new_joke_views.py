@@ -48,14 +48,14 @@ def edit_joke(request, id):
     print("CONTEXT", context)
     return render(request, template_name, context)
 
-
   elif request.method == "POST":
     joke.question = request.POST["question"]
     joke.answer = request.POST["answer"]
     joke.hint = request.POST["hint"]
     joke.save()
 
-    return HttpResponseRedirect(reverse('jt:random_joke'))
+    next = request.POST.get('next', '/')
+    return HttpResponseRedirect(next)
 
 
 def delete_joke(request, id):

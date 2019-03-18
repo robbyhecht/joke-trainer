@@ -26,7 +26,7 @@
         <div class="edit-button-container">
           <form action="{% url 'jt:edit_joke' joke.id %}" method="GET">
             {% csrf_token %}
-            <input type="hidden" name="joke_for_edit" value="{{joke.id}}">
+            <input type="hidden" name="next" value="{{ request.path }}">
             <button class="button is-dark is-small" id="edit-button">EDIT</button>
           </form>
         </div>
