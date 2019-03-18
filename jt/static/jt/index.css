@@ -415,6 +415,13 @@
   margin-top: 5px;
 }
 
+#delete-button:hover {
+  background-color: hsl(348, 86%, 59%);
+}
+
+.delete-button-modal {
+  margin-right: 10px;
+}
 
 .flip-button {
   width: 110px;
