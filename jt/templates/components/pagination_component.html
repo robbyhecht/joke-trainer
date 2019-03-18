@@ -1,0 +1,21 @@
+{% load static %}
+
+<div class="pagination-container">
+  <div class="pagination">
+    <div class="step-links">
+      {% if joke_content.has_previous %}
+        <a href="?page=1" class="first">&laquo; First</a>
+        <a href="?page={{ joke_content.previous_page_number }}" class="previous">Previous</a>
+      {% endif %}
+
+      <span class="current">
+        Page {{ joke_content.number }} of {{ joke_content.paginator.num_pages }}
+      </span>
+
+      {% if joke_content.has_next %}
+        <a href="?page={{ joke_content.next_page_number }}" class="next">Next</a>
+        <a href="?page={{ joke_content.paginator.num_pages }}" class="last">Last &raquo;</a>
+      {% endif %}
+    </div>
+  </div>
+</div>

@@ -12,17 +12,17 @@ from django.core.paginator import Paginator
 def favorites_list(request):
   '''Handles listing jokes by user's favorites...
   User name is accessed in favorite_jokes
-  joke_list filters using join table to match up jokes with user'''
+  joke_content filters using join table to match up jokes with user'''
   filtered_jokes = UserJoke.objects.filter(user_id = request.user.id).order_by('joke')
-  joke_list = []
+  joke_content = []
   for joke in filtered_jokes:
-    joke_list.append(Joke.objects.get(pk = joke.joke.id))
+    joke_content.append(Joke.objects.get(pk = joke.joke.id))
 
-  paginator = Paginator(joke_list, 5)
+  paginator = Paginator(joke_content, 5)
   page = request.GET.get('page')
-  joke_list = paginator.get_page(page)
+  joke_content = paginator.get_page(page)
 
-  context = { 'joke_list' : joke_list }
+  context = { 'joke_content' : joke_content }
   print("faves", context)
   return render(request, 'favorite_jokes.html', context)
 
@@ -31,18 +31,18 @@ def favorites_list(request):
 def favorites_train(request):
   '''Handles listing jokes by user's favorites...
   User name is accessed in favorite_jokes
-  joke_list filters using join table to match up jokes with user'''
+  joke_content filters using join table to match up jokes with user'''
   filtered_jokes = UserJoke.objects.filter(user_id = request.user.id).order_by('joke')
-  joke_list = []
+  joke_content = []
   for joke in filtered_jokes:
-    joke_list.append(Joke.objects.get(pk = joke.joke.id))
-  print('EMPTY', joke_list)
+    joke_content.append(Joke.objects.get(pk = joke.joke.id))
+  print('EMPTY', joke_content)
 
-  paginator = Paginator(joke_list, 5)
+  paginator = Paginator(joke_content, 5)
   page = request.GET.get('page')
-  joke_list = paginator.get_page(page)
+  joke_content = paginator.get_page(page)
 
-  context = { 'joke_list' : joke_list }
+  context = { 'joke_content' : joke_content }
   print("faves", context)
   return render(request, 'favorite_trainer.html', context)
 
