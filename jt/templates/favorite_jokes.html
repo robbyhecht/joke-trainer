@@ -21,16 +21,10 @@
       <div class="category-header-container center-header-container">
         <h1 class="category-header is-size-3 has-text-weight-semibold">My Favorite Jokes</h1>
       </div>
-      {% if joke_list is None %}
-        <div class="explanation-container">
-          <h3 class="is-size-4 has-text-centered">Add some jokes to your Favorites to get started!</h3>
-        </div>
-      {%else%}
         <div class="explanation-container">
           <h3 class="is-size-4 has-text-centered">Your personal library of the best of the best. Once you've got a nice collection going, head over to the <strong><a href="{% url 'jt:favorites_trainer' %}" class="is-dark" id="trainer-text-link">Trainer</a></strong> section to work on making them part of your act!</h3>
         </div>
-      {% endif %}
-      {% for joke in joke_list %}
+      {% for joke in joke_content %}
         <div class="singlecard-container">
 
           <div
@@ -62,24 +56,9 @@
       {% endfor %}
     </div>
 
-    <div class="pagination-container">
-      <div class="pagination">
-        <div class="step-links">
-          {% if joke_list.has_previous %}
-            <a href="?page=1" class="first">&laquo; First</a>
-            <a href="?page={{ joke_list.previous_page_number }}" class="previous">Previous</a>
-          {% endif %}
-
-          <span class="current">
-            Page {{ joke_list.number }} of {{ joke_list.paginator.num_pages }}
-          </span>
-
-          {% if joke_list.has_next %}
-            <a href="?page={{ joke_list.next_page_number }}" class="next">Next</a>
-            <a href="?page={{ joke_list.paginator.num_pages }}" class="last">Last &raquo;</a>
-          {% endif %}
-        </div>
-      </div>
+    <div>
+      <!-- pagination -->
+      {% include 'components/pagination_component.html' %}
     </div>
 
   </div>

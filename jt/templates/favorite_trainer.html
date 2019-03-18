@@ -12,9 +12,6 @@
     <div class="go-to-trainer-button-container">
       <a href="{% url 'jt:favorites' %}"><button class="button is-dark is-large" id="go-to-trainer-button">Go To Favorites</button></a>
     </div>
-    <!-- <div class="left-col-text" id="left-trainer-text">
-      <p class="is-size-6 has-text-centered">Use the Joke Trainer cues to commit your favorite jokes to memory</p>
-    </div> -->
   </div>
 {%endblock%}
 
@@ -27,7 +24,7 @@
       <div class="explanation-container">
         <h3 class="is-size-4 has-text-centered">The cards below have your favorite jokes hidden on the back with only a hint to jog your memory. How many can you remember?</h3>
       </div>
-      {% for joke in joke_list %}
+      {% for joke in joke_content %}
         <div class="singlecard-container">
           <div
             class="flip3D"
@@ -52,24 +49,9 @@
       {% endfor %}
     </div>
 
-    <div class="pagination-container">
-      <div class="pagination">
-        <div class="step-links">
-          {% if joke_list.has_previous %}
-            <a href="?page=1" class="first">&laquo; First</a>
-            <a href="?page={{ joke_list.previous_page_number }}" class="previous">Previous</a>
-          {% endif %}
-
-          <span class="current">
-            Page {{ joke_list.number }} of {{ joke_list.paginator.num_pages }}
-          </span>
-
-          {% if joke_list.has_next %}
-            <a href="?page={{ joke_list.next_page_number }}" class="next">Next</a>
-            <a href="?page={{ joke_list.paginator.num_pages }}" class="last">Last &raquo;</a>
-          {% endif %}
-        </div>
-      </div>
+    <div>
+      <!-- pagination -->
+      {% include 'components/pagination_component.html' %}
     </div>
 
   </div>
