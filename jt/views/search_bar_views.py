@@ -9,17 +9,17 @@ def search(request):
   if request.method == "POST":
     search_query = request.POST["search_query"]
     if search_query is not "":
-      all_search_results = Joke.objects.filter(question__contains=search_query)
+      all_joke_content = Joke.objects.filter(question__contains=search_query)
 
-      search_results = list()
-      for joke in all_search_results:
+      joke_content = list()
+      for joke in all_joke_content:
         if joke.creator_id is None or joke.creator_id == request.user.id:
-          search_results.append(joke)
-          print("SEARCH RESULTS", search_results)
+          joke_content.append(joke)
+          print("SEARCH RESULTS", joke_content)
 
       if request.user.is_authenticated:
         faved_jokes = UserJoke.objects.filter(user = request.user)
-        for joke in search_results:
+        for joke in joke_content:
           joke.is_favorited_by_user = False
           for fav_joke in faved_jokes:
             if fav_joke.joke.id == joke.id:
@@ -27,10 +27,10 @@ def search(request):
       else: faved_jokes = Joke.objects.all()
 
       context = { 
-        "search_results" : search_results, 
+        "joke_content" : joke_content, 
         "search_query" : search_query, 
-        "number_of" : len(search_results),
-        "no_jokes_found" : True if len(search_results) is 0 else False
+        "number_of" : len(joke_content),
+        "no_jokes_found" : True if len(joke_content) is 0 else False
       }
       print("CONTEXT", context)
 
@@ -44,15 +44,3 @@ def search(request):
 
   else:
     return HttpResponseRedirect(reverse("jt:random_joke"))
-
-
-
-
-
-
-  #   def search(request):
-  # """Shows retrieved jokes when the user makes a search in the navbar search field"""
-  # if request.method == "POST":
-  #   search_query = request.POST["search_query"]
-  #   if search_query is not "":
-  #     search_results = Joke.objects.filter(question__contains=search_query)

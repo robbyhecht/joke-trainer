@@ -1,49 +1,4 @@
-{% extends 'index.html' %}
-
-{% block indexcenter %}
-
-  <div class="main-search-container ">
-
-    <div class="search-header center-header-container">
-      <h1 class="search-header is-size-3 has-text-weight-semibold">Search Results</h1>
-    </div>
-
-    <div class="search-results-number">
-      {% if search_query == "" %}
-        <h6>Give the search bar something to look for, silly!</h6>
-      {% else %}
-        {% if no_jokes_found %}
-          <h6>There are no results for {{ search_query }}</h6>
-        {% else %}
-          <div class="has-text-centered">
-            <h6>{{ number_of }} results for {{ search_query }}:</h6>
-          </div>
-        {% endif %}
-      {% endif %}
-    </div>
-
-    <div>
-      <!-- includes joke flashcard and buttons -->
-      {% include 'joke_content_component.html' %}
-    </div>
-
-  </div>
-
-
-{% endblock %}
-
-
-
-
-
-
-
-
-
-
-
-
-{% comment %}
+{% load static %}
 
 {% for joke in joke_content %}
 <div class="singlecard-container">
@@ -139,5 +94,51 @@
 
 </div>
 {% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+{% comment %}
+
+<div class="delete-container">
+  <div class="modal" id="modaltarget-{{joke.id}}">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">
+          Are you sure you want to delete your joke?
+        </p>
+        <button class="delete" aria-label="close" onclick="closeDeletionModal('modaltarget-{{joke.id}}')"></button>
+      </header>
+      <footer class="modal-card-foot">
+        {% if joke.creator_id %}
+          <div class="delete-button-modal">
+            <form action="{% url 'jt:delete_joke' joke.id %}" method="DELETE">
+              {% csrf_token %}
+              <input type="hidden" name="joke" value="{{joke.id}}">
+              <button class="button is-danger">Delete</button>
+            </form>
+          </div>
+        {% endif %}
+        <button class="button" onclick="closeDeletionModal('modaltarget-{{joke.id}}')" >Cancel</button>
+      </footer>
+    </div>
+  </div>
+  {% if joke.creator_id %}
+    <div class="delete-button-container">
+      <button class="button is-danger is-small" id="delete-button"
+      onclick="deletionModal('modaltarget-{{joke.id}}')">
+        Delete
+      </button>
+    </div>
+  {% endif %}
+</div>
 
 {% endcomment %}
