@@ -7,10 +7,10 @@
       <h4 class="is-size-5 has-text-centered">A toast to the jokes you love the most</h4>
     </div>
     <div class="sidebar-image-container has-text-centered">
-      <img src="{% static 'jt/images/toaster.png' %}" alt="toaster" width="125px">
+      <img src="{% static 'jt/images/toaster.png' %}" alt="toaster" class="fav-trainer-side-image">
     </div>
   </div>
-  <div class="go-to-trainer-button-container">
+  <div class="trainer-favorites-button-container">
     <a href="{% url 'jt:favorites_trainer' %}"><button class="button is-dark is-large" id="go-to-trainer-button">Go To Trainer</button></a>
   </div>
 {% endblock %}
