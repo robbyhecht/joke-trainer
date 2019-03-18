@@ -62,9 +62,9 @@
   width: 85px;
 }
 
-/* .sidebar-image:hover {
+.sidebar-image:hover {
   transform: scale(1.1);
-} */
+}
 
 .fav-trainer-side-image {
   width: 125px;
