@@ -10,6 +10,7 @@
     <form action="{% url 'jt:edit_joke' joke.id %}" method="POST">
       {% csrf_token %}
       {{ editjoke_form }}
+      <input type="hidden" name="next" value="{{ request.GET.next }}">
       <div class="auth-button-container has-text-centered">
         <button class="button is-primary">Submit</button>
       </div>
