@@ -12,7 +12,7 @@
         <img src="{% static 'jt/images/joke_trainer_logo.png' %}" alt="Joke Trainer Logo" class="navbar-logo">
         <!-- <p> JOKE TRAINER </p> -->
       </a>
-      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <a role="button" class="navbar-burger burger " aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -28,7 +28,7 @@
         <a class="navbar-item" href="{% url 'jt:add_joke' %}">Add a Joke</a>
         <form action="{% url 'jt:search' %}" id="searchform" method='POST'>
           {% csrf_token %}
-          <div class="navbar-item field has-addons">
+          <div class="navbar-item field has-addons" id="nav-search">
             <div class="control">
               <input class="input searchfield" id="searchbox" name="search_query" type="text" placeholder="Search...">
             </div>

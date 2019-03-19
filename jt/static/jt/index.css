@@ -10,20 +10,25 @@
   border-bottom: 2px solid hsl(0, 0%, 96%);
 }
 
-.navbar-brand {
-  margin-left: 30px;
-  margin-right: 20px;
-}
-
 .navbar-logo {
   padding: 0px;
   width: 240px;
   height:53px;
 }
 
+.navbar-brand {
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+.navbar-start {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .navbar-item {
-  margin-right: 10px;
-  font-size: 1.1rem;
+  margin-right: 5px;
+  /* font-size: 1.1rem; */
 }
 
 .navbar-end {
@@ -470,11 +475,13 @@
 /* ---- */
 
 .column1 {
-  /* height: 100vh; */
-  overflow: auto;
+  min-height: calc(100vh - 70px);
+}
+
+.column2 {
+  min-height: calc(100vh - 70px);
 }
 
 .column3 {
-  /* height: 200vh; */
-  overflow: auto;
+  min-height: calc(100vh - 70px);
 }
