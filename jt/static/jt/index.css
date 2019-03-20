@@ -51,6 +51,7 @@
 .left-col-text {
   margin-top: 20px;
   margin-bottom: 20px;
+  font-size: 1.05rem;
 }
 /* favorites and trainer */
 .left-column-header {
@@ -59,7 +60,7 @@
 }
 
 .sidebar-image {
-  width: 85px;
+  width: 75px;
 }
 
 .sidebar-image:hover {
@@ -177,7 +178,7 @@
 
 .categories-header {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-top: 40px;
   margin-bottom: 30px;
 }
@@ -257,10 +258,10 @@
   /* color: black; */
 }
 
-#hint-text {
+/* #hint-text {
   font-weight: normal;
   margin-bottom: 35px;
-}
+} */
 
 .flip3D {
   height: 240px;
