@@ -1,145 +1,5 @@
 [
 {
-  "model": "jt.joke",
-  "pk": 1,
-  "fields": {
-    "hint": "Gorilla Nose",
-    "question": "Why do gorillas have such big nostrils?",
-    "answer": "Because they have such big fingers",
-    "creator": null
-  }
-},
-{
-  "model": "jt.joke",
-  "pk": 2,
-  "fields": {
-    "hint": "Socialism Jokes",
-    "question": "When can you tell jokes about socialism?",
-    "answer": "Only when everybody gets them",
-    "creator": null
-  }
-},
-{
-  "model": "jt.joke",
-  "pk": 3,
-  "fields": {
-    "hint": "Fish Concrete",
-    "question": "What did the fish say when he swam into a concrete wall?",
-    "answer": "Dam",
-    "creator": null
-  }
-},
-{
-  "model": "jt.joke",
-  "pk": 4,
-  "fields": {
-    "hint": "Camping Friend",
-    "question": "I wanted to go camping with a friend of mine...",
-    "answer": "But I decided against it because I thought it would be two in tents",
-    "creator": null
-  }
-},
-{
-  "model": "jt.joke",
-  "pk": 5,
-  "fields": {
-    "hint": "Jedi Car",
-    "question": "What kind of car does a Jedi drive?",
-    "answer": "A Toy-Yoda",
-    "creator": null
-  }
-},
-{
-  "model": "jt.joke",
-  "pk": 6,
-  "fields": {
-    "hint": "Chicken Dirt",
-    "question": "Why did the chicken cross the road, roll in the dirt, and cross the road again?",
-    "answer": "Because he was a dirty double-crosser",
-    "creator": null
-  }
-},
-{
-  "model": "jt.joke",
-  "pk": 7,
-  "fields": {
-    "hint": "Duck",
-    "question": "Why did the duck cross the road?",
-    "answer": "To prove he wasn't chicken",
-    "creator": null
-  }
-},
-{
-  "model": "jt.joke",
-  "pk": 8,
-  "fields": {
-    "hint": "12 Chickens",
-    "question": "Why did the 12 chickens cross the road?",
-    "answer": "It dozen really matter",
-    "creator": null
-  }
-},
-{
-  "model": "jt.joke",
-  "pk": 9,
-  "fields": {
-    "hint": "James Bond",
-    "question": "After crossing the road, a chicken goes up to James Bond and asks him, \"What's your name?\"",
-    "answer": "He replies, \"Bond, James Bond. What's yours?\" \"Ken, Chick Ken.\"",
-    "creator": null
-  }
-},
-{
-  "model": "jt.joke",
-  "pk": 10,
-  "fields": {
-    "hint": "Two Playgrounds",
-    "question": "Two playgrounds are on either side of the road...so, why did the children cross the road?",
-    "answer": "To get to the other slide",
-    "creator": null
-  }
-},
-{
-  "model": "jt.joke",
-  "pk": 11,
-  "fields": {
-    "hint": "Indecisive Bee",
-    "question": "What do you call a bee that can't make up its mind?",
-    "answer": "A may-bee",
-    "creator": null
-  }
-},
-{
-  "model": "jt.joke",
-  "pk": 12,
-  "fields": {
-    "hint": "One Minute Birthday",
-    "question": "Did you hear about the old man whose birthday one year lasted only one minute?",
-    "answer": "It was his sixty-second birthday",
-    "creator": null
-  }
-},
-{
-  "model": "jt.joke",
-  "pk": 13,
-  "fields": {
-    "hint": "Weathermen Limbs",
-    "question": "What happened when two weathermen each broke an arm and a leg in an accident?",
-    "answer": "They were worried about the four casts",
-    "creator": null
-  }
-},
-{
-  "model": "jt.joke",
-  "pk": 14,
-  "fields": {
-    "hint": "Leia Thanksgiving",
-    "question": "Why didn't Han Solo like Princess Leia's Thanksgiving Dinner?",
-    "answer": "It was Chewie",
-    "creator": null
-  }
-},
-{
   "model": "jt.category",
   "pk": 1,
   "fields": {
@@ -183,20 +43,6 @@
 },
 {
   "model": "jt.category",
-  "pk": 7,
-  "fields": {
-    "name": "One Liners"
-  }
-},
-{
-  "model": "jt.category",
-  "pk": 8,
-  "fields": {
-    "name": "Pickup Lines"
-  }
-},
-{
-  "model": "jt.category",
   "pk": 9,
   "fields": {
     "name": "Star Wars"
@@ -214,6 +60,83 @@
   "pk": 11,
   "fields": {
     "name": "Religion"
+  }
+},
+{
+  "model": "jt.category",
+  "pk": 12,
+  "fields": {
+    "name": "Obvious"
+  }
+},
+{
+  "model": "jt.category",
+  "pk": 14,
+  "fields": {
+    "name": "What Do You"
+  }
+},
+{
+  "model": "jt.category",
+  "pk": 15,
+  "fields": {
+    "name": "Walks into a Bar"
+  }
+},
+{
+  "model": "jt.category",
+  "pk": 17,
+  "fields": {
+    "name": "Science"
+  }
+},
+{
+  "model": "jt.category",
+  "pk": 18,
+  "fields": {
+    "name": "Grammar"
+  }
+},
+{
+  "model": "jt.category",
+  "pk": 19,
+  "fields": {
+    "name": "Pirate"
+  }
+},
+{
+  "model": "jt.category",
+  "pk": 20,
+  "fields": {
+    "name": "Food"
+  }
+},
+{
+  "model": "jt.category",
+  "pk": 21,
+  "fields": {
+    "name": "Wisdom"
+  }
+},
+{
+  "model": "jt.category",
+  "pk": 22,
+  "fields": {
+    "name": "Music"
+  }
+},
+{
+  "model": "jt.category",
+  "pk": 23,
+  "fields": {
+    "name": "Holiday"
+  }
+},
+{
+  "model": "jt.category",
+  "pk": 24,
+  "fields": {
+    "name": "Numbers"
   }
 },
 {
@@ -329,6 +252,918 @@
   }
 },
 {
+  "model": "jt.jokecategory",
+  "pk": 15,
+  "fields": {
+    "category": 11,
+    "joke": 15
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 17,
+  "fields": {
+    "category": 6,
+    "joke": 17
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 18,
+  "fields": {
+    "category": 1,
+    "joke": 18
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 19,
+  "fields": {
+    "category": 6,
+    "joke": 18
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 20,
+  "fields": {
+    "category": 1,
+    "joke": 19
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 23,
+  "fields": {
+    "category": 6,
+    "joke": 22
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 24,
+  "fields": {
+    "category": 11,
+    "joke": 23
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 25,
+  "fields": {
+    "category": 14,
+    "joke": 22
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 26,
+  "fields": {
+    "category": 6,
+    "joke": 23
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 27,
+  "fields": {
+    "category": 15,
+    "joke": 23
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 28,
+  "fields": {
+    "category": 10,
+    "joke": 23
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 50,
+  "fields": {
+    "category": 12,
+    "joke": 39
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 51,
+  "fields": {
+    "category": 10,
+    "joke": 40
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 52,
+  "fields": {
+    "category": 6,
+    "joke": 41
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 53,
+  "fields": {
+    "category": 10,
+    "joke": 42
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 54,
+  "fields": {
+    "category": 12,
+    "joke": 42
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 55,
+  "fields": {
+    "category": 1,
+    "joke": 43
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 56,
+  "fields": {
+    "category": 6,
+    "joke": 43
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 57,
+  "fields": {
+    "category": 6,
+    "joke": 44
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 58,
+  "fields": {
+    "category": 10,
+    "joke": 44
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 60,
+  "fields": {
+    "category": 12,
+    "joke": 46
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 61,
+  "fields": {
+    "category": 10,
+    "joke": 47
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 62,
+  "fields": {
+    "category": 15,
+    "joke": 48
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 63,
+  "fields": {
+    "category": 10,
+    "joke": 49
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 64,
+  "fields": {
+    "category": 6,
+    "joke": 50
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 65,
+  "fields": {
+    "category": 18,
+    "joke": 50
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 66,
+  "fields": {
+    "category": 1,
+    "joke": 51
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 67,
+  "fields": {
+    "category": 6,
+    "joke": 51
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 69,
+  "fields": {
+    "category": 10,
+    "joke": 53
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 70,
+  "fields": {
+    "category": 17,
+    "joke": 53
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 71,
+  "fields": {
+    "category": 2,
+    "joke": 54
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 72,
+  "fields": {
+    "category": 18,
+    "joke": 54
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 73,
+  "fields": {
+    "category": 10,
+    "joke": 55
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 74,
+  "fields": {
+    "category": 19,
+    "joke": 55
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 75,
+  "fields": {
+    "category": 19,
+    "joke": 23
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 76,
+  "fields": {
+    "category": 10,
+    "joke": 56
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 77,
+  "fields": {
+    "category": 20,
+    "joke": 15
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 78,
+  "fields": {
+    "category": 20,
+    "joke": 46
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 80,
+  "fields": {
+    "category": 6,
+    "joke": 58
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 81,
+  "fields": {
+    "category": 21,
+    "joke": 58
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 82,
+  "fields": {
+    "category": 1,
+    "joke": 59
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 83,
+  "fields": {
+    "category": 6,
+    "joke": 59
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 84,
+  "fields": {
+    "category": 10,
+    "joke": 60
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 85,
+  "fields": {
+    "category": 6,
+    "joke": 61
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 86,
+  "fields": {
+    "category": 10,
+    "joke": 62
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 87,
+  "fields": {
+    "category": 1,
+    "joke": 63
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 90,
+  "fields": {
+    "category": 6,
+    "joke": 66
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 91,
+  "fields": {
+    "category": 9,
+    "joke": 66
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 92,
+  "fields": {
+    "category": 5,
+    "joke": 67
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 93,
+  "fields": {
+    "category": 5,
+    "joke": 68
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 94,
+  "fields": {
+    "category": 17,
+    "joke": 68
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 95,
+  "fields": {
+    "category": 3,
+    "joke": 69
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 96,
+  "fields": {
+    "category": 5,
+    "joke": 69
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 97,
+  "fields": {
+    "category": 5,
+    "joke": 70
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 98,
+  "fields": {
+    "category": 22,
+    "joke": 70
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 99,
+  "fields": {
+    "category": 10,
+    "joke": 71
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 100,
+  "fields": {
+    "category": 1,
+    "joke": 72
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 101,
+  "fields": {
+    "category": 10,
+    "joke": 72
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 102,
+  "fields": {
+    "category": 6,
+    "joke": 73
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 103,
+  "fields": {
+    "category": 1,
+    "joke": 74
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 104,
+  "fields": {
+    "category": 10,
+    "joke": 74
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 105,
+  "fields": {
+    "category": 10,
+    "joke": 75
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 106,
+  "fields": {
+    "category": 20,
+    "joke": 75
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 107,
+  "fields": {
+    "category": 1,
+    "joke": 76
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 108,
+  "fields": {
+    "category": 6,
+    "joke": 76
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 109,
+  "fields": {
+    "category": 14,
+    "joke": 76
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 110,
+  "fields": {
+    "category": 1,
+    "joke": 77
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 111,
+  "fields": {
+    "category": 6,
+    "joke": 78
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 112,
+  "fields": {
+    "category": 10,
+    "joke": 78
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 113,
+  "fields": {
+    "category": 1,
+    "joke": 79
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 114,
+  "fields": {
+    "category": 6,
+    "joke": 79
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 115,
+  "fields": {
+    "category": 1,
+    "joke": 80
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 116,
+  "fields": {
+    "category": 6,
+    "joke": 80
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 117,
+  "fields": {
+    "category": 1,
+    "joke": 81
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 118,
+  "fields": {
+    "category": 2,
+    "joke": 81
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 119,
+  "fields": {
+    "category": 10,
+    "joke": 81
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 120,
+  "fields": {
+    "category": 1,
+    "joke": 82
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 121,
+  "fields": {
+    "category": 6,
+    "joke": 82
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 122,
+  "fields": {
+    "category": 6,
+    "joke": 83
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 123,
+  "fields": {
+    "category": 10,
+    "joke": 83
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 124,
+  "fields": {
+    "category": 19,
+    "joke": 83
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 125,
+  "fields": {
+    "category": 6,
+    "joke": 84
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 126,
+  "fields": {
+    "category": 23,
+    "joke": 84
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 127,
+  "fields": {
+    "category": 6,
+    "joke": 85
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 128,
+  "fields": {
+    "category": 23,
+    "joke": 85
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 129,
+  "fields": {
+    "category": 10,
+    "joke": 86
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 130,
+  "fields": {
+    "category": 18,
+    "joke": 86
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 131,
+  "fields": {
+    "category": 20,
+    "joke": 86
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 132,
+  "fields": {
+    "category": 24,
+    "joke": 87
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 133,
+  "fields": {
+    "category": 6,
+    "joke": 88
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 134,
+  "fields": {
+    "category": 24,
+    "joke": 88
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 135,
+  "fields": {
+    "category": 10,
+    "joke": 89
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 136,
+  "fields": {
+    "category": 10,
+    "joke": 90
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 137,
+  "fields": {
+    "category": 14,
+    "joke": 90
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 138,
+  "fields": {
+    "category": 20,
+    "joke": 90
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 139,
+  "fields": {
+    "category": 6,
+    "joke": 91
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 140,
+  "fields": {
+    "category": 20,
+    "joke": 91
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 141,
+  "fields": {
+    "category": 1,
+    "joke": 92
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 142,
+  "fields": {
+    "category": 6,
+    "joke": 92
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 143,
+  "fields": {
+    "category": 14,
+    "joke": 92
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 144,
+  "fields": {
+    "category": 6,
+    "joke": 93
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 145,
+  "fields": {
+    "category": 1,
+    "joke": 94
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 146,
+  "fields": {
+    "category": 10,
+    "joke": 94
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 147,
+  "fields": {
+    "category": 6,
+    "joke": 95
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 148,
+  "fields": {
+    "category": 20,
+    "joke": 95
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 149,
+  "fields": {
+    "category": 1,
+    "joke": 96
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 150,
+  "fields": {
+    "category": 18,
+    "joke": 96
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 151,
+  "fields": {
+    "category": 3,
+    "joke": 97
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 152,
+  "fields": {
+    "category": 6,
+    "joke": 97
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 153,
+  "fields": {
+    "category": 1,
+    "joke": 98
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 154,
+  "fields": {
+    "category": 6,
+    "joke": 98
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 158,
+  "fields": {
+    "category": 1,
+    "joke": 101
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 188,
+  "fields": {
+    "category": 10,
+    "joke": 126
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 192,
+  "fields": {
+    "category": 6,
+    "joke": 129
+  }
+},
+{
   "model": "sessions.session",
   "pk": "6mdm54n9f3il12nvsyf1euwquwpsigyr",
   "fields": {
@@ -370,6 +1205,14 @@
 },
 {
   "model": "sessions.session",
+  "pk": "p7zyhsah1xx1hz38lmkzshu1g35psm9g",
+  "fields": {
+    "session_data": "ZWFmZWViZWE2M2JhZjJiNGUyMWQ2MjgxMTY0YWRhNjEwYzQ3MDAwYzp7Il9hdXRoX3VzZXJfaWQiOiIxMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiMTZjNDViY2QzNzg3YjRiMGMwNzBkOGVkYzdiY2Y4YTMxNWIwODc4ZCJ9",
+    "expire_date": "2019-04-03T19:50:11.492Z"
+  }
+},
+{
+  "model": "sessions.session",
   "pk": "qh2hn4mviavfjdp18gs1gecrx1bxqooa",
   "fields": {
     "session_data": "MzllY2ZhNTQ1OGJkMDk5MjVkMmU5MTBhMGE2YjQ4ZjcxMTViYjJmMzp7fQ==",
@@ -390,6 +1233,14 @@
   "fields": {
     "session_data": "MzllY2ZhNTQ1OGJkMDk5MjVkMmU5MTBhMGE2YjQ4ZjcxMTViYjJmMzp7fQ==",
     "expire_date": "2019-03-20T17:05:57.374Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "znkccmc881m8neq3x87bsi31y2z6cwc7",
+  "fields": {
+    "session_data": "ZWFmZWViZWE2M2JhZjJiNGUyMWQ2MjgxMTY0YWRhNjEwYzQ3MDAwYzp7Il9hdXRoX3VzZXJfaWQiOiIxMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiMTZjNDViY2QzNzg3YjRiMGMwNzBkOGVkYzdiY2Y4YTMxNWIwODc4ZCJ9",
+    "expire_date": "2019-04-03T19:50:11.500Z"
   }
 },
 {
@@ -829,7 +1680,7 @@
   "pk": 7,
   "fields": {
     "password": "pbkdf2_sha256$120000$7wSiO5sLpmtz$5Mfph8O0uQEfeUq4qS5MHLz0oqncnesq2ngx7jN2ows=",
-    "last_login": "2019-03-11T18:47:19.900Z",
+    "last_login": "2019-03-20T16:32:15.536Z",
     "is_superuser": false,
     "username": "r",
     "first_name": "r",
@@ -856,6 +1707,78 @@
     "is_staff": false,
     "is_active": true,
     "date_joined": "2019-03-10T19:04:35.738Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 9,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$FQ43jAw2Apu2$iUW4yI+Jf0B5BgjWLhI9O5DtDXq1Ixr8jYkvoYe0Z8E=",
+    "last_login": "2019-03-15T21:20:46.510Z",
+    "is_superuser": false,
+    "username": "edaws",
+    "first_name": "Elyse",
+    "last_name": "Dawson",
+    "email": "elyse@elyse.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-03-15T21:20:46.259Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 10,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$3LE8oThsmFjK$uNMCBPq52+N48o5k5a8G1/F3FVuat6un0spkgAJiGPc=",
+    "last_login": "2019-03-17T17:49:59.087Z",
+    "is_superuser": false,
+    "username": "annieklaver",
+    "first_name": "Annie",
+    "last_name": "Klaver",
+    "email": "annieklaver@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-03-17T17:46:50.724Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 11,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$1ywQ9NLBtP38$6Smrgg3Vt71KbHofMzMUMRGl1GNBS0QAfKKIYeLS+Aw=",
+    "last_login": "2019-03-20T15:39:18.407Z",
+    "is_superuser": false,
+    "username": "ousama",
+    "first_name": "o",
+    "last_name": "o",
+    "email": "o@o.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-03-20T15:38:39.862Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 12,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$LzDNEGVOdUQb$eVLS79diWAmtOUMKftwf4yxFPg+Pfspgi2MaMQsg4vE=",
+    "last_login": "2019-03-20T19:50:11.497Z",
+    "is_superuser": false,
+    "username": "hchalmers23",
+    "first_name": "Helen",
+    "last_name": "Ch",
+    "email": "helen@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-03-20T19:50:11.172Z",
     "groups": [],
     "user_permissions": []
   }
@@ -888,7 +1811,7 @@
 },
 {
   "model": "jt.userjoke",
-  "pk": 2,
+  "pk": 1,
   "fields": {
     "user": 3,
     "joke": 3
@@ -896,7 +1819,7 @@
 },
 {
   "model": "jt.userjoke",
-  "pk": 3,
+  "pk": 2,
   "fields": {
     "user": 4,
     "joke": 2
@@ -904,7 +1827,7 @@
 },
 {
   "model": "jt.userjoke",
-  "pk": 4,
+  "pk": 3,
   "fields": {
     "user": 4,
     "joke": 4
@@ -912,7 +1835,23 @@
 },
 {
   "model": "jt.userjoke",
-  "pk": 37,
+  "pk": 98,
+  "fields": {
+    "user": 10,
+    "joke": 83
+  }
+},
+{
+  "model": "jt.userjoke",
+  "pk": 99,
+  "fields": {
+    "user": 10,
+    "joke": 9
+  }
+},
+{
+  "model": "jt.userjoke",
+  "pk": 112,
   "fields": {
     "user": 7,
     "joke": 6
@@ -920,34 +1859,830 @@
 },
 {
   "model": "jt.userjoke",
-  "pk": 39,
+  "pk": 113,
   "fields": {
     "user": 7,
-    "joke": 3
+    "joke": 9
   }
 },
 {
   "model": "jt.userjoke",
-  "pk": 44,
+  "pk": 114,
   "fields": {
     "user": 7,
-    "joke": 7
+    "joke": 10
   }
 },
 {
   "model": "jt.userjoke",
-  "pk": 45,
+  "pk": 116,
   "fields": {
     "user": 7,
+    "joke": 81
+  }
+},
+{
+  "model": "jt.userjoke",
+  "pk": 117,
+  "fields": {
+    "user": 7,
+    "joke": 71
+  }
+},
+{
+  "model": "jt.userjoke",
+  "pk": 118,
+  "fields": {
+    "user": 7,
+    "joke": 87
+  }
+},
+{
+  "model": "jt.userjoke",
+  "pk": 120,
+  "fields": {
+    "user": 12,
     "joke": 2
   }
 },
 {
-  "model": "jt.userjoke",
+  "model": "jt.joke",
+  "pk": 1,
+  "fields": {
+    "hint": "Gorilla Nose",
+    "question": "Why do gorillas have such big nostrils?",
+    "answer": "Because they have such big fingers",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 2,
+  "fields": {
+    "hint": "Socialism Jokes",
+    "question": "When can you tell jokes about socialism?",
+    "answer": "Only when everybody gets them",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 3,
+  "fields": {
+    "hint": "Fish Concrete",
+    "question": "What did the fish say when he swam into a concrete wall",
+    "answer": "Dam",
+    "creator": 7
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 4,
+  "fields": {
+    "hint": "Camping Friend",
+    "question": "I wanted to go camping with a friend of mine...",
+    "answer": "But I decided against it because I thought it would be two in tents",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 5,
+  "fields": {
+    "hint": "Jedi Car",
+    "question": "What kind of car does a Jedi drive?",
+    "answer": "A Toy-Yoda",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 6,
+  "fields": {
+    "hint": "Chicken Dirt",
+    "question": "Why did the chicken cross the road, roll in the dirt, and cross the road again?",
+    "answer": "Because he was a dirty double-crosser",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 7,
+  "fields": {
+    "hint": "Duck",
+    "question": "Why did the duck cross the road?",
+    "answer": "To prove he wasn't chicken",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 8,
+  "fields": {
+    "hint": "12 Chickens",
+    "question": "Why did the 12 chickens cross the road",
+    "answer": "It dozen really matter",
+    "creator": 7
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 9,
+  "fields": {
+    "hint": "James Bond",
+    "question": "After crossing the road, a chicken goes up to James Bond and asks him, \"What's your name?\"",
+    "answer": "He replies, \"Bond, James Bond. What's yours?\" \"Ken, Chick Ken.\"",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 10,
+  "fields": {
+    "hint": "Two Playgrounds",
+    "question": "Two playgrounds are on either side of the road...so, why did the children cross the road?",
+    "answer": "To get to the other slide",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 11,
+  "fields": {
+    "hint": "Indecisive Bee",
+    "question": "What do you call a bee that can't make up its mind?",
+    "answer": "A may-bee",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 12,
+  "fields": {
+    "hint": "One Minute Birthday",
+    "question": "Did you hear about the old man whose birthday one year lasted only one minute?",
+    "answer": "It was his sixty-second birthday",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 13,
+  "fields": {
+    "hint": "Weathermen Limbs",
+    "question": "What happened when two weathermen each broke an arm and a leg in an accident?",
+    "answer": "They were worried about the four casts",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 14,
+  "fields": {
+    "hint": "Leia Thanksgiving",
+    "question": "Why didn't Han Solo like Princess Leia's Thanksgiving Dinner?",
+    "answer": "It was Chewie",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 15,
+  "fields": {
+    "hint": "Buddhist Hot Dog",
+    "question": "What did the Buddhist ask the hot dog vendor?",
+    "answer": "\u201cMake me one with everything.\u201d",
+    "creator": 7
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 17,
+  "fields": {
+    "hint": "General's Armies",
+    "question": "Where does a general keep his armies?",
+    "answer": "In his sleevies",
+    "creator": 7
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 18,
+  "fields": {
+    "hint": "Koalas",
+    "question": "Why aren\u2019t koalas actual bears?",
+    "answer": "They don\u2019t meet the koalafications",
+    "creator": 7
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 19,
+  "fields": {
+    "hint": "Bears Ears",
+    "question": "What do you call bears with no ears?",
+    "answer": "B",
+    "creator": 7
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 22,
+  "fields": {
+    "hint": "Dyslexic Insomniac Agnostic",
+    "question": "What do you get when you cross a dyslexic, an insomniac, and an agnostic?",
+    "answer": "pirate",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 23,
+  "fields": {
+    "hint": "Pirate Steering Wheel",
+    "question": "A pirate walks into a bar with a steering wheel on the front of his pants. The bartender says, \u201cHey, you\u2019ve got a steering wheel on the front of your pants.\u201d",
+    "answer": "The pirate says, \u201cArrrr, I know. It\u2019s drivin me nuts\u201d",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 39,
+  "fields": {
+    "hint": "Brown and Sticky",
+    "question": "What\u2019s brown and sticky?",
+    "answer": "A stick",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 40,
+  "fields": {
+    "hint": "Angry Pepper",
+    "question": "What does a pepper do when it\u2019s angry?",
+    "answer": "It gets jalape\u00f1o face",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 41,
+  "fields": {
+    "hint": "\"nions\"",
+    "question": "What things start with an \"O\" and end with \"nions\" and sometimes make you cry?",
+    "answer": "Opinions",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 42,
+  "fields": {
+    "hint": "Slippery",
+    "question": "What\u2019s a foot long and slippery?",
+    "answer": "A slipper",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 43,
+  "fields": {
+    "hint": "Goldfish Tank",
+    "question": "Two goldfish are in a tank",
+    "answer": "One looks at the other and says, \u201cYou know how to drive this thing?!\u201d",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 44,
+  "fields": {
+    "hint": "Outstanding Scarecrow",
+    "question": "As a scarecrow, people say I\u2019m outstanding in my field",
+    "answer": "But hay, it\u2019s in my jeans",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
   "pk": 46,
   "fields": {
-    "user": 7,
-    "joke": 8
+    "hint": "Red/Green Apple",
+    "question": "What is the resemblance between a green apple and a red apple?",
+    "answer": "They\u2019re both red except for the green one",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 47,
+  "fields": {
+    "hint": "Hipster Burn",
+    "question": "How did the hipster burn his mouth?",
+    "answer": "He ate the pizza before it was cool",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 48,
+  "fields": {
+    "hint": "Atheist/Crossfitter/Vegan",
+    "question": "An atheist, a Crossfitter and a vegan walk into a bar",
+    "answer": "I know because they all told me",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 49,
+  "fields": {
+    "hint": "Where's the Sun",
+    "question": "I waited and stayed up all night and tried to figure out where the sun was",
+    "answer": "Then it dawned on me",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 50,
+  "fields": {
+    "hint": "Thesaurus",
+    "question": "I bought the world\u2019s worst thesaurus yesterday",
+    "answer": "Not only is it terrible, it\u2019s terrible",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 51,
+  "fields": {
+    "hint": "Pterodactyl Bathroom",
+    "question": "Why can\u2019t you hear a pterodactyl go to the bathroom?",
+    "answer": "Because the \u201cP\u201d is silent",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 53,
+  "fields": {
+    "hint": "NASA Party",
+    "question": "How does NASA organize a party?",
+    "answer": "They planet",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 54,
+  "fields": {
+    "hint": "To Who",
+    "question": "Knock Knock. Who\u2019s There? To. To Who?",
+    "answer": "It's \"to whom\"",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 55,
+  "fields": {
+    "hint": "Pirate Letter",
+    "question": "What\u2019s a pirates favorite letter?",
+    "answer": "You'd think it was R, but it be the C",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 56,
+  "fields": {
+    "hint": "Corduroy Pillows",
+    "question": "Have you heard about corduroy pillows?",
+    "answer": "They\u2019re making headlines",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 58,
+  "fields": {
+    "hint": "Walked a Mile",
+    "question": "Never criticize someone until you've walked a mile in their shoes...",
+    "answer": "That way, when you criticize them, you\u2019ll be a mile away, and you\u2019ll have their shoes",
+    "creator": 7
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 59,
+  "fields": {
+    "hint": "Alexander the Pooh",
+    "question": "What do Alexander the Great and Winnie the Pooh have in common?",
+    "answer": "The same middle name",
+    "creator": 7
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 60,
+  "fields": {
+    "hint": "Highway Dad",
+    "question": "I couldn\u2019t believe the highway department called my dad a thief...",
+    "answer": "But when I got home, all the signs were there",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 61,
+  "fields": {
+    "hint": "Left/Right Eye",
+    "question": "What did the left eye say to the right eye?",
+    "answer": "Between you and me, something smells",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 62,
+  "fields": {
+    "hint": "Cannon Love",
+    "question": "What do cannon balls do when they\u2019re in love?",
+    "answer": "Make bbs",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 63,
+  "fields": {
+    "hint": "Cowboy Wiener Dog",
+    "question": "Why did the cowboy get a wiener dog?",
+    "answer": "He wanted to get a long little doggie",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 66,
+  "fields": {
+    "hint": "Chocolate Chewbacca",
+    "question": "What do you call Chewbacca with chocolate in his hair?",
+    "answer": "A chocolate chip wookie",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 67,
+  "fields": {
+    "hint": "Grandmother Lightbulb",
+    "question": "How many grandmothers does it take to change a lightbulb?",
+    "answer": "None. I'll sit in the dark. I'll be fine. Don't worry about me.",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 68,
+  "fields": {
+    "hint": "Skeleton Lightbulb",
+    "question": "Why should you never ask a skeleton to change a lightbulb?",
+    "answer": "Because no body will show up",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 69,
+  "fields": {
+    "hint": "Bureaucrats Lightbulb",
+    "question": "How many bureaucrats does it take to change a lightbulb? ",
+    "answer": "Two. One to assure everyone that everything possible is being done while the other inserts the bulb into the water faucet.",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 70,
+  "fields": {
+    "hint": "Folksinger Lightbulb",
+    "question": "How many folk singers does it take to change a lightbulb?",
+    "answer": "Ten. One to change it and nine to sing about how good the old one was.",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 71,
+  "fields": {
+    "hint": "Bicycle Fall",
+    "question": "Why did the bicycle fall down?",
+    "answer": "It was two tired",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 72,
+  "fields": {
+    "hint": "One Eye Deer",
+    "question": "What do you call a deer with one eye?",
+    "answer": "No eye deer",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 73,
+  "fields": {
+    "hint": "One-legged Hitchhiker",
+    "question": "What do you say to a one-legged hitch hiker?",
+    "answer": "Hop In",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 74,
+  "fields": {
+    "hint": "Buffalo Son",
+    "question": "What does a buffalo say to his son when he is leaving for college?",
+    "answer": "Bye son",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 75,
+  "fields": {
+    "hint": "Pretzel Alley",
+    "question": "Two pretzels were walking down a dark alley...",
+    "answer": "And one was a salted",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 76,
+  "fields": {
+    "hint": "Bear Teeth",
+    "question": "What do you call a bear with no teeth?",
+    "answer": "A gummy bear",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 77,
+  "fields": {
+    "hint": "Elephant Fence",
+    "question": "What time is it when an elephant sits on your fence?",
+    "answer": "Time to get a new fence",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 78,
+  "fields": {
+    "hint": "Kleenex Dance",
+    "question": "How do you make a Kleenex dance?",
+    "answer": "Put a little boogie in it",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 79,
+  "fields": {
+    "hint": "Anteater Cold",
+    "question": "Why can't anteaters catch a cold?",
+    "answer": "Because they're full of little antibodies",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 80,
+  "fields": {
+    "hint": "Sea Lion Classroom",
+    "question": "What's a sea lion's favorite classroom subject?",
+    "answer": "Art! Art! Art!",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 81,
+  "fields": {
+    "hint": "Knock Knock Panther",
+    "question": "Knock knock. Who's there? Panther. Panther who?",
+    "answer": "Panther or no pants, I'm going swimming",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 82,
+  "fields": {
+    "hint": "Chicken Doors",
+    "question": "Why does a chicken coop always have two doors?",
+    "answer": "Because if it had four doors it would be a chicken sedan",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 83,
+  "fields": {
+    "hint": "Pirate Corn",
+    "question": "How much does a pirate pay for corn on the cob?",
+    "answer": "A buck an ear",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 84,
+  "fields": {
+    "hint": "Santa Sled",
+    "question": "How much did Santa pay for his sled?",
+    "answer": "Nothing....it was on the house",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 85,
+  "fields": {
+    "hint": "Santa Money",
+    "question": "Where does Santa keep his money?",
+    "answer": "In a snow bank",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 86,
+  "fields": {
+    "hint": "Alphabet Soup Font",
+    "question": "What font do they use for alphabet soup?",
+    "answer": "Times New Ramen",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 87,
+  "fields": {
+    "hint": "Zero and Eight",
+    "question": "What did the zero say to the eight?",
+    "answer": "Nice belt",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 88,
+  "fields": {
+    "hint": "Scared Six",
+    "question": "Why was six afraid of seven?",
+    "answer": "Because seven ate nine",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 89,
+  "fields": {
+    "hint": "Majorette in Winter",
+    "question": "Did you hear about the majorette at the elite prep school who struggled to perform on a cold winter night?",
+    "answer": "It was a furs twirled problem",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 90,
+  "fields": {
+    "hint": "Fake Noodle",
+    "question": "What do you call a fake noodle?",
+    "answer": "An impasta",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 91,
+  "fields": {
+    "hint": "Egg Roll",
+    "question": "How do you make an egg roll?",
+    "answer": "Push it down a hill",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 92,
+  "fields": {
+    "hint": "Kitten Pile",
+    "question": "What do you call a pile of kittens?",
+    "answer": "A meowntain",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 93,
+  "fields": {
+    "hint": "Death Pillow",
+    "question": "Why shouldn't you challenge Death to a pillow fight",
+    "answer": "You have to deal with the repercushions",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 94,
+  "fields": {
+    "hint": "Animal Games",
+    "question": "Why should you never play games with wild animals? ",
+    "answer": "One might be a cheetah",
+    "creator": 7
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 95,
+  "fields": {
+    "hint": "OJ Factory",
+    "question": "Why was the orange juice factory employee fired?",
+    "answer": "He couldn\u2019t concentrate",
+    "creator": 7
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 96,
+  "fields": {
+    "hint": "Fish Eyes",
+    "question": "What do you call a fish with no eyes?",
+    "answer": "Fsh",
+    "creator": 7
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 97,
+  "fields": {
+    "hint": "Switzerland",
+    "question": "What\u2019s the best thing about Switzerland?",
+    "answer": "I don\u2019t know, but their flag is a huge plus",
+    "creator": 7
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 98,
+  "fields": {
+    "hint": "Octopus Road",
+    "question": "Why was the motorist arrested after he crashed his car while swerving to avoid hitting an octopus he claimed to have seen in the road?",
+    "answer": "Officials couldn't find any squid marks",
+    "creator": 9
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 101,
+  "fields": {
+    "hint": "Elephants Drink",
+    "question": "Why do elephants drink?",
+    "answer": "To forget",
+    "creator": 9
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 126,
+  "fields": {
+    "hint": "Attic Yachts",
+    "question": "I started a new business making yachts in my attic this year...",
+    "answer": "Sails are going through the roof",
+    "creator": 7
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 129,
+  "fields": {
+    "hint": "Bank Balance",
+    "question": "Today at the bank, an old lady asked me to check her balance.",
+    "answer": "So I pushed her over",
+    "creator": 7
   }
 }
 ]
