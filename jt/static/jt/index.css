@@ -17,13 +17,13 @@
 }
 
 .navbar-brand {
-  margin-left: 30px;
+  margin-left: 40px;
   margin-right: 20px;
 }
 
 .navbar-item {
-  margin-right: 5px;
-  /* font-size: 1.1rem; */
+  margin-right: 8px;
+  font-size: 1.05rem;
 }
 
 .navbar-end {
