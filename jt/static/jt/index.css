@@ -474,14 +474,18 @@
 
 /* ---- */
 
-.column1 {
-  min-height: calc(100vh - 70px);
-}
+@media only screen and (min-width: 800px) {
 
-.column2 {
-  min-height: calc(100vh - 70px);
-}
+  .column1 {
+    min-height: calc(100vh - 70px);
+  }
 
-.column3 {
-  min-height: calc(100vh - 70px);
+  .column2 {
+    min-height: calc(100vh - 70px);
+  }
+
+  .column3 {
+    min-height: calc(100vh - 70px);
+  }
+
 }
