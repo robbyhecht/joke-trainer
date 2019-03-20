@@ -18,6 +18,12 @@ urlpatterns = [
   path('category/add', views.add_to_favorites, name='add_to_favorites'),
   path('favorites/remove/<int:id>', views.remove_from_favorites, name ='remove_from_favorites'),
   path('about', views.about, name = 'about'),
+  path('about/cruise', views.about_cruise, name = 'about_cruise'),
+  path('about/favorites', views.about_favorites, name = 'about_favorites'),
+  path('about/trainer', views.about_trainer, name = 'about_trainer'),
+  path('about/add', views.about_add, name = 'about_add'),
+
+
   path('search', views.search, name = 'search'),
   path('add', views.add_joke, name = 'add_joke'),
   path('delete/<int:id>', views.delete_joke, name = 'delete_joke'),

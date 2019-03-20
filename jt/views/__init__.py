@@ -5,6 +5,12 @@ from .views import user_logout
 from .views import hi_user
 from .views import nav_favorites
 from .views import about
+from .views import about_cruise
+from .views import about_favorites
+from .views import about_trainer
+from .views import about_add
+
+
 
 from .joke_views import list_categories
 from .joke_views import random_joke

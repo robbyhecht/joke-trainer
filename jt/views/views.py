@@ -15,6 +15,22 @@ def about(request):
   template_name = 'about.html'
   return render(request, template_name, {})
 
+def about_cruise(request):
+  template_name = 'about_cruise.html'
+  return render(request, template_name, {})
+
+def about_favorites(request):
+  template_name = 'about_favorites.html'
+  return render(request, template_name, {})
+
+def about_trainer(request):
+  template_name = 'about_trainer.html'
+  return render(request, template_name, {})
+
+def about_add(request):
+  template_name = 'about_add.html'
+  return render(request, template_name, {})
+
 def hi_user(request):
   users_name = User.objects.all()
   context = { 'users_name' : users_name }
