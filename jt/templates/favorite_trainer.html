@@ -22,7 +22,7 @@
         <h1 class="category-header is-size-3 has-text-weight-semibold">Joke Trainer</h1>
       </div>
       <div class="explanation-container">
-        <h3 class="is-size-4 has-text-centered">Your favorite jokes are hidden on the back of these cards with only a hint to jog your memory. How many can you remember?</h3>
+        <h3 class="is-size-4 has-text-centered">Your favorite jokes are hidden on the back of these cards with <strong>only a hint</strong> to jog your memory. How many can you remember?</h3>
       </div>
       {% for joke in joke_content %}
         <div class="singlecard-container">
@@ -37,7 +37,7 @@
               </div>
             </div>
             <div class="front hint-container">
-              <h3 class="card-text" id="hint-text">Hint: <br /><strong>{{ joke.hint }}</strong></h3>
+              <h3 class="card-text" id="hint-text"><strong>{{ joke.hint }}</strong></h3>
             </div>
           </div>
           <div class="card-buttons-container">
