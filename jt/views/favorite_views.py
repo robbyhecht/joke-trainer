@@ -18,6 +18,7 @@ def favorites_list(request):
   for joke in filtered_jokes:
     joke_content.append(Joke.objects.get(pk = joke.joke.id))
 
+  # pagination
   paginator = Paginator(joke_content, 5)
   page = request.GET.get('page')
   joke_content = paginator.get_page(page)
@@ -38,6 +39,7 @@ def favorites_train(request):
     joke_content.append(Joke.objects.get(pk = joke.joke.id))
   print('EMPTY', joke_content)
 
+  # pagination
   paginator = Paginator(joke_content, 5)
   page = request.GET.get('page')
   joke_content = paginator.get_page(page)

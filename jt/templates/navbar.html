@@ -10,7 +10,6 @@
     <div class="navbar-brand navbar-logo-container">
       <a class="brand" href="{% url 'jt:random_joke' %}" id="navbar-logo-link">
         <img src="{% static 'jt/images/joke_trainer_logo.png' %}" alt="Joke Trainer Logo" class="navbar-logo">
-        <!-- <p> JOKE TRAINER </p> -->
       </a>
       <a role="button" class="navbar-burger burger " aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
@@ -21,7 +20,6 @@
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
         
-        <!-- <a class="navbar-item" href="{% url 'jt:random_joke' %}">Home</a> -->
         <a class="navbar-item" href="{% url 'jt:favorites' %}">Favorites</a>
         <a class="navbar-item" href="{% url 'jt:favorites_trainer' %}">Trainer</a>
         <a class="navbar-item" href="{% url 'jt:add_joke' %}">Add a Joke</a>
@@ -38,6 +36,8 @@
         </form>
 
       </div>
+
+      <!-- login/signup and logout buttons toggle depending on current login status -->
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">

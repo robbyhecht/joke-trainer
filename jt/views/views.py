@@ -15,6 +15,12 @@ def about(request):
   template_name = 'about.html'
   return render(request, template_name, {})
 
+def hi_user(request):
+  users_name = User.objects.all()
+  context = { 'users_name' : users_name }
+  return render(request, 'index.html', context)
+
+# the following four 'about' methods render the left sidebar section instructions
 def about_cruise(request):
   template_name = 'about_cruise.html'
   return render(request, template_name, {})
@@ -31,16 +37,13 @@ def about_add(request):
   template_name = 'about_add.html'
   return render(request, template_name, {})
 
-def hi_user(request):
-  users_name = User.objects.all()
-  context = { 'users_name' : users_name }
-  return render(request, 'index.html', context)
-
+# navbar link to the favorites section
 def nav_favorites(request, id):
   current_user = get_object_or_404(User, pk= id)
   context = { 'current_user' : current_user }
   return render(request, 'navbar.html', context)
 
+# user registration
 def register(request):
     '''Handles the creation of a new user for authentication
 
@@ -77,7 +80,7 @@ def register(request):
         template_name = 'register.html'
         return render(request, template_name, {'user_form': user_form,})
 
-
+# user login
 def login_user(request):
     '''Handles the creation of a new user for authentication
 
@@ -125,6 +128,5 @@ def user_logout(request):
     # Since we know the user is logged in, we can now just log them out.
     logout(request)
 
-    # Take the user back to the homepage. Is there a way to not hard code
-    # in the URL in redirects?????
+    # Take the user back to the homepage.
     return HttpResponseRedirect('/')
