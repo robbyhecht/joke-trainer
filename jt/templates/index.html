@@ -11,6 +11,8 @@
 
             <div class="left-column-header">
               <div class="joke-trainer-left-text">
+
+                <!-- left column image links to site explanations -->
                 <h2 class="categories-header has-text-centered">ACTIVITIES</h2>
                 <div>
                   <p class="has-text-centered left-col-text">Cruise the Jokes</p>
@@ -57,6 +59,7 @@
                 <h5 class="is-size-5 has-text-centered" id="random-joke-header"><strong>Joke of the Moment</strong></h5>
               </div>
 
+              <!-- random joke card -->
               <div class="singlecard-container">
                 <div class="flip3D" id="cardtarget">
                   <div class="back">
@@ -67,6 +70,7 @@
                   </div>
                 </div>
 
+                <!-- buttons for card flip and adding to favorites -->
                 <div class="card-buttons-container">
                   <div class="flip-button-container">
                     {% if joke_at_random.is_favorited_by_user == False %}
@@ -96,14 +100,18 @@
       <div class="column is-one-fifth column3 has-background-light">
         <div class="col-3-div">
           {% block indexright%}
+
+          <!-- categories list -->
             <h2 class="categories-header">CATEGORIES</h2>
 
+            <!-- the My Jokes category only displays when a user is logged in -->
             {% if user.is_authenticated %}
             <div class="my-jokes-link-container">
               <a href="{% url 'jt:list_my_jokes' %}" class="my-jokes category">My Jokes</a>
             </div>
             {% endif %}
 
+            <!-- standard categories -->
             <ul class="categories-list">
               {% for category in category_list %}
                 <li><a href="http://localhost:8000/category/{{category.id}}" class="category">{{category.name}}</a></li>

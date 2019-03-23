@@ -26,7 +26,8 @@
         </div>
       {% for joke in joke_content %}
         <div class="singlecard-container">
-
+          
+          <!-- flipcard -->
           <div
             class="flip3D"
             id="cardtarget-{{joke.id}}">
@@ -40,6 +41,7 @@
             </div>
           </div>
 
+          <!-- buttons to flip the card and remove the joke from the userjoke table -->
           <div class="card-buttons-container">
             <div class="flip-button-container">
               <a class="button is-success flip-button flip-button-paired" onclick="flipTheCard('cardtarget-{{joke.id}}')">flip card</a>
@@ -57,7 +59,6 @@
     </div>
 
     <div>
-      <!-- pagination -->
       {% include 'components/pagination_component.html' %}
     </div>
 

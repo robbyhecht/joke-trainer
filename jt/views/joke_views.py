@@ -41,6 +41,7 @@ def list_by_category(request, id):
           joke.is_favorited_by_user = True
   else: faved_jokes = Joke.objects.all()
 
+  # pagination
   paginator = Paginator(joke_content, 5)
   page = request.GET.get('page')
   joke_content = paginator.get_page(page)
@@ -68,6 +69,7 @@ def list_my_jokes(request):
           joke.is_favorited_by_user = True
   else: faved_jokes = Joke.objects.all()
 
+  # pagination
   paginator = Paginator(joke_content, 5)
   page = request.GET.get('page')
   joke_content = paginator.get_page(page)
@@ -82,6 +84,7 @@ def add_to_favorites(request):
   '''Handles adding the selected joke to UserJoke table'''
   user = request.user
   UserJoke.objects.create(joke_id = request.POST["joke_id"], user = user)
+  # this return keeps user on the same page after doing the action
   return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 
 
@@ -89,7 +92,9 @@ def favorites_list(request):
   '''Handles listing jokes by user's favorites...
   User name is accessed in favorite_jokes
   joke_content filters using join table to match up jokes with user'''
+  # accesses all jokes that match user's id in the join table
   filtered_jokes = UserJoke.objects.filter(user_id = request.user.id)
+  # makes a list from the returned queryset
   joke_list = []
   for joke in filtered_jokes:
     joke_list.append(Joke.objects.get(pk = joke.joke.id))
@@ -101,12 +106,13 @@ def random_joke(request):
   '''Handles displaying random question and answer on flip card on home page'''
   # get all jokes in random order
   all_random_jokes = Joke.objects.order_by("?")
+  # make a list from queryset
   joke_at_random = list()
   for joke in all_random_jokes:
     if joke.creator_id is None or joke.creator_id == request.user.id:
       joke_at_random.append(joke)
 
-  # to avoid crash, limit to authenticated users before filtering by user
+  # to avoid crash, limit to authenticated users before filtering by user (if no user, only a joke with a null creator value will be diplayed)
   if request.user.is_authenticated:
     # filter by current user to establish connection with favorited jokes
     faved_jokes = UserJoke.objects.filter(user = request.user)
@@ -118,5 +124,6 @@ def random_joke(request):
           joke.is_favorited_by_user = True
   else: faved_jokes = Joke.objects.all()
 
+  # return only the first random joke to the template with each page reload
   for joke in joke_at_random:
     return render (request, 'index.html', { 'joke_at_random' : joke, 'faved_jokes' : faved_jokes })
