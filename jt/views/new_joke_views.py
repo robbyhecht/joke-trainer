@@ -1,10 +1,8 @@
-from django.contrib.auth import logout, login, authenticate
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponse, HttpResponseRedirect, Http404
-from django.shortcuts import render, get_object_or_404
-from django.template import RequestContext
+from django.http import HttpResponse, HttpResponseRedirect
+from django.shortcuts import render
 from django.urls import reverse
-from jt.models import Category, Joke, JokeCategory, UserJoke
+from jt.models import Category, Joke, JokeCategory
 from jt.forms import NewJokeForm, EditJokeForm
 
 @login_required

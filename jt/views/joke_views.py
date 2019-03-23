@@ -1,11 +1,8 @@
-from django.contrib.auth import logout, login, authenticate
+from django.contrib.auth import authenticate
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponse, HttpResponseRedirect, Http404
+from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
-from django.template import RequestContext
-from django.urls import reverse
 from jt.models import Category, Joke, JokeCategory, UserJoke
-from jt.forms import NewJokeForm
 from django.core.paginator import Paginator
 
 def list_categories(request):

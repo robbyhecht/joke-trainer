@@ -22,7 +22,6 @@ class LoginForm(forms.ModelForm):
   class Meta:
     model = User
     fields = ('username', 'password')
-    # next = form.fields['next'].widget = forms.HiddenInput()
 
 class NewJokeForm(forms.ModelForm):
 
