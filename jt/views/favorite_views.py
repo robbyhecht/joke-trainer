@@ -1,8 +1,6 @@
-from django.contrib.auth import logout, login, authenticate
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponse, HttpResponseRedirect, Http404
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
-from django.template import RequestContext
 from django.urls import reverse
 from jt.models import Joke, UserJoke, User
 from django.core.paginator import Paginator
