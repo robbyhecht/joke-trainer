@@ -5,19 +5,6 @@ from django.shortcuts import render
 from jt.models import User
 from jt.forms import UserForm, LoginForm
 
-def index(request):
-  template_name = 'index.html'
-  return render(request, template_name, {})
-
-def about(request):
-  template_name = 'about.html'
-  return render(request, template_name, {})
-
-def hi_user(request):
-  users_name = User.objects.all()
-  context = { 'users_name' : users_name }
-  return render(request, 'index.html', context)
-
 # the following four 'about' methods render the left sidebar section instructions
 def about_cruise(request):
   template_name = 'about_cruise.html'
