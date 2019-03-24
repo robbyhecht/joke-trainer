@@ -114,7 +114,7 @@
             <!-- standard categories -->
             <ul class="categories-list">
               {% for category in category_list %}
-                <li><a href="http://localhost:8000/category/{{category.id}}" class="category">{{category.name}}</a></li>
+                <li><a href="{% url 'jt:list_by_category' category.id %}" class="category">{{category.name}}</a></li>
               {% endfor %}
             </ul>
           {%endblock%}
