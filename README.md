@@ -30,7 +30,10 @@ a. pip install django
 CLONE DOWN JOKE TRAINER
 
 4. Clone down the Joke Trainer project:<br />
-a. git clone https://github.com/robbyhecht/joke-trainer.git
+a. git clone https://github.com/robbyhecht/joke-trainer.git<br />
+b. pull down the branch designated for development using the commands:<br />
+git fetch --all<br />
+git pull origin DEVELOPMENT<br />
 
 5. There should now be a folder called joke_trainer-- navigate into this folder
 
