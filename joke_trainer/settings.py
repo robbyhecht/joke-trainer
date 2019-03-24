@@ -124,4 +124,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 LOGIN_URL = '/login'
-STATIC_ROOT = '/home/robbyhecht/joke-trainer/static'
+STATIC_ROOT = '/home/robbyhecht/joke-trainer/jt/static'
