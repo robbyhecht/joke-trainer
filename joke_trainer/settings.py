@@ -28,7 +28,7 @@ SECRET_KEY = '*ub^)k6qpe5l9q2vh9hg(v96vbty*f=sjm!1i#seut^c@-!@-b'
 DEBUG = True
 # DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['robbyhecht.pythonanywhere.com']
 
 
 # Application definition
@@ -124,3 +124,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 LOGIN_URL = '/login'
+STATIC_ROOT = '/home/robbyhecht/joke-trainer/static'
