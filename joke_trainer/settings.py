@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '*ub^)k6qpe5l9q2vh9hg(v96vbty*f
 # DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['robbyhecht.pythonanywhere.com']
+ALLOWED_HOSTS = ['robbyhecht.pythonanywhere.com', 'localhost']
 
 
 # Application definition

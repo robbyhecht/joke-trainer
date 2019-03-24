@@ -339,7 +339,7 @@
 .back {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
   align-content: center;
   padding: 20px;
@@ -349,7 +349,7 @@
 .favorites-button-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
   align-content: center;
 }
