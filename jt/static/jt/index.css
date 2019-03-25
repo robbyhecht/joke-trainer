@@ -161,7 +161,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 34px;
-  margin-bottom: 34px;
+  margin-bottom: 40px;
 }
 
 #random-joke-header-container {
@@ -206,7 +206,7 @@
   }
   .center-header-container {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
   }
   .about-text-container {
     margin-bottom: 20px;
@@ -257,6 +257,7 @@
     margin-top: 30px;
     margin-bottom: 20px;
   }
+
 
 }
 
