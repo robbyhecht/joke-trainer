@@ -10,7 +10,7 @@
       <img src="{% static 'jt/images/toaster.png' %}" alt="toaster" class="fav-trainer-side-image">
     </div>
   </div>
-  <div class="trainer-favorites-button-container">
+  <div class="trainer-favorites-button-container is-hidden-mobile">
     <a href="{% url 'jt:favorites_trainer' %}"><button class="button is-dark is-large" id="go-to-trainer-button">Go To Trainer</button></a>
   </div>
 {% endblock %}
