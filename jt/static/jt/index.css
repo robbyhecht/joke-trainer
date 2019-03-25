@@ -8,6 +8,8 @@
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 2px solid hsl(0, 0%, 96%);
+  -webkit-transform: translate3d(0, 0, 500px);
+  transform: translate3d(0, 0, 500px);
 }
 
 .navbar-logo {
@@ -255,13 +257,7 @@
 .card-text {
   font-weight: bold;
   text-align: center;
-  /* color: black; */
 }
-
-/* #hint-text {
-  font-weight: normal;
-  margin-bottom: 35px;
-} */
 
 .flip3D {
   height: 240px;
@@ -286,7 +282,7 @@
   transition: transform .4s linear 0s;
 	-webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
-	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .flip3D > .back {
@@ -303,7 +299,7 @@
   transition: transform .4s linear 0s;
 	-webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
-	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (max-width: 800px) {
