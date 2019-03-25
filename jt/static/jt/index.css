@@ -95,29 +95,43 @@
 @media only screen and (max-width: 800px) {
 
   .left-col-text {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    /* margin-top: 5px; */
+    /* margin-bottom: 5px; */
+    margin: 0;
+    font-size: 0;
   }
   .left-column-header {
     margin-top: 20px;
     margin-bottom: 20px;
   }
   .sidebar-image {
-    width: 40px;
+    width: 50px;
   }
   .fav-trainer-side-image {
     width: 60px;
+    margin-bottom: 10px;
   }
   #repertoir-text {
     margin-bottom: 0px;
   }
-
   #left-trainer-text {
     margin-top: 20px;
     margin-bottom: 20px;
   }
   .trainer-favorites-button-container {
     margin-top: 20px;
+  }
+  .index-left-contents {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  /* .index-left-activity-container {
+    display: flex;
+    justify-content: space-between;
+  } */
+  .explanation-container {
+    margin-bottom: 20px;
   }
 }
 
@@ -147,16 +161,23 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 34px;
-  margin-bottom: 45px;
+  margin-bottom: 34px;
 }
 
 #random-joke-header-container {
-  /* margin-top: 50px; */
   margin-bottom: 20px;
 }
 
 #random-joke-header {
-  font-size: 20px !important;
+  font-size: 20px;
+}
+
+.main-header {
+  font-size: 32px;
+}
+
+.main-text {
+  font-size: 24px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -164,14 +185,31 @@
     margin-top: 40px;
     margin-bottom: 20px;
   }
+  .about-text-container {
+    margin-bottom: 34px;
+  }
 }
 
-@media only screen and (max-width: 400px) {
-  #index-header {
+@media only screen and (max-width: 450px) {
+
+  #random-joke-header {
+    font-size: 0px;
+  }
+  #random-joke-header-container {
+    margin: 0px;
+  }
+  .main-header {
     font-size: 25px !important;
   }
-  #random-joke-header {
-    font-size: 20px !important;
+  .main-text {
+    font-size: 20px;
+  }
+  .center-header-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .about-text-container {
+    margin-bottom: 20px;
   }
 }
 
@@ -446,7 +484,7 @@
 
 @media only screen and (max-width: 800px) {
   .card-buttons-container {
-    margin-top: -10px;
+    margin-top: -30px;
   }
 }
 

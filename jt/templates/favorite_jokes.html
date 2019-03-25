@@ -10,7 +10,7 @@
       <img src="{% static 'jt/images/toaster.png' %}" alt="toaster" class="fav-trainer-side-image">
     </div>
   </div>
-  <div class="trainer-favorites-button-container">
+  <div class="trainer-favorites-button-container is-hidden-mobile">
     <a href="{% url 'jt:favorites_trainer' %}"><button class="button is-dark is-large" id="go-to-trainer-button">Go To Trainer</button></a>
   </div>
 {% endblock %}
@@ -18,11 +18,11 @@
 {%block indexcenter%}
   <div class="all-center-div">
     <div class="allcards-container">
-      <div class="category-header-container center-header-container">
-        <h1 class="category-header is-size-3 has-text-weight-semibold">My Favorite Jokes</h1>
+      <div class="main-header-container center-header-container">
+        <h1 class="main-header is-size-3 has-text-weight-semibold">My Favorite Jokes</h1>
       </div>
         <div class="explanation-container">
-          <h3 class="is-size-4 has-text-centered">Your personal library of the best of the best. Once you've got a nice collection going, head over to the <strong><a href="{% url 'jt:favorites_trainer' %}" class="is-dark" id="trainer-text-link">Trainer</a></strong> section to work on making them part of your act!</h3>
+          <h3 class="main-text has-text-centered">Your personal library of the best of the best. Once you've got a nice collection going, head over to the <strong><a href="{% url 'jt:favorites_trainer' %}" class="is-dark" id="trainer-text-link">Trainer</a></strong> section to work on making them part of your act!</h3>
         </div>
       {% for joke in joke_content %}
         <div class="singlecard-container">
