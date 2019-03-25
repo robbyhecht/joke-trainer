@@ -105,7 +105,7 @@
     margin-bottom: 20px;
   }
   .sidebar-image {
-    width: 40px;
+    width: 50px;
   }
   .fav-trainer-side-image {
     width: 60px;
@@ -125,10 +125,10 @@
     justify-content: space-evenly;
     align-items: center;
   }
-  .index-left-activity-container {
-    /* display: flex;
-    justify-content: space-between; */
-  }
+  /* .index-left-activity-container {
+    display: flex;
+    justify-content: space-between;
+  } */
   .explanation-container {
     margin-bottom: 20px;
   }
@@ -171,11 +171,11 @@
   font-size: 20px;
 }
 
-.about-header {
+.main-header {
   font-size: 32px;
 }
 
-.about-text {
+.main-text {
   font-size: 24px;
 }
 
@@ -190,20 +190,18 @@
 }
 
 @media only screen and (max-width: 450px) {
-  #index-header {
-    font-size: 25px !important;
-  }
+
   #random-joke-header {
     font-size: 0px;
   }
   #random-joke-header-container {
     margin: 0px;
   }
-  .about-header {
+  .main-header {
     font-size: 25px !important;
   }
-  .about-text {
-    font-size: 18px;
+  .main-text {
+    font-size: 20px;
   }
   .center-header-container {
     margin-top: 20px;
