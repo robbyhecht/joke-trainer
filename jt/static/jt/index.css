@@ -185,8 +185,8 @@
     margin-top: 40px;
     margin-bottom: 20px;
   }
-  .about-cruise-text-container {
-    margin-bottom: 20px;
+  .about-text-container {
+    margin-bottom: 34px;
   }
 }
 
@@ -206,6 +206,9 @@
   }
   .center-header-container {
     margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .about-text-container {
     margin-bottom: 20px;
   }
 }
