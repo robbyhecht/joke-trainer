@@ -111,13 +111,23 @@
   #repertoir-text {
     margin-bottom: 0px;
   }
-
   #left-trainer-text {
     margin-top: 20px;
     margin-bottom: 20px;
   }
   .trainer-favorites-button-container {
     margin-top: 20px;
+  }
+  .index-left-contents {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .index-left-activity-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .explanation-container {
+    margin-bottom: 20px;
   }
 }
 
@@ -147,16 +157,23 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 34px;
-  margin-bottom: 45px;
+  margin-bottom: 34px;
 }
 
 #random-joke-header-container {
-  /* margin-top: 50px; */
   margin-bottom: 20px;
 }
 
 #random-joke-header {
-  font-size: 20px !important;
+  font-size: 20px;
+}
+
+.about-header {
+  font-size: 32px;
+}
+
+.about-text {
+  font-size: 24px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -166,12 +183,28 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   #index-header {
     font-size: 25px !important;
   }
   #random-joke-header {
-    font-size: 20px !important;
+    font-size: 0px;
+  }
+  #random-joke-header-container {
+    margin: 0px;
+  }
+  .about-header {
+    font-size: 25px !important;
+  }
+  .about-text {
+    font-size: 18px;
+  }
+  .center-header-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .about-text-container {
+    margin-bottom: 10px;
   }
 }
 
@@ -446,7 +479,7 @@
 
 @media only screen and (max-width: 800px) {
   .card-buttons-container {
-    margin-top: -10px;
+    margin-top: -30px;
   }
 }
 

@@ -14,29 +14,39 @@
 
                 <!-- left column image links to site explanations -->
                 <h2 class="categories-header has-text-centered">ACTIVITIES</h2>
-                <div>
-                  <p class="has-text-centered left-col-text">Cruise the Jokes</p>
-                </div>
-                <div class="sidebar-image-container has-text-centered">
-                  <a href="{% url 'jt:about_cruise' %}"><img src="{% static 'jt/images/interested_at_computer.png' %}" class="sidebar-image" alt="interested in computer"></a>
-                </div>
-                <div>
-                  <p class="has-text-centered left-col-text">Save Your Favorites</p>
-                </div>
-                <div class="sidebar-image-container has-text-centered">
-                    <a href="{% url 'jt:about_favorites' %}"><img src="{% static 'jt/images/heart.svg' %}" class="sidebar-image" alt="heart"></a>
-                </div>
-                <div>
-                  <p class="has-text-centered left-col-text" id="repertoir-text">Build Your Repertoire</p>
-                </div>
-                <div class="sidebar-image-container has-text-centered">
-                    <a href="{% url 'jt:about_trainer' %}"><img src="{% static 'jt/images/jester_hat.png' %}" class="sidebar-image" alt="jester hat"></a>
-                </div>
-                <div>
-                  <p class="has-text-centered left-col-text">Add Your Own</p>
-                </div>
-                <div class="sidebar-image-container has-text-centered">
-                    <a href="{% url 'jt:about_add' %}"><img src="{% static 'jt/images/sewing_machine.png' %}" class="sidebar-image" alt="sewing machine"></a>
+                <div class="index-left-contents">
+                  <div class="index-left-activity-container">
+                    <div>
+                      <p class="has-text-centered left-col-text">Cruise the Jokes</p>
+                    </div>
+                    <div class="sidebar-image-container has-text-centered">
+                      <a href="{% url 'jt:about_cruise' %}"><img src="{% static 'jt/images/interested_at_computer.png' %}" class="sidebar-image" alt="interested in computer"></a>
+                    </div>
+                  </div>
+                  <div class="index-left-activity-container">
+                    <div>
+                      <p class="has-text-centered left-col-text">Save Your Favorites</p>
+                    </div>
+                    <div class="sidebar-image-container has-text-centered">
+                        <a href="{% url 'jt:about_favorites' %}"><img src="{% static 'jt/images/heart.svg' %}" class="sidebar-image" alt="heart"></a>
+                    </div>
+                  </div>
+                  <div class="index-left-activity-container">
+                    <div>
+                      <p class="has-text-centered left-col-text" id="repertoir-text">Build Your Repertoire</p>
+                    </div>
+                    <div class="sidebar-image-container has-text-centered">
+                        <a href="{% url 'jt:about_trainer' %}"><img src="{% static 'jt/images/jester_hat.png' %}" class="sidebar-image" alt="jester hat"></a>
+                    </div>
+                  </div>
+                  <div class="index-left-activity-container">
+                    <div>
+                      <p class="has-text-centered left-col-text">Add Your Own</p>
+                    </div>
+                    <div class="sidebar-image-container has-text-centered">
+                        <a href="{% url 'jt:about_add' %}"><img src="{% static 'jt/images/sewing_machine.png' %}" class="sidebar-image" alt="sewing machine"></a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -56,7 +66,7 @@
                 <h4 class="is-size-4 has-text-centered">A curated library of jokes for you to enjoy, customize and learn. Choose a category or use the search bar to get started!</h4>
               </div>
               <div id="random-joke-header-container">
-                <h5 class="is-size-5 has-text-centered" id="random-joke-header"><strong>Joke of the Moment</strong></h5>
+                <h5 class="has-text-centered" id="random-joke-header"><strong>Joke of the Moment</strong></h5>
               </div>
 
               <!-- random joke card -->
