@@ -1,3 +1,6 @@
+body {
+  box-sizing: border-box;
+}
 
 /* NAVBAR */
 
@@ -401,8 +404,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* flex-direction: column; */
-  /* align-content: center; */
 }
 
 #add-button {
@@ -449,13 +450,17 @@
 }
 
 @media only screen and (max-width: 800px) {
-
-  .modal-card-title {
-    font-size: 14px !important;
+  
+  .modal-card {
+    max-width: 90%;
   }
 
-  .modal-card {
-    max-width: 95%;
+}
+
+@media only screen and (max-width: 450px) {
+
+  .modal-card-title {
+    font-size: 0.7rem !important;
   }
 
 }
