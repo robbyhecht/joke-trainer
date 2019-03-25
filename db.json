@@ -1164,6 +1164,190 @@
   }
 },
 {
+  "model": "jt.jokecategory",
+  "pk": 193,
+  "fields": {
+    "category": 10,
+    "joke": 130
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 194,
+  "fields": {
+    "category": 20,
+    "joke": 131
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 195,
+  "fields": {
+    "category": 10,
+    "joke": 131
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 196,
+  "fields": {
+    "category": 10,
+    "joke": 132
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 197,
+  "fields": {
+    "category": 10,
+    "joke": 133
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 198,
+  "fields": {
+    "category": 20,
+    "joke": 133
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 199,
+  "fields": {
+    "category": 1,
+    "joke": 134
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 200,
+  "fields": {
+    "category": 10,
+    "joke": 134
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 201,
+  "fields": {
+    "category": 10,
+    "joke": 135
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 202,
+  "fields": {
+    "category": 15,
+    "joke": 135
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 203,
+  "fields": {
+    "category": 18,
+    "joke": 135
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 204,
+  "fields": {
+    "category": 2,
+    "joke": 136
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 205,
+  "fields": {
+    "category": 2,
+    "joke": 137
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "jt",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "jt",
+    "model": "joke"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "jt",
+    "model": "jokecategory"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "jt",
+    "model": "userjoke"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
   "model": "sessions.session",
   "pk": "6mdm54n9f3il12nvsyf1euwquwpsigyr",
   "fields": {
@@ -1680,7 +1864,7 @@
   "pk": 7,
   "fields": {
     "password": "pbkdf2_sha256$120000$7wSiO5sLpmtz$5Mfph8O0uQEfeUq4qS5MHLz0oqncnesq2ngx7jN2ows=",
-    "last_login": "2019-03-20T16:32:15.536Z",
+    "last_login": "2019-03-23T18:59:59.347Z",
     "is_superuser": false,
     "username": "r",
     "first_name": "r",
@@ -1932,7 +2116,7 @@
     "hint": "Fish Concrete",
     "question": "What did the fish say when he swam into a concrete wall",
     "answer": "Dam",
-    "creator": 7
+    "creator": null
   }
 },
 {
@@ -1982,7 +2166,7 @@
     "hint": "12 Chickens",
     "question": "Why did the 12 chickens cross the road",
     "answer": "It dozen really matter",
-    "creator": 7
+    "creator": null
   }
 },
 {
@@ -2052,7 +2236,7 @@
     "hint": "Buddhist Hot Dog",
     "question": "What did the Buddhist ask the hot dog vendor?",
     "answer": "\u201cMake me one with everything.\u201d",
-    "creator": 7
+    "creator": null
   }
 },
 {
@@ -2062,7 +2246,7 @@
     "hint": "General's Armies",
     "question": "Where does a general keep his armies?",
     "answer": "In his sleevies",
-    "creator": 7
+    "creator": null
   }
 },
 {
@@ -2072,7 +2256,7 @@
     "hint": "Koalas",
     "question": "Why aren\u2019t koalas actual bears?",
     "answer": "They don\u2019t meet the koalafications",
-    "creator": 7
+    "creator": null
   }
 },
 {
@@ -2082,7 +2266,7 @@
     "hint": "Bears Ears",
     "question": "What do you call bears with no ears?",
     "answer": "B",
-    "creator": 7
+    "creator": null
   }
 },
 {
@@ -2272,7 +2456,7 @@
     "hint": "Walked a Mile",
     "question": "Never criticize someone until you've walked a mile in their shoes...",
     "answer": "That way, when you criticize them, you\u2019ll be a mile away, and you\u2019ll have their shoes",
-    "creator": 7
+    "creator": null
   }
 },
 {
@@ -2282,7 +2466,7 @@
     "hint": "Alexander the Pooh",
     "question": "What do Alexander the Great and Winnie the Pooh have in common?",
     "answer": "The same middle name",
-    "creator": 7
+    "creator": null
   }
 },
 {
@@ -2481,7 +2665,7 @@
   "fields": {
     "hint": "Knock Knock Panther",
     "question": "Knock knock. Who's there? Panther. Panther who?",
-    "answer": "Panther or no pants, I'm going swimming",
+    "answer": "Panther or no pants, I'm going thwimming",
     "creator": null
   }
 },
@@ -2612,7 +2796,7 @@
     "hint": "Animal Games",
     "question": "Why should you never play games with wild animals? ",
     "answer": "One might be a cheetah",
-    "creator": 7
+    "creator": null
   }
 },
 {
@@ -2622,7 +2806,7 @@
     "hint": "OJ Factory",
     "question": "Why was the orange juice factory employee fired?",
     "answer": "He couldn\u2019t concentrate",
-    "creator": 7
+    "creator": null
   }
 },
 {
@@ -2632,7 +2816,7 @@
     "hint": "Fish Eyes",
     "question": "What do you call a fish with no eyes?",
     "answer": "Fsh",
-    "creator": 7
+    "creator": null
   }
 },
 {
@@ -2642,7 +2826,7 @@
     "hint": "Switzerland",
     "question": "What\u2019s the best thing about Switzerland?",
     "answer": "I don\u2019t know, but their flag is a huge plus",
-    "creator": 7
+    "creator": null
   }
 },
 {
@@ -2650,9 +2834,9 @@
   "pk": 98,
   "fields": {
     "hint": "Octopus Road",
-    "question": "Why was the motorist arrested after he crashed his car while swerving to avoid hitting an octopus he claimed to have seen in the road?",
+    "question": "Why was the motorist arrested after swerving to avoid hitting an octopus he claimed to have seen in the road?",
     "answer": "Officials couldn't find any squid marks",
-    "creator": 9
+    "creator": null
   }
 },
 {
@@ -2662,7 +2846,7 @@
     "hint": "Elephants Drink",
     "question": "Why do elephants drink?",
     "answer": "To forget",
-    "creator": 9
+    "creator": null
   }
 },
 {
@@ -2672,7 +2856,7 @@
     "hint": "Attic Yachts",
     "question": "I started a new business making yachts in my attic this year...",
     "answer": "Sails are going through the roof",
-    "creator": 7
+    "creator": null
   }
 },
 {
@@ -2683,6 +2867,86 @@
     "question": "Today at the bank, an old lady asked me to check her balance.",
     "answer": "So I pushed her over",
     "creator": 7
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 130,
+  "fields": {
+    "hint": "Make Antifreeze",
+    "question": "How do you make antifreeze?",
+    "answer": "Steal her blanket",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 131,
+  "fields": {
+    "hint": "Cheese Factory",
+    "question": "Did you hear about the explosion at the cheese factory in France?",
+    "answer": "De-brie was everywhere",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 132,
+  "fields": {
+    "hint": "Klepto Puns",
+    "question": "It's really hard to explain puns to a kleptomaniac",
+    "answer": "They always take things literally",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 133,
+  "fields": {
+    "hint": "Orange Juice Factory",
+    "question": "My first job was working in an orange juice factory",
+    "answer": "but I got canned because I couldn't concentrate",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 134,
+  "fields": {
+    "hint": "Bird Contest",
+    "question": "The pet store down the street had a bird contest...",
+    "answer": "No perches necessary",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 135,
+  "fields": {
+    "hint": "Future Present Past",
+    "question": "The future, the present, and the past walked into a bar...",
+    "answer": "Things got a little tense",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 136,
+  "fields": {
+    "hint": "I Smell Mop",
+    "question": "Knock knock.\nWho\u2019s there?\nI smell mop.\nI smell mop who?",
+    "answer": "Ew, gross.",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 137,
+  "fields": {
+    "hint": "Knock Robin",
+    "question": "Knock knock. Who's there? Robin. Robin who?",
+    "answer": "Robin you, now stick em up!",
+    "creator": null
   }
 }
 ]
