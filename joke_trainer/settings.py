@@ -25,10 +25,10 @@ SECRET_KEY = '*ub^)k6qpe5l9q2vh9hg(v96vbty*f=sjm!1i#seut^c@-!@-b'
 # SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '*ub^)k6qpe5l9q2vh9hg(v96vbty*f=sjm!1i#seut^c@-!@-b')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-# DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+# DEBUG = True
+DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['robbyhecht.pythonanywhere.com', 'localhost']
+ALLOWED_HOSTS = ['localhost', 'www.joketrainer.com']
 
 
 # Application definition
