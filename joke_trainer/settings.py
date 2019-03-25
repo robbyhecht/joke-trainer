@@ -28,7 +28,7 @@ SECRET_KEY = '*ub^)k6qpe5l9q2vh9hg(v96vbty*f=sjm!1i#seut^c@-!@-b'
 # DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['robbyhecht.pythonanywhere.com', 'localhost', 'www.joketrainer.com']
+ALLOWED_HOSTS = ['localhost', 'www.joketrainer.com']
 
 
 # Application definition
