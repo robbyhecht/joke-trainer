@@ -251,6 +251,16 @@
   text-align: center;
 }
 
+@media only screen and (max-width: 450px) {
+
+  #activities-header {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+}
+
+
 
 /* ABOUT SECTION */
 
