@@ -95,8 +95,10 @@
 @media only screen and (max-width: 800px) {
 
   .left-col-text {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    /* margin-top: 5px; */
+    /* margin-bottom: 5px; */
+    margin: 0;
+    font-size: 0;
   }
   .left-column-header {
     margin-top: 20px;
@@ -119,12 +121,13 @@
     margin-top: 20px;
   }
   .index-left-contents {
-    margin-left: 10%;
-    margin-right: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   }
   .index-left-activity-container {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
   }
   .explanation-container {
     margin-bottom: 20px;
@@ -181,6 +184,9 @@
     margin-top: 40px;
     margin-bottom: 20px;
   }
+  .about-cruise-text-container {
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -202,9 +208,6 @@
   .center-header-container {
     margin-top: 20px;
     margin-bottom: 20px;
-  }
-  .about-text-container {
-    margin-bottom: 10px;
   }
 }
 
