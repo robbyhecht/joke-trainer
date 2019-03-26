@@ -54,8 +54,8 @@
                 <!-- include login buttons only on mobile -->
                 {% if user.is_authenticated %}
                 {% else %}
-                  <a class="button is-primary is-small is-hidden-desktop" href="{% url 'jt:register' %}"><strong>Sign up</strong></a>
-                  <a class="button is-primary log-button is-hidden-desktop is-small" href="{% url 'jt:login' %}">Log in</a>
+                  <a class="button is-primary is-small is-hidden-tablet left-auth-button" href="{% url 'jt:register' %}">Sign up</a>
+                  <a class="button is-primary log-button is-small is-hidden-tablet left-auth-button" href="{% url 'jt:login' %}">Log in</a>
                 {% endif %}
 
               </div>

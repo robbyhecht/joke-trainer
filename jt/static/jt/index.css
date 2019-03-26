@@ -98,7 +98,14 @@ body {
 .login-buttons-left-column {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 16px;
+}
+
+.left-auth-button {
+  /* border: 1px solid black !important; */
+  font-weight: bold;
+  width: 75px;
+  border-radius: 3px !important;
 }
 
 @media only screen and (max-width: 800px) {
@@ -141,6 +148,28 @@ body {
   } */
   .explanation-container {
     margin-bottom: 20px;
+  }
+  #activities-header {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .left-auth-button {
+    margin-top: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  #activities-header {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .left-auth-button {
+    margin-top: 0;
+    margin-left: 4px;
+    margin-right: 4px;
   }
 }
 
@@ -264,17 +293,6 @@ body {
   text-align: center;
 }
 
-@media only screen and (max-width: 450px) {
-
-  #activities-header {
-    margin-top: 30px;
-    margin-bottom: 20px;
-  }
-
-
-}
-
-
 
 /* ABOUT SECTION */
 
@@ -373,6 +391,15 @@ body {
     width: 300px;
     height: 180px;
   }
+}
+
+@media only screen and (max-width: 450px) {
+
+  .categories-header {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
 }
 
 .flipit > .front {
