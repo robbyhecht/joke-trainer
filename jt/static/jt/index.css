@@ -102,10 +102,12 @@ body {
 }
 
 .left-auth-button {
-  /* border: 1px solid black !important; */
   font-weight: bold;
   width: 75px;
   border-radius: 3px !important;
+  margin-top: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -152,11 +154,6 @@ body {
   #activities-header {
     margin-top: 30px;
     margin-bottom: 20px;
-  }
-  .left-auth-button {
-    margin-top: 10px;
-    margin-left: 8px;
-    margin-right: 8px;
   }
 }
 
