@@ -95,6 +95,12 @@ body {
   color: rgb(54, 54, 54)
 }
 
+.login-buttons-left-column {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
 @media only screen and (max-width: 800px) {
 
   .left-col-text {
