@@ -96,9 +96,9 @@ body {
 }
 
 .login-buttons-left-column {
-  display: flex;
-  justify-content: center;
-  margin-top: 16px;
+  display: flex !important;
+  justify-content: center !important;
+  margin-top: 16px !important;
 }
 
 .left-auth-button {
@@ -113,8 +113,6 @@ body {
 @media only screen and (max-width: 800px) {
 
   .left-col-text {
-    /* margin-top: 5px; */
-    /* margin-bottom: 5px; */
     margin: 0;
     font-size: 0;
   }
@@ -144,10 +142,6 @@ body {
     justify-content: space-evenly;
     align-items: center;
   }
-  /* .index-left-activity-container {
-    display: flex;
-    justify-content: space-between;
-  } */
   .explanation-container {
     margin-bottom: 20px;
   }
