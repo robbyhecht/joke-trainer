@@ -14,5 +14,13 @@
 <div class="trainer-favorites-button-container is-hidden-mobile">
   <a href="{% url 'jt:favorites_trainer' %}"><button class="button is-dark is-large" id="go-to-trainer-button">Go to Trainer</button></a>
 </div>
+
+<div class="login-buttons-left-column is-hidden-desktop">
+  {% if user.is_authenticated %}
+  {% else %}
+    <a class="button is-primary is-hidden-tablet left-auth-button" href="{% url 'jt:register' %}">Sign up</a>
+    <a class="button is-primary log-button is-hidden-tablet left-auth-button" href="{% url 'jt:login' %}">Log in</a>
+  {% endif %}
+</div>
   
 {% endblock %}
