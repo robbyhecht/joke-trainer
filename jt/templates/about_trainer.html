@@ -7,12 +7,20 @@
     <h1 class="has-text-centered has-text-weight-semibold main-header">Train Your Brain</h1>
   </div>
   <div class="about-text-container">
-    <h2 class="has-text-centered main-text">The Trainer page is where we go from funny to functional. You'll see all your favorite jokes, but this time with <strong>only a hint on the front and the whole joke on the back</strong>. You can use these flashcards to help you <strong>memorize the jokes</strong> and become a full blown entertainer!</h2>
+    <h2 class="has-text-centered main-text">The Trainer page takes you from funny to functional. You'll see all your favorite jokes, but this time with <strong>only a hint on the front and the whole joke on the back</strong>. You can use these flashcards to help you <strong>memorize the jokes</strong> and become a full blown entertainer!</h2>
   </div>
 </div>
 
 <div class="trainer-favorites-button-container is-hidden-mobile">
   <a href="{% url 'jt:favorites_trainer' %}"><button class="button is-dark is-large" id="go-to-trainer-button">Go to Trainer</button></a>
+</div>
+
+<div class="login-buttons-left-column is-hidden-desktop">
+  {% if user.is_authenticated %}
+  {% else %}
+    <a class="button is-primary is-hidden-tablet left-auth-button" href="{% url 'jt:register' %}">Sign up</a>
+    <a class="button is-primary log-button is-hidden-tablet left-auth-button" href="{% url 'jt:login' %}">Log in</a>
+  {% endif %}
 </div>
   
 {% endblock %}

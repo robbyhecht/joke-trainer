@@ -98,7 +98,7 @@ body {
 .login-buttons-left-column {
   display: flex !important;
   justify-content: center !important;
-  margin-top: 16px !important;
+  margin-bottom: 18px !important;
 }
 
 .left-auth-button {
@@ -121,7 +121,7 @@ body {
     margin-bottom: 20px;
   }
   .sidebar-image {
-    width: 50px;
+    width: 40px;
   }
   .fav-trainer-side-image {
     width: 60px;
@@ -141,6 +141,8 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: -30px;
+    margin-top: -22px;
   }
   .explanation-container {
     margin-bottom: 20px;
@@ -159,8 +161,8 @@ body {
   }
   .left-auth-button {
     margin-top: 0;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-left: 7px;
+    margin-right: 7px;
   }
 }
 
@@ -190,7 +192,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 34px;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 }
 
 #random-joke-header-container {
@@ -228,13 +230,13 @@ body {
     margin: 0px;
   }
   .main-header {
-    font-size: 25px !important;
+    font-size: 27px !important;
   }
   .main-text {
     font-size: 20px;
   }
   .center-header-container {
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 20px;
   }
   .about-text-container {
@@ -391,6 +393,10 @@ body {
     margin-bottom: 25px;
   }
 
+  .flip3D {
+    margin-top: 25px;
+  }
+
 }
 
 .flipit > .front {
@@ -437,6 +443,7 @@ body {
   border-bottom-right-radius: 7px;
   width: 110px;
   margin-top: 1px;
+  background-color: #8383b6 !important;
 }
 
 .triple-button-container {

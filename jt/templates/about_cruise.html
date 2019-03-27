@@ -11,4 +11,12 @@
   </div>
 </div>
 
+<div class="login-buttons-left-column is-hidden-desktop">
+  {% if user.is_authenticated %}
+  {% else %}
+    <a class="button is-primary is-hidden-tablet left-auth-button" href="{% url 'jt:register' %}">Sign up</a>
+    <a class="button is-primary log-button is-hidden-tablet left-auth-button" href="{% url 'jt:login' %}">Log in</a>
+  {% endif %}
+</div>
+
 {% endblock %}

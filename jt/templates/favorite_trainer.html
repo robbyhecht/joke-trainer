@@ -1,25 +1,29 @@
 {% extends 'index.html' %}
 {% load static %}
 
+{% comment %}
 {%block indexleft%}
-  <div>
-    <div class="left-column-header">
-      <h4 class="is-size-5 has-text-centered">Become a master joke teller!</h4>
-    </div>
-    <div class="sidebar-image-container has-text-centered">
-      <img src="{% static 'jt/images/brain.png' %}" alt="use your brain" class="fav-trainer-side-image">
-    </div>
-    <div class="trainer-favorites-button-container is-hidden-mobile">
-      <a href="{% url 'jt:favorites' %}"><button class="button is-dark is-large" id="go-to-trainer-button">Go To Favorites</button></a>
+  <div class="is-hidden-mobile">
+    <div>
+      <div class="left-column-header">
+        <h4 class="is-size-5 has-text-centered">Become a master joke teller!</h4>
+      </div>
+      <div class="sidebar-image-container has-text-centered">
+        <img src="{% static 'jt/images/brain.png' %}" alt="use your brain" class="fav-trainer-side-image">
+      </div>
+      <div class="trainer-favorites-button-container is-hidden-mobile">
+        <a href="{% url 'jt:favorites' %}"><button class="button is-dark is-large" id="go-to-trainer-button">Go To Favorites</button></a>
+      </div>
     </div>
   </div>
 {%endblock%}
+{% endcomment %}
 
 {%block indexcenter%}
   <div class="all-center-div">
     <div class="allcards-container">
       <div class="main-header-container center-header-container">
-        <h1 class="main-header is-size-3 has-text-weight-semibold">Trainer</h1>
+        <h1 class="main-header has-text-weight-semibold">Trainer</h1>
       </div>
       <div class="explanation-container">
         <h3 class="main-text has-text-centered">Your favorite jokes are hidden on the back of these cards with <strong>only a hint</strong> to jog your memory. How many can you remember?</h3>

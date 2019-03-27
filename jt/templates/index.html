@@ -13,7 +13,7 @@
               <div class="joke-trainer-left-text">
 
                 <!-- left column image links to site explanations -->
-                <h2 class="categories-header has-text-centered" id="activities-header">ACTIVITIES</h2>
+                <h2 class="categories-header has-text-centered is-hidden-mobile" id="activities-header">ACTIVITIES</h2>
                 <div class="index-left-contents">
                   <div class="index-left-activity-container">
                     <div>
@@ -50,15 +50,6 @@
                 </div>
               </div>
 
-              <div class="login-buttons-left-column">
-                <!-- include login buttons only on mobile -->
-                {% if user.is_authenticated %}
-                {% else %}
-                  <a class="button is-primary is-hidden-tablet left-auth-button" href="{% url 'jt:register' %}">Sign up</a>
-                  <a class="button is-primary log-button is-hidden-tablet left-auth-button" href="{% url 'jt:login' %}">Log in</a>
-                {% endif %}
-
-              </div>
             </div>
 
           {% endblock %}
