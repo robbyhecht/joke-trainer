@@ -1268,6 +1268,30 @@
   }
 },
 {
+  "model": "jt.jokecategory",
+  "pk": 206,
+  "fields": {
+    "category": 10,
+    "joke": 138
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 207,
+  "fields": {
+    "category": 19,
+    "joke": 138
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 208,
+  "fields": {
+    "category": 19,
+    "joke": 139
+  }
+},
+{
   "model": "sessions.session",
   "pk": "6mdm54n9f3il12nvsyf1euwquwpsigyr",
   "fields": {
@@ -1784,7 +1808,7 @@
   "pk": 7,
   "fields": {
     "password": "pbkdf2_sha256$120000$7wSiO5sLpmtz$5Mfph8O0uQEfeUq4qS5MHLz0oqncnesq2ngx7jN2ows=",
-    "last_login": "2019-03-23T18:59:59.347Z",
+    "last_login": "2019-03-28T04:00:39.406Z",
     "is_superuser": false,
     "username": "r",
     "first_name": "r",
@@ -2010,6 +2034,30 @@
   }
 },
 {
+  "model": "jt.userjoke",
+  "pk": 122,
+  "fields": {
+    "user": 7,
+    "joke": 85
+  }
+},
+{
+  "model": "jt.userjoke",
+  "pk": 123,
+  "fields": {
+    "user": 7,
+    "joke": 50
+  }
+},
+{
+  "model": "jt.userjoke",
+  "pk": 124,
+  "fields": {
+    "user": 7,
+    "joke": 43
+  }
+},
+{
   "model": "jt.joke",
   "pk": 1,
   "fields": {
@@ -2186,16 +2234,6 @@
     "hint": "Bears Ears",
     "question": "What do you call bears with no ears?",
     "answer": "B",
-    "creator": null
-  }
-},
-{
-  "model": "jt.joke",
-  "pk": 22,
-  "fields": {
-    "hint": "Dyslexic Insomniac Agnostic",
-    "question": "What do you get when you cross a dyslexic, an insomniac, and an agnostic?",
-    "answer": "pirate",
     "creator": null
   }
 },
@@ -2866,6 +2904,26 @@
     "hint": "Knock Robin",
     "question": "Knock knock. Who's there? Robin. Robin who?",
     "answer": "Robin you, now stick em up!",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 138,
+  "fields": {
+    "hint": "Pirate 80",
+    "question": "What did the pirate say on his 80th birthday?",
+    "answer": "Aye matey",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 139,
+  "fields": {
+    "hint": "Pirate Two Eyes",
+    "question": "What do ye call a pirate with two eyes and two legs?",
+    "answer": "Rookie",
     "creator": null
   }
 }
