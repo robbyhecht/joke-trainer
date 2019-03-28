@@ -31,12 +31,20 @@ body {
   font-size: 1.05rem;
 }
 
+.navbar-item:hover {
+  color: #8383b6 !important;
+}
+
 .navbar-end {
   margin-right: 45px;
 }
 
 #searchbox {
   margin-bottom: 0px;
+}
+
+#searchform {
+  margin-top: .5px;
 }
 
 #navbar-logo-link {
@@ -102,12 +110,19 @@ body {
 }
 
 .left-auth-button {
-  font-weight: bold;
-  width: 75px;
+  /* font-weight: bold; */
+  width: 80px;
   border-radius: 3px !important;
   margin-top: 10px;
   margin-left: 8px;
   margin-right: 8px;
+  background-color: #8383b6 !important;
+  color: white !important;
+}
+
+.left-auth-button:hover {
+  background-color: #7878a7 !important;
+  color: white !important;
 }
 
 @media only screen and (max-width: 800px) {
@@ -279,7 +294,8 @@ body {
 }
 
 .category:hover {
-  color: gray;
+  /* color: gray; */
+  color: #8383b6;
 }
 
 .col-3-div {
@@ -289,10 +305,19 @@ body {
 
 /* ABOUT SECTION */
 
-
 .about-div-main {
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.about-button-large {
+  background-color: #8383b6 !important;
+  color: white !important;
+}
+
+.about-button-large:hover {
+  background-color: #7878a7 !important;
+  color: white !important;
 }
 
 /* AUTHENTICATION */
@@ -446,6 +471,10 @@ body {
   background-color: #8383b6 !important;
 }
 
+#add-button:hover {
+  background-color: #7878a7 !important;
+}
+
 .triple-button-container {
   display: flex;
   flex-wrap: wrap;
@@ -464,16 +493,26 @@ body {
   width: 64px;
   border-radius: 7px;
   margin-top: 5px;
+  background-color: rgb(255, 183, 0);
+  /* background-color: gold; */
+  color: white;
+}
+
+#edit-button:hover {
+  background-color: rgb(233, 167, 0);
 }
 
 #delete-button {
   width: 64px;
   border-radius: 7px;
   margin-top: 5px;
+  background-color: hsl(348, 86%, 59%) !important;
+  color: white;
 }
 
 #delete-button:hover {
-  background-color: hsl(348, 86%, 59%);
+  background-color: hsl(348, 65%, 52%) !important;
+  color: white;
 }
 
 .delete-button-modal {
@@ -522,10 +561,12 @@ body {
   border-bottom-right-radius: 7px;
   width: 110px;
   margin-top: 1px;
+  background-color: #8383b6;
 }
 
 #remove-button:hover {
-  background-color: hsl(348, 86%, 59%);
+  background-color: rgb(241, 205, 0);
+  color: black;
 }
 
 .card-buttons-container {
@@ -583,4 +624,34 @@ body {
     min-height: calc(100vh - 70px);
   }
 
+}
+
+.login-form-button {
+  background-color: #8383b6 !important;
+  color: white !important;
+}
+
+.login-form-button:hover {
+  background-color: #7878a7 !important;
+  color: white !important;
+}
+
+.registration-form-button {
+  background-color: #8383b6 !important;
+  color: white !important;
+}
+
+.registration-form-button:hover {
+  background-color: #7878a7 !important;
+  color: white !important;
+}
+
+.new-joke-button {
+  background-color: #8383b6 !important;
+  color: white !important;
+}
+
+.new-joke-button:hover {
+  background-color: #7878a7 !important;
+  color: white !important;
 }
