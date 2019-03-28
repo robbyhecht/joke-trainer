@@ -31,6 +31,10 @@ body {
   font-size: 1.05rem;
 }
 
+.navbar-item:hover {
+  color: #8383b6 !important;
+}
+
 .navbar-end {
   margin-right: 45px;
 }
@@ -39,9 +43,32 @@ body {
   margin-bottom: 0px;
 }
 
+#searchform {
+  margin-top: .5px;
+}
+
 #navbar-logo-link {
   display: flex !important;
   align-items: center !important;
+}
+
+/* .search-button {
+  background-color: gold !important;
+  background-color: #8383b6 !important;
+}
+
+.search-button:hover {
+  background-color: rgb(241, 205, 0) !important;
+  background-color: #7878a7 !important;
+} */
+
+.register-button {
+  background-color: #8383b6 !important;
+  color: white !important;
+}
+
+.register-button:hover {
+  background-color: #7878a7 !important;
 }
 
 
@@ -101,14 +128,14 @@ body {
   margin-bottom: 18px !important;
 }
 
-.left-auth-button {
+/* .left-auth-button {
   font-weight: bold;
   width: 75px;
   border-radius: 3px !important;
   margin-top: 10px;
   margin-left: 8px;
   margin-right: 8px;
-}
+} */
 
 @media only screen and (max-width: 800px) {
 
@@ -163,6 +190,12 @@ body {
     margin-top: 0;
     margin-left: 7px;
     margin-right: 7px;
+    background-color: #8383b6 !important;
+    color: white !important;
+  }
+  .left-auth-button:hover {
+    background-color: #7878a7 !important;
+    color: white !important;
   }
 }
 
@@ -279,7 +312,8 @@ body {
 }
 
 .category:hover {
-  color: gray;
+  /* color: gray; */
+  color: #8383b6;
 }
 
 .col-3-div {
@@ -446,6 +480,10 @@ body {
   background-color: #8383b6 !important;
 }
 
+#add-button:hover {
+  background-color: #7878a7 !important;
+}
+
 .triple-button-container {
   display: flex;
   flex-wrap: wrap;
@@ -464,16 +502,24 @@ body {
   width: 64px;
   border-radius: 7px;
   margin-top: 5px;
+  background-color: gold;
+  /* color: white; */
+}
+
+#edit-button:hover {
+  background-color: rgb(241, 205, 0);
 }
 
 #delete-button {
   width: 64px;
   border-radius: 7px;
   margin-top: 5px;
+  background-color: gold;
 }
 
 #delete-button:hover {
   background-color: hsl(348, 86%, 59%);
+  color: white;
 }
 
 .delete-button-modal {
@@ -522,10 +568,12 @@ body {
   border-bottom-right-radius: 7px;
   width: 110px;
   margin-top: 1px;
+  background-color: #8383b6;
 }
 
 #remove-button:hover {
-  background-color: hsl(348, 86%, 59%);
+  background-color: rgb(241, 205, 0);
+  color: black;
 }
 
 .card-buttons-container {
@@ -584,3 +632,13 @@ body {
   }
 
 }
+
+/* .login-form-button {
+  background-color: #8383b6 !important;
+  color: white !important;
+}
+
+.login-form-button:hover {
+  background-color: #7878a7 !important;
+  color: white !important;
+} */

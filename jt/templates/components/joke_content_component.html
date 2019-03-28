@@ -29,7 +29,7 @@
           <form action="{% url 'jt:edit_joke' joke.id %}" method="GET">
             {% csrf_token %}
             <input type="hidden" name="next" value="{{ request.path }}">
-            <button class="button is-dark is-small" id="edit-button">EDIT</button>
+            <button class="button is-small is-warning" id="edit-button">edit</button>
           </form>
         </div>
       {% endif %}
@@ -70,9 +70,9 @@
         </div>
         {% if joke.creator_id %}
           <div class="delete-button-container">
-            <button class="button is-danger is-small" id="delete-button"
+            <button class="button is-warning is-small" id="delete-button"
             onclick="deletionModal('modaltarget-{{joke.id}}')">
-              Delete
+              delete
             </button>
           </div>
         {% endif %}
