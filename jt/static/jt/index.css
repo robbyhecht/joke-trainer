@@ -305,10 +305,19 @@ body {
 
 /* ABOUT SECTION */
 
-
 .about-div-main {
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.about-button-large {
+  background-color: #8383b6 !important;
+  color: white !important;
+}
+
+.about-button-large:hover {
+  background-color: #7878a7 !important;
+  color: white !important;
 }
 
 /* AUTHENTICATION */
