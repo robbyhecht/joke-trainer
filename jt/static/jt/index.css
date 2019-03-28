@@ -52,25 +52,6 @@ body {
   align-items: center !important;
 }
 
-/* .search-button {
-  background-color: gold !important;
-  background-color: #8383b6 !important;
-}
-
-.search-button:hover {
-  background-color: rgb(241, 205, 0) !important;
-  background-color: #7878a7 !important;
-} */
-
-.register-button {
-  background-color: #8383b6 !important;
-  color: white !important;
-}
-
-.register-button:hover {
-  background-color: #7878a7 !important;
-}
-
 
 /* LEFT COLUMN */
 
@@ -128,14 +109,21 @@ body {
   margin-bottom: 18px !important;
 }
 
-/* .left-auth-button {
-  font-weight: bold;
-  width: 75px;
+.left-auth-button {
+  /* font-weight: bold; */
+  width: 80px;
   border-radius: 3px !important;
   margin-top: 10px;
   margin-left: 8px;
   margin-right: 8px;
-} */
+  background-color: #8383b6 !important;
+  color: white !important;
+}
+
+.left-auth-button:hover {
+  background-color: #7878a7 !important;
+  color: white !important;
+}
 
 @media only screen and (max-width: 800px) {
 
@@ -190,12 +178,6 @@ body {
     margin-top: 0;
     margin-left: 7px;
     margin-right: 7px;
-    background-color: #8383b6 !important;
-    color: white !important;
-  }
-  .left-auth-button:hover {
-    background-color: #7878a7 !important;
-    color: white !important;
   }
 }
 
@@ -502,23 +484,25 @@ body {
   width: 64px;
   border-radius: 7px;
   margin-top: 5px;
-  background-color: gold;
-  /* color: white; */
+  background-color: rgb(255, 183, 0);
+  /* background-color: gold; */
+  color: white;
 }
 
 #edit-button:hover {
-  background-color: rgb(241, 205, 0);
+  background-color: rgb(233, 167, 0);
 }
 
 #delete-button {
   width: 64px;
   border-radius: 7px;
   margin-top: 5px;
-  background-color: gold;
+  background-color: hsl(348, 86%, 59%) !important;
+  color: white;
 }
 
 #delete-button:hover {
-  background-color: hsl(348, 86%, 59%);
+  background-color: hsl(348, 65%, 52%) !important;
   color: white;
 }
 
@@ -633,7 +617,7 @@ body {
 
 }
 
-/* .login-form-button {
+.login-form-button {
   background-color: #8383b6 !important;
   color: white !important;
 }
@@ -641,4 +625,24 @@ body {
 .login-form-button:hover {
   background-color: #7878a7 !important;
   color: white !important;
-} */
+}
+
+.registration-form-button {
+  background-color: #8383b6 !important;
+  color: white !important;
+}
+
+.registration-form-button:hover {
+  background-color: #7878a7 !important;
+  color: white !important;
+}
+
+.new-joke-button {
+  background-color: #8383b6 !important;
+  color: white !important;
+}
+
+.new-joke-button:hover {
+  background-color: #7878a7 !important;
+  color: white !important;
+}
