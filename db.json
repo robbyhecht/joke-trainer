@@ -293,26 +293,10 @@
 },
 {
   "model": "jt.jokecategory",
-  "pk": 23,
-  "fields": {
-    "category": 6,
-    "joke": 22
-  }
-},
-{
-  "model": "jt.jokecategory",
   "pk": 24,
   "fields": {
     "category": 11,
     "joke": 23
-  }
-},
-{
-  "model": "jt.jokecategory",
-  "pk": 25,
-  "fields": {
-    "category": 14,
-    "joke": 22
   }
 },
 {
