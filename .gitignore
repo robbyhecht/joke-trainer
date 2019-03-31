@@ -3,6 +3,6 @@ __pycache__
 *.pyc
 bin
 obj
-*.db
+# *.db
 *.sqlite3
 .DS_Store
