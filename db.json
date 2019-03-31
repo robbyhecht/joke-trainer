@@ -1276,6 +1276,102 @@
   }
 },
 {
+  "model": "jt.jokecategory",
+  "pk": 209,
+  "fields": {
+    "category": 1,
+    "joke": 140
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 210,
+  "fields": {
+    "category": 18,
+    "joke": 140
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 211,
+  "fields": {
+    "category": 6,
+    "joke": 140
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 212,
+  "fields": {
+    "category": 18,
+    "joke": 141
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 213,
+  "fields": {
+    "category": 18,
+    "joke": 142
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 214,
+  "fields": {
+    "category": 10,
+    "joke": 142
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 215,
+  "fields": {
+    "category": 18,
+    "joke": 143
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 216,
+  "fields": {
+    "category": 12,
+    "joke": 143
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 217,
+  "fields": {
+    "category": 5,
+    "joke": 144
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 218,
+  "fields": {
+    "category": 18,
+    "joke": 145
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 219,
+  "fields": {
+    "category": 2,
+    "joke": 146
+  }
+},
+{
+  "model": "jt.jokecategory",
+  "pk": 220,
+  "fields": {
+    "category": 11,
+    "joke": 146
+  }
+},
+{
   "model": "sessions.session",
   "pk": "6mdm54n9f3il12nvsyf1euwquwpsigyr",
   "fields": {
@@ -1345,6 +1441,14 @@
   "fields": {
     "session_data": "ZTVmNGUyMWQ2OWViZTI5MGQxZDhhZWFiOGJjM2UxZTIyOWQ2NjM2Yjp7Il9hdXRoX3VzZXJfaWQiOiI3IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyNDA3MWMxYTMxYzhjYjg5NTY1NjQxOGY4NzJkZmNiMTc4MTEzMWU5In0=",
     "expire_date": "2019-03-21T00:29:43.348Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "td4k04c7nu8npbma20kw8g9kx1jy0ki1",
+  "fields": {
+    "session_data": "ZTVmNGUyMWQ2OWViZTI5MGQxZDhhZWFiOGJjM2UxZTIyOWQ2NjM2Yjp7Il9hdXRoX3VzZXJfaWQiOiI3IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyNDA3MWMxYTMxYzhjYjg5NTY1NjQxOGY4NzJkZmNiMTc4MTEzMWU5In0=",
+    "expire_date": "2019-04-14T14:46:01.473Z"
   }
 },
 {
@@ -2047,6 +2151,30 @@
   "fields": {
     "user": 7,
     "joke": 43
+  }
+},
+{
+  "model": "jt.userjoke",
+  "pk": 125,
+  "fields": {
+    "user": 7,
+    "joke": 61
+  }
+},
+{
+  "model": "jt.userjoke",
+  "pk": 126,
+  "fields": {
+    "user": 7,
+    "joke": 76
+  }
+},
+{
+  "model": "jt.userjoke",
+  "pk": 127,
+  "fields": {
+    "user": 7,
+    "joke": 53
   }
 },
 {
@@ -2916,6 +3044,76 @@
     "hint": "Pirate Two Eyes",
     "question": "What do ye call a pirate with two eyes and two legs?",
     "answer": "Rookie",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 140,
+  "fields": {
+    "hint": "Cat Comma",
+    "question": "What\u2019s the difference between a cat and a comma?",
+    "answer": "One has claws at the end of its paws, and the other is a pause at the end of a clause",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 141,
+  "fields": {
+    "hint": "Apostrophe Date",
+    "question": "Why should you never date an apostrophe?",
+    "answer": "They\u2019re too possessive",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 142,
+  "fields": {
+    "hint": "25 Letters",
+    "question": "When I was young there were only 25 letters in the Alphabet...",
+    "answer": "Nobody knew why",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 143,
+  "fields": {
+    "hint": "Shorter",
+    "question": "Which word becomes shorter after you add two letters to it?",
+    "answer": "Short",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 144,
+  "fields": {
+    "hint": "Mystery Writers",
+    "question": "How many mystery writers does it take to change a light bulb?",
+    "answer": "Two. One to screw the bulb almost all the way in, and one to give a surprising twist at the end",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 145,
+  "fields": {
+    "hint": "Grammar Comfort",
+    "question": "What should you say to comfort a grammar snob?",
+    "answer": "There, their, they\u2019re",
+    "creator": null
+  }
+},
+{
+  "model": "jt.joke",
+  "pk": 146,
+  "fields": {
+    "hint": "Knock Amish",
+    "question": "Knock knock.  Who\u2019s there?  Amish.   Amish who?",
+    "answer": "Really? You don't look like a shoe",
     "creator": null
   }
 }
