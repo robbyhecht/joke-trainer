@@ -6,3 +6,4 @@ obj
 # *.db
 *.sqlite3
 .DS_Store
+db.json
