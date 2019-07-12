@@ -222,6 +222,15 @@ body {
   font-size: 32px;
 }
 
+.secondary-header {
+  font-size: 26px !important;
+}
+
+.about-save-header-container {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
 .main-text {
   font-size: 24px;
 }
@@ -245,17 +254,24 @@ body {
     margin: 0px;
   }
   .main-header {
-    font-size: 27px !important;
+    font-size: 26px !important;
+  }
+  .secondary-header {
+    font-size: 20px !important;
   }
   .main-text {
-    font-size: 20px;
+    font-size: 14px;
   }
   .center-header-container {
     margin-top: 15px;
     margin-bottom: 20px;
   }
-  .about-text-container {
+  .about-save-header-container {
+    margin-top: 0px;
     margin-bottom: 20px;
+  }
+  .about-text-container {
+    margin-bottom: 10px;
   }
   .category-header-container {
     margin-top: 20px;
@@ -629,11 +645,20 @@ body {
 .login-form-button {
   background-color: #8383b6 !important;
   color: white !important;
+  width: 80px;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 .login-form-button:hover {
   background-color: #7878a7 !important;
   color: white !important;
+}
+
+.login-alert {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .registration-form-button {
@@ -654,4 +679,8 @@ body {
 .new-joke-button:hover {
   background-color: #7878a7 !important;
   color: white !important;
+}
+
+.register-button-login {
+  margin-top: -5px;
 }

@@ -7,6 +7,10 @@ from jt.forms import UserForm, LoginForm
 
 # the following four 'about' methods render the left sidebar section instructions
 # ** on mobile, the icons top bar
+def about(request):
+  template_name = 'about.html'
+  return render(request, template_name, {})
+
 def about_cruise(request):
   template_name = 'about_cruise.html'
   return render(request, template_name, {})
@@ -98,7 +102,12 @@ def login_user(request):
       else:
           # Bad login details were provided. So we can't log the user in.
           print("Invalid login details: {}, {}".format(username, password))
-          return HttpResponse("Invalid login details supplied.")
+          # return HttpResponse("Invalid login details supplied.")
+          login_form = LoginForm()
+          context = {'next': request.GET.get('next', '/')
+  , 'login_form': login_form,}
+          template_name = 'login_rejected.html'
+          return render(request, template_name, context)
 
     elif request.method == 'GET':
       login_form = LoginForm()

@@ -23,6 +23,7 @@
         <a class="navbar-item" href="{% url 'jt:favorites' %}">Favorites</a>
         <a class="navbar-item" href="{% url 'jt:favorites_trainer' %}">Trainer</a>
         <a class="navbar-item" href="{% url 'jt:add_joke' %}">Add a Joke</a>
+        <a class="navbar-item navbar-about is-hidden-desktop" href="{% url 'jt:about' %}">About</a>
         <form action="{% url 'jt:search' %}" id="searchform" method='POST'>
           {% csrf_token %}
           <div class="navbar-item field has-addons" id="nav-search">
@@ -34,6 +35,12 @@
             </div>
           </div>
         </form>
+
+        <!-- {%comment%} -->
+        <a class="navbar-about is-hidden-desktop" href="{% url 'jt:about' %}">About</a>
+        <!-- {%endcomment%} -->
+
+
 
       </div>
 

@@ -6,6 +6,7 @@
 
 {%block indexcenter%}
   <!-- login form -->
+  <p class="has-text-danger login-alert has-text-centered">This username or password is not registered. Please try again or create a new account.</p>
   <div class="login-container">
     <h3 class="title is-size3 auth-header">Login</h3>
     <form action="{% url 'jt:login' %}" method="POST">
