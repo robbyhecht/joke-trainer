@@ -655,6 +655,12 @@ body {
   color: white !important;
 }
 
+.login-alert {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .registration-form-button {
   background-color: #8383b6 !important;
   color: white !important;

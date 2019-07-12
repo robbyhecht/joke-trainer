@@ -1,0 +1,26 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{%block indexleft%}
+{%endblock%}
+
+{%block indexcenter%}
+  <!-- login form -->
+  <p class="has-text-danger login-alert has-text-centered">This username or password is not registered. Please try again or create a new account.</p>
+  <div class="login-container">
+    <h3 class="title is-size3 auth-header">Login</h3>
+    <form action="{% url 'jt:login' %}" method="POST">
+      {% csrf_token %}
+      {{ login_form }}
+      <input type="hidden" value="{{next}}" name="next"/>
+      <div class="auth-button-container has-text-centered">
+        <button class="button is-primary login-form-button">Log in</button>
+      </div>
+    </form>
+    <div class="has-text-centered">
+    <a class="button is-primary register-button-login" href="{% url 'jt:register' %}">Sign up</a></div>
+  </div>
+{%endblock%}
+
+{%block indexright%}
+{%endblock%}
