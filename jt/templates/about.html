@@ -2,18 +2,61 @@
 
 {%block indexcenter%}
 
+<div class="main-about-header center-header-container has-text-centered has-text-weight-semibold main-header">
+  Joke Trainer Guidebook
+</div>
+
+<div class="about-div-main">
+  <div class="about-save-header-container">
+    <h1 class="has-text-centered has-text-weight-semibold secondary-header">Save Your Favorite Jokes</h1>
+  </div>
+  <div class="about-text-container">
+    <h2 class="has-text-centered main-text">If there's a joke you find hilarious and want to remember for later, you can <strong>add it</strong> to your own collection of <strong>favorite jokes</strong>. Once you're logged in, just press the "add to favorites" button beneath any joke to save!</h2>
+  </div>
+</div>
+
+<div class="trainer-favorites-button-container">
+  <a href="{% url 'jt:favorites' %}">
+    <button class="button is-dark is-normal about-button-large is-hidden-tablet" id="go-to-trainer-button">Go to Favorites</button>
+    <button class="button is-dark is-medium about-button-large is-hidden-mobile" id="go-to-trainer-button">Go to Favorites</button> 
+  </a>
+</div>
+
 <div class="about-div-main">
   <div class="center-header-container">
-    <h1 class="has-text-centered has-text-weight-semibold main-header">Train Your Brain</h1>
+    <h1 class="has-text-centered has-text-weight-semibold secondary-header">Train Your Brain</h1>
   </div>
   <div class="about-text-container">
     <h2 class="has-text-centered main-text">The Trainer page takes you from funny to functional. You'll see all your favorite jokes, but this time with only a <strong>hint on the front</strong> and the <strong>whole joke on the back</strong>. You can use these flashcards to help you <strong>memorize the jokes</strong> and become a full blown entertainer!</h2>
   </div>
 </div>
 
-<div class="trainer-favorites-button-container is-hidden-mobile">
-  <a href="{% url 'jt:favorites_trainer' %}"><button class="button is-dark is-medium about-button-large" id="go-to-trainer-button">Go to Trainer</button></a>
+<div class="trainer-favorites-button-container">
+  <a href="{% url 'jt:favorites_trainer' %}">
+    <button class="button is-dark is-normal about-button-large is-hidden-tablet" id="go-to-trainer-button">Go to Trainer</button>
+    <button class="button is-dark is-medium about-button-large is-hidden-mobile" id="go-to-trainer-button">Go to Trainer</button> 
+  </a>
 </div>
+
+<div class="about-div-main">
+  <div class="center-header-container">
+    <h1 class="has-text-centered has-text-weight-semibold secondary-header">Add Your Own Jokes</h1>
+  </div>
+  <div class="about-text-container">
+    <h2 class="has-text-centered main-text">If you've got some real zingers that you'd love to work into your act, you can <strong>add as many as you'd like</strong>. They'll appear with the rest of the library anytime you're logged into your account!</h2>
+  </div>
+</div>
+
+<div class="trainer-favorites-button-container">
+  <a href="{% url 'jt:add_joke' %}">
+    <button class="button is-dark is-normal about-button-large is-hidden-tablet" id="go-to-trainer-button">Add a Joke</button>
+    <button class="button is-dark is-medium about-button-large is-hidden-mobile" id="go-to-trainer-button">Add a Joke</button> 
+  </a>
+</div>
+
+
+
+
 
 <div class="login-buttons-left-column is-hidden-desktop">
   {% if user.is_authenticated %}
