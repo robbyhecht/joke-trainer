@@ -92,7 +92,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 45px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .explanation-container {
@@ -226,6 +226,11 @@ body {
   font-size: 26px !important;
 }
 
+.secondary-header-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .about-save-header-container {
   margin-top: 0px;
   margin-bottom: 20px;
@@ -257,7 +262,7 @@ body {
     font-size: 26px !important;
   }
   .secondary-header {
-    font-size: 22px !important;
+    font-size: 21px !important;
   }
   .main-text {
     font-size: 15px;

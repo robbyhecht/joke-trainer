@@ -2,68 +2,54 @@
 
 {%block indexcenter%}
 
-<div class="main-about-header center-header-container has-text-centered has-text-weight-semibold main-header">
-  Joke Trainer Guidebook
-</div>
-
 <div class="about-div-main">
-  <div class="center-header-container">
-    <h1 class="has-text-centered has-text-weight-semibold secondary-header">Save Your Favorite Jokes</h1>
+
+  <div class=" center-header-container has-text-centered">
+    <h1 class="main-about-header has-text-weight-semibold main-header">Joke Trainer Guidebook</h1>
+  </div>
+
+  <div class="secondary-header-container">
+    <h3 class="has-text-centered has-text-weight-semibold secondary-header">Save Your Favorite Jokes</h3>
   </div>
   <div class="about-text-container">
-    <p class="has-text-centered main-text">If there's a joke you find hilarious and want to remember for later, you can <strong>add it</strong> to your own collection of <strong>favorite jokes</strong>. Once you're logged in, just press the "add to favorites" button beneath any joke to save!</p>
+    <p class="has-text-centered main-text">If there's a joke you find hilarious and want to remember for later, you can add it to your own collection of favorite jokes. Once you're logged in, just press the "add to favorites" button beneath any joke to save!</p>
   </div>
-</div>
 
-<div class="trainer-favorites-button-container">
-  <a href="{% url 'jt:favorites' %}">
-    <button class="button is-dark is-normal about-button-large is-hidden-tablet" id="go-to-trainer-button">Go to Favorites</button>
-    <button class="button is-dark is-medium about-button-large is-hidden-mobile" id="go-to-trainer-button">Go to Favorites</button> 
-  </a>
-</div>
+  <div class="trainer-favorites-button-container">
+    <a href="{% url 'jt:favorites' %}">
+      <button class="button is-dark is-normal about-button-large is-hidden-tablet" id="go-to-trainer-button">Go to Favorites</button>
+      <button class="button is-dark is-medium about-button-large is-hidden-mobile" id="go-to-trainer-button">Go to Favorites</button> 
+    </a>
+  </div>
 
-<div class="about-div-main">
-  <div class="center-header-container">
-    <h1 class="has-text-centered has-text-weight-semibold secondary-header">Train Your Brain</h1>
+  <div class="secondary-header-container">
+    <h3 class="has-text-centered has-text-weight-semibold secondary-header">Train Your Brain</h3>
   </div>
   <div class="about-text-container">
-    <p class="has-text-centered main-text">The Trainer page takes you from funny to functional. You'll see all your favorite jokes, but this time with only a <strong>hint on the front</strong> and the <strong>whole joke on the back</strong>. You can use these flashcards to help you <strong>memorize the jokes</strong> and become a full blown entertainer!</p>
+    <p class="has-text-centered main-text">The Trainer page takes you from funny to functional. You'll see all your favorite jokes, but this time with only a hint on the front and the whole joke on the back. You can use these flashcards to help you memorize the jokes and become a full blown entertainer!</p>
   </div>
-</div>
 
-<div class="trainer-favorites-button-container">
-  <a href="{% url 'jt:favorites_trainer' %}">
-    <button class="button is-dark is-normal about-button-large is-hidden-tablet" id="go-to-trainer-button">Go to Trainer</button>
-    <button class="button is-dark is-medium about-button-large is-hidden-mobile" id="go-to-trainer-button">Go to Trainer</button> 
-  </a>
-</div>
+  <div class="trainer-favorites-button-container">
+    <a href="{% url 'jt:favorites_trainer' %}">
+      <button class="button is-dark is-normal about-button-large is-hidden-tablet" id="go-to-trainer-button">Go to Trainer</button>
+      <button class="button is-dark is-medium about-button-large is-hidden-mobile" id="go-to-trainer-button">Go to Trainer</button> 
+    </a>
+  </div>
 
-<div class="about-div-main">
-  <div class="center-header-container">
-    <h1 class="has-text-centered has-text-weight-semibold secondary-header">Add Your Own Jokes</h1>
+  <div class="secondary-header-container">
+    <h3 class="has-text-centered has-text-weight-semibold secondary-header">Add Your Own Jokes</h3>
   </div>
   <div class="about-text-container">
-    <p class="has-text-centered main-text">If you've got some real zingers that you'd love to work into your act, you can <strong>add as many as you'd like</strong>. They'll appear with the rest of the library anytime you're logged into your account!</p>
+    <p class="has-text-centered main-text">If you've got some real zingers that you'd love to work into your act, you can add as many as you'd like. They'll appear with the rest of the library anytime you're logged into your account!</p>
   </div>
-</div>
 
-<div class="trainer-favorites-button-container">
-  <a href="{% url 'jt:add_joke' %}">
-    <button class="button is-dark is-normal about-button-large is-hidden-tablet" id="go-to-trainer-button">Add a Joke</button>
-    <button class="button is-dark is-medium about-button-large is-hidden-mobile" id="go-to-trainer-button">Add a Joke</button> 
-  </a>
-</div>
-
-
-
-
-
-<div class="login-buttons-left-column is-hidden-desktop">
-  {% if user.is_authenticated %}
-  {% else %}
-    <a class="button is-primary is-hidden-tablet left-auth-button" href="{% url 'jt:register' %}">Sign up</a>
-    <a class="button is-primary log-button is-hidden-tablet left-auth-button" href="{% url 'jt:login' %}">Log in</a>
-  {% endif %}
-</div>
+  <div class="trainer-favorites-button-container">
+    <a href="{% url 'jt:add_joke' %}">
+      <button class="button is-dark is-normal about-button-large is-hidden-tablet" id="go-to-trainer-button">Add a Joke</button>
+      <button class="button is-dark is-medium about-button-large is-hidden-mobile" id="go-to-trainer-button">Add a Joke</button> 
+    </a>
+  </div>
   
+</div>
+
 {% endblock %}
