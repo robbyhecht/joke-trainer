@@ -645,6 +645,9 @@ body {
 .login-form-button {
   background-color: #8383b6 !important;
   color: white !important;
+  width: 80px;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 .login-form-button:hover {
