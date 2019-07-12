@@ -6,8 +6,7 @@ from .views import about_cruise
 from .views import about_favorites
 from .views import about_trainer
 from .views import about_add
-
-
+from .views import about
 
 from .joke_views import list_categories
 from .joke_views import random_joke

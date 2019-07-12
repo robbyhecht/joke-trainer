@@ -245,7 +245,7 @@ body {
     margin: 0px;
   }
   .main-header {
-    font-size: 28px !important;
+    font-size: 27px !important;
   }
   .main-text {
     font-size: 14px;
@@ -654,4 +654,8 @@ body {
 .new-joke-button:hover {
   background-color: #7878a7 !important;
   color: white !important;
+}
+
+.register-button-login {
+  margin-top: -5px;
 }

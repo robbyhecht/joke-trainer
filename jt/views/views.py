@@ -7,6 +7,10 @@ from jt.forms import UserForm, LoginForm
 
 # the following four 'about' methods render the left sidebar section instructions
 # ** on mobile, the icons top bar
+def about(request):
+  template_name = 'about.html'
+  return render(request, template_name, {})
+
 def about_cruise(request):
   template_name = 'about_cruise.html'
   return render(request, template_name, {})
