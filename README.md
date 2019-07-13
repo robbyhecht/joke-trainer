@@ -12,49 +12,13 @@
 Joke Trainer ERD:
 ![Joke Trainer ERD](jt/static/jt/images/joke_trainer_erd.jpeg)
 
-## To access Joke Trainer in your terminal:
+## To access Joke Trainer on the web:
 
-SET UP A VIRTUAL ENVIRONMENT
+Joke Trainer is available online at <a href="http://www.joketrainer.com">http://www.joketrainer.com</a>
+<br><p>If you prefer to tour the full site without creating your own user profile, you may use the following demonstration account:</p>
 
-1. Create a folder for the project named JokeTrainer (or whatever you'd like) and navigate into the folder
-2. Initialize a virtual environment from within your new folder
-a. virtualenv env<br />
-b. source env/bin/activate<br />
-c. (To end your virtual environment: deactivate)
-
-INSTALL DJANGO
-
-3. Within your new folder (but outside of the virtual environment folder) install Django by typing:<br />
-a. pip install django
-
-CLONE DOWN JOKE TRAINER
-
-4. Clone down the Joke Trainer project:<br />
-a. git clone https://github.com/robbyhecht/joke-trainer.git<br />
-b. pull down the branch designated for development using the commands:<br />
-git fetch --all<br />
-git pull origin DEVELOPMENT<br />
-
-5. There should now be a folder called joke_trainer-- navigate into this folder
-
-MAKE A DATABASE
-
-6. Create your database by typing-- 
-python manage.py makemigrations
-
-7. Then to activate migrations, enter-- python manage.py migrate
-
-8. You can access the SQLite database now by opening the file inside your project called db.sqlite3 in DB Browser.
-
-POPULATE THE DATABASE
-
-9. You can populate the database with the existing file db.json by typing-- pyman loaddata db.json
-
-FIND JOKE TRAINER IN YOUR BROWSER
-
-10. Start up your local server by typing: python manage.py runserver
-
-11. In your browser, you should now see the Joke Trainer homepage at localhost:8000
+<strong>username:</strong> demo<br>
+<strong>password:</strong> tourthesite
 
 ## Sections in Joke Trainer
 
