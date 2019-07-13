@@ -64,7 +64,8 @@
                 <h1 class="main-header has-text-weight-semibold" id="index-header">Welcome to Joke Trainer</h1>
               </div>
               <div class="explanation-container" id="index-explanation-container">
-                <h4 class="main-text has-text-centered">A curated library of jokes for you to enjoy, customize and learn. Choose a category or use the search bar to get started!</h4>
+                <h4 class="main-text has-text-centered is-hidden-tablet">A curated library of jokes for you to enjoy, customize and learn. Choose a <a href="#categories" class="crosspage-text-link">category</a> or use the search bar to get started!</h4>
+                <h4 class="main-text has-text-centered is-hidden-mobile">A curated library of jokes for you to enjoy, customize and learn. Choose a category or use the search bar to get started!</h4>
               </div>
               <!-- <div id="random-joke-header-container">
                 <h5 class="has-text-centered" id="random-joke-header"><strong>Joke of the Moment</strong></h5>
@@ -113,7 +114,7 @@
           {% block indexright%}
 
           <!-- categories list -->
-            <h2 class="categories-header">CATEGORIES</h2>
+            <h2 class="categories-header" id="categories">CATEGORIES</h2>
 
             <!-- the My Jokes category only displays when a user is logged in -->
             {% if user.is_authenticated %}
