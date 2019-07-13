@@ -26,7 +26,7 @@
         <h1 class="main-header has-text-weight-semibold">Favorites</h1>
       </div>
         <div class="explanation-container">
-          <h3 class="main-text has-text-centered">Your personal library of the best of the best. To add a joke to your favorites, just click the "add to favorites" button below any joke. Once you've got a nice collection going, head over to the <strong><a href="{% url 'jt:favorites_trainer' %}" class="is-dark" id="trainer-text-link">Trainer</a></strong> section to work on making them part of your act!</h3>
+          <h3 class="main-text has-text-centered">Your personal library of the best of the best. To add a joke to your favorites, just click the "add to favorites" button below any joke. Once you've got a nice collection going, head over to the <a href="{% url 'jt:favorites_trainer' %}" class="is-dark" id="trainer-text-link">Trainer</a> section to work on making them part of your act!</h3>
         </div>
       {% for joke in joke_content %}
         <div class="singlecard-container">
