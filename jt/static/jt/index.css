@@ -99,11 +99,19 @@ body {
   margin: 0px 20px 50px 20px;
 }
 
-.crosspage-text-link {
+#trainer-text-link {
   color: #7878a7 !important
 }
 
-.crosspage-text-link:hover {
+#trainer-text-link:hover {
+  color: #8383b6 !important
+}
+
+#categories-text-link {
+  color: #7878a7 !important
+}
+
+#categories-text-link:hover {
   color: #8383b6 !important
 }
 
