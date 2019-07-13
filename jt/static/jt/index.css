@@ -100,7 +100,11 @@ body {
 }
 
 #trainer-text-link {
-  color: rgb(54, 54, 54)
+  color: #7878a7
+}
+
+#trainer-text-link:hover {
+  color: #8383b6
 }
 
 .login-buttons-left-column {

@@ -7,3 +7,4 @@ obj
 *.sqlite3
 .DS_Store
 database.json
+notes
